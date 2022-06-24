@@ -4,4 +4,14 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://54.211.120.43/api'</initValue>
+      <name>url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU2MDcwNjU1LCJpYXQiOjE2NTYwNTI2NTV9.gDrQX4TP3SQFMOFefOCzFZAfzaxoyhM6Qvh4V3lG_LoIAIiof1auF4JfCIyfAoxU8msjzbWhQ1TtXI-slZ-CUw'</initValue>
+      <name>token</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
