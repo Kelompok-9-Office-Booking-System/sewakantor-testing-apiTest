@@ -13,8 +13,8 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Jakarta&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;value&quot;: &quot;Kota Badung&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
   ]
@@ -39,7 +39,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${url}/v1/admin/cities/1</restUrl>
+   <restUrl>${url}/v1/admin/cities/${createID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -54,6 +54,13 @@
       <id>1242473f-ad58-48cb-8ae4-ceb94ae76e00</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_CreateID</defaultValue>
+      <description></description>
+      <id>a66d92ff-2ac6-4e0b-87b2-45f81284be7e</id>
+      <masked>false</masked>
+      <name>createID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

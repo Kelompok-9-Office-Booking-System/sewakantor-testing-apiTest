@@ -38,13 +38,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5df53cfa-a5a4-475a-afa1-b1ba99894544</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/TS3_City/TC_Update City</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1a96d616-9e17-4527-a214-773556155851</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

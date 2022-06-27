@@ -14,7 +14,7 @@
     {
       &quot;name&quot;: &quot;name&quot;,
       &quot;value&quot;: &quot;Bandung&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
   ]

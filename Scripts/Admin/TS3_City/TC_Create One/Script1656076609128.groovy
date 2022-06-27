@@ -23,3 +23,12 @@ WS.verifyResponseStatusCode(rslt, 200)
 
 WS.verifyElementPropertyValue(rslt, 'data.name', 'Bandung')
 
+
+def slurper = new groovy.json.JsonSlurper()
+def result = slurper.parseText(rslt.getResponseBodyContent())
+
+def value= result.data.id
+
+GlobalVariable.admin_CreateID= value
+
+println(GlobalVariable.admin_CreateID)

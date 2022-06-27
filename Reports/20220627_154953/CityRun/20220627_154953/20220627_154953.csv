@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CityRun,,,,2022-06-27 15:49:58,2022-06-27 15:50:21,23.262s,FAILED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get All City,,,,2022-06-27 15:49:59,2022-06-27 15:50:09,10.180s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-27 15:49:59,2022-06-27 15:50:09,9.373s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get One City,,,,2022-06-27 15:50:09,2022-06-27 15:50:16,6.870s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-27 15:50:09,2022-06-27 15:50:16,6.166s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Create One,,,,2022-06-27 15:50:16,2022-06-27 15:50:17,1.637s,FAILED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Create One""))",,,,2022-06-27 15:50:16,2022-06-27 15:50:17,0.977s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 15:50:17,2022-06-27 15:50:17,0.034s,FAILED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Update City,,,,2022-06-27 15:50:17,2022-06-27 15:50:20,2.446s,FAILED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Update""))",,,,2022-06-27 15:50:18,2022-06-27 15:50:20,1.798s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 15:50:20,2022-06-27 15:50:20,0.008s,FAILED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Delete,,,,2022-06-27 15:50:20,2022-06-27 15:50:21,1.585s,FAILED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Delete""))",,,,2022-06-27 15:50:20,2022-06-27 15:50:21,1.002s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 15:50:21,2022-06-27 15:50:21,0.012s,FAILED

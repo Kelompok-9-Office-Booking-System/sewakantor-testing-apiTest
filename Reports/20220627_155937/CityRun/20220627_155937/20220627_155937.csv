@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CityRun,,,,2022-06-27 15:59:42,2022-06-27 16:00:03,21.194s,FAILED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get All City,,,,2022-06-27 15:59:43,2022-06-27 15:59:52,9.253s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-27 15:59:44,2022-06-27 15:59:52,8.420s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get One City,,,,2022-06-27 15:59:52,2022-06-27 15:59:59,6.899s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-27 15:59:53,2022-06-27 15:59:59,6.173s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Create One,,,,2022-06-27 15:59:59,2022-06-27 16:00:01,1.900s,PASSED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Create One""))",,,,2022-06-27 16:00:00,2022-06-27 16:00:01,1.131s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 16:00:01,2022-06-27 16:00:01,0.012s,PASSED
+"verifyElementPropertyValue(rslt, ""data.name"", ""Bandung"")",,,,2022-06-27 16:00:01,2022-06-27 16:00:01,0.064s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-06-27 16:00:01,2022-06-27 16:00:01,0.000s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-06-27 16:00:01,2022-06-27 16:00:01,0.000s,PASSED
+value = id,,,,2022-06-27 16:00:01,2022-06-27 16:00:01,0.000s,PASSED
+admin_CreateID = value,,,,2022-06-27 16:00:01,2022-06-27 16:00:01,0.000s,PASSED
+println(admin_CreateID),,,,2022-06-27 16:00:01,2022-06-27 16:00:01,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Update City,,,,2022-06-27 16:00:01,2022-06-27 16:00:03,1.736s,FAILED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Update""))",,,,2022-06-27 16:00:01,2022-06-27 16:00:03,1.106s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 16:00:03,2022-06-27 16:00:03,0.030s,FAILED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Delete,,,,2022-06-27 16:00:03,2022-06-27 16:00:03,0.843s,FAILED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Delete""))",,,,2022-06-27 16:00:03,2022-06-27 16:00:03,0.283s,FAILED

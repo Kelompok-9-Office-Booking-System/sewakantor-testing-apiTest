@@ -1,0 +1,60 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+AdminFlow,,,,2022-06-27 16:04:45,2022-06-27 16:05:59,1m - 13.769s,PASSED
+,,,,,,,
+Test Cases/Admin/TS1_Authori/TC_Login,,,,2022-06-27 16:04:46,2022-06-27 16:04:58,12.555s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-27 16:04:47,2022-06-27 16:04:58,11.441s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-06-27 16:04:58,2022-06-27 16:04:58,0.008s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-06-27 16:04:58,2022-06-27 16:04:58,0.016s,PASSED
+value = token,,,,2022-06-27 16:04:58,2022-06-27 16:04:58,0.000s,PASSED
+token = value,,,,2022-06-27 16:04:58,2022-06-27 16:04:58,0.000s,PASSED
+println(token),,,,2022-06-27 16:04:58,2022-06-27 16:04:58,0.012s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Create One,,,,2022-06-27 16:04:58,2022-06-27 16:05:00,1.907s,PASSED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Create One""))",,,,2022-06-27 16:04:59,2022-06-27 16:05:00,1.179s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 16:05:00,2022-06-27 16:05:00,0.000s,PASSED
+"verifyElementPropertyValue(rslt, ""data.name"", ""Bandung"")",,,,2022-06-27 16:05:00,2022-06-27 16:05:00,0.047s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-06-27 16:05:00,2022-06-27 16:05:00,0.000s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-06-27 16:05:00,2022-06-27 16:05:00,0.000s,PASSED
+value = id,,,,2022-06-27 16:05:00,2022-06-27 16:05:00,0.000s,PASSED
+admin_CreateID = value,,,,2022-06-27 16:05:00,2022-06-27 16:05:00,0.000s,PASSED
+println(admin_CreateID),,,,2022-06-27 16:05:00,2022-06-27 16:05:00,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get All City,,,,2022-06-27 16:05:00,2022-06-27 16:05:05,4.815s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-27 16:05:01,2022-06-27 16:05:05,4.143s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get One City,,,,2022-06-27 16:05:05,2022-06-27 16:05:12,7.243s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-27 16:05:06,2022-06-27 16:05:12,6.548s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Delete,,,,2022-06-27 16:05:12,2022-06-27 16:05:15,2.533s,PASSED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Delete""))",,,,2022-06-27 16:05:13,2022-06-27 16:05:15,1.934s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 16:05:15,2022-06-27 16:05:15,0.003s,PASSED
+"verifyElementPropertyValue(rslt, ""message"", ""city deleted successfully"")",,,,2022-06-27 16:05:15,2022-06-27 16:05:15,0.029s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding,,,,2022-06-27 16:05:15,2022-06-27 16:05:22,6.964s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-27 16:05:15,2022-06-27 16:05:22,6.318s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding,,,,2022-06-27 16:05:22,2022-06-27 16:05:27,5.299s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-27 16:05:22,2022-06-27 16:05:27,4.734s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding,,,,2022-06-27 16:05:27,2022-06-27 16:05:28,1.474s,PASSED
+"rslt = sendRequest(findTestObject(""Postman/Admin/Building/Update""))",,,,2022-06-27 16:05:28,2022-06-27 16:05:28,0.874s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 16:05:28,2022-06-27 16:05:28,0.000s,PASSED
+"verifyElementPropertyValue(rslt, ""data.name"", ""Tempo Scan Tower"")",,,,2022-06-27 16:05:28,2022-06-27 16:05:28,0.040s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get All Complex,,,,2022-06-27 16:05:29,2022-06-27 16:05:33,4.710s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-27 16:05:29,2022-06-27 16:05:33,4.155s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get Dropdown,,,,2022-06-27 16:05:33,2022-06-27 16:05:37,3.839s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-27 16:05:34,2022-06-27 16:05:37,3.291s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get One Complex,,,,2022-06-27 16:05:37,2022-06-27 16:05:44,6.459s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-27 16:05:38,2022-06-27 16:05:44,5.812s,PASSED
+,,,,,,,
+Test Cases/Admin/TS5_Facility/TC_Get All Facility,,,,2022-06-27 16:05:44,2022-06-27 16:05:49,5.317s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-27 16:05:44,2022-06-27 16:05:49,4.731s,PASSED
+,,,,,,,
+Test Cases/Admin/TS5_Facility/TC_Get Dropdown,,,,2022-06-27 16:05:49,2022-06-27 16:05:53,4.010s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-27 16:05:49,2022-06-27 16:05:53,3.466s,PASSED
+,,,,,,,
+Test Cases/Admin/TS5_Facility/TC_Get One Facility,,,,2022-06-27 16:05:53,2022-06-27 16:05:59,6.057s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-27 16:05:54,2022-06-27 16:05:59,5.396s,PASSED

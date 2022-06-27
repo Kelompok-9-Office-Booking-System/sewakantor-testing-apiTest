@@ -54,4 +54,9 @@
       <initValue>''</initValue>
       <name>admin_FacilityID</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>admin_CreateID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

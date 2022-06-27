@@ -23,7 +23,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${url}/v1/admin/cities/5</restUrl>
+   <restUrl>${url}/v1/admin/cities/${cityID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -38,6 +38,13 @@
       <id>b6bb4f92-eb54-4d95-bbc1-b4ff8b3d6594</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_CreateID</defaultValue>
+      <description></description>
+      <id>158f6f03-216e-4862-8316-d73ec30d0231</id>
+      <masked>false</masked>
+      <name>cityID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

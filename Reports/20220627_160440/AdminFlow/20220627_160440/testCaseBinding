@@ -1,0 +1,14 @@
+{"testCaseName":"Test Cases/Admin/TS1_Authori/TC_Login","testCaseId":"Test Cases/Admin/TS1_Authori/TC_Login","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS3_City/TC_Create One","testCaseId":"Test Cases/Admin/TS3_City/TC_Create One","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS3_City/TC_Get All City","testCaseId":"Test Cases/Admin/TS3_City/TC_Get All City","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS3_City/TC_Get One City","testCaseId":"Test Cases/Admin/TS3_City/TC_Get One City","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS3_City/TC_Delete","testCaseId":"Test Cases/Admin/TS3_City/TC_Delete","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding","testCaseId":"Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding","testCaseId":"Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding","testCaseId":"Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS4_Complex/TC_Get All Complex","testCaseId":"Test Cases/Admin/TS4_Complex/TC_Get All Complex","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS4_Complex/TC_Get Dropdown","testCaseId":"Test Cases/Admin/TS4_Complex/TC_Get Dropdown","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS4_Complex/TC_Get One Complex","testCaseId":"Test Cases/Admin/TS4_Complex/TC_Get One Complex","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS5_Facility/TC_Get All Facility","testCaseId":"Test Cases/Admin/TS5_Facility/TC_Get All Facility","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS5_Facility/TC_Get Dropdown","testCaseId":"Test Cases/Admin/TS5_Facility/TC_Get Dropdown","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS5_Facility/TC_Get One Facility","testCaseId":"Test Cases/Admin/TS5_Facility/TC_Get One Facility","iterationVariableName":""}

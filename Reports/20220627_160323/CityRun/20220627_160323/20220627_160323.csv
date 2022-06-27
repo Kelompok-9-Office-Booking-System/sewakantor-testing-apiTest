@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CityRun,,,,2022-06-27 16:03:28,2022-06-27 16:03:49,20.380s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get All City,,,,2022-06-27 16:03:29,2022-06-27 16:03:39,9.627s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-27 16:03:30,2022-06-27 16:03:39,8.782s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get One City,,,,2022-06-27 16:03:39,2022-06-27 16:03:44,5.296s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-27 16:03:39,2022-06-27 16:03:44,4.588s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Create One,,,,2022-06-27 16:03:44,2022-06-27 16:03:46,1.854s,PASSED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Create One""))",,,,2022-06-27 16:03:45,2022-06-27 16:03:46,1.096s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 16:03:46,2022-06-27 16:03:46,0.007s,PASSED
+"verifyElementPropertyValue(rslt, ""data.name"", ""Bandung"")",,,,2022-06-27 16:03:46,2022-06-27 16:03:46,0.032s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-06-27 16:03:46,2022-06-27 16:03:46,0.000s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-06-27 16:03:46,2022-06-27 16:03:46,0.000s,PASSED
+value = id,,,,2022-06-27 16:03:46,2022-06-27 16:03:46,0.008s,PASSED
+admin_CreateID = value,,,,2022-06-27 16:03:46,2022-06-27 16:03:46,0.000s,PASSED
+println(admin_CreateID),,,,2022-06-27 16:03:46,2022-06-27 16:03:46,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Update City,,,,2022-06-27 16:03:46,2022-06-27 16:03:47,1.705s,PASSED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Update""))",,,,2022-06-27 16:03:46,2022-06-27 16:03:47,1.070s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 16:03:47,2022-06-27 16:03:47,0.000s,PASSED
+"verifyElementPropertyValue(rslt, ""message"", ""city updated successfully"")",,,,2022-06-27 16:03:47,2022-06-27 16:03:47,0.048s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Delete,,,,2022-06-27 16:03:47,2022-06-27 16:03:49,1.383s,PASSED
+"rslt = sendRequest(findTestObject(""Postman/Admin/City/Delete""))",,,,2022-06-27 16:03:48,2022-06-27 16:03:49,0.780s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-06-27 16:03:49,2022-06-27 16:03:49,0.000s,PASSED
+"verifyElementPropertyValue(rslt, ""message"", ""city deleted successfully"")",,,,2022-06-27 16:03:49,2022-06-27 16:03:49,0.032s,PASSED
