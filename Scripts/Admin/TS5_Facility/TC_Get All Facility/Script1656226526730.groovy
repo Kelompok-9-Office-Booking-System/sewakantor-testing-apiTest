@@ -17,9 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get All'))
-
-WS.verifyResponseStatusCode(rslt, 200)
-
-WS.verifyElementPropertyValue(rslt, 'message', 'list facility')
-
+for(int i=0;i<2;i++)
+	{
+		if(i==0)
+		{
+			GlobalVariable.token=""
+			rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get All'))
+			WS.verifyResponseStatusCode(rslt, 401)
+		}
+		
+		else if(i==1)
+		{
+			WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
+			rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get All'))
+			
+			WS.verifyResponseStatusCode(rslt, 200)
+			
+			WS.verifyElementPropertyValue(rslt, 'message', 'list facility')
+		}
+	}

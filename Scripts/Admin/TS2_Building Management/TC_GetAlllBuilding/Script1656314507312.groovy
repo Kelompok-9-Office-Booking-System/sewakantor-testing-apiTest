@@ -17,10 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Get One'))
-
-WS.verifyResponseStatusCode(rslt, 200)
-
-'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
-WS.verifyElementPropertyValue(rslt, 'message', 'list building')
-
+for(int i=0;i<2;i++)
+{
+	if(i==0)
+	{
+		GlobalVariable.token=""
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Get All'))
+		WS.verifyResponseStatusCode(rslt, 401)
+	}
+	
+	else if(i==1)
+	{
+		WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Get All'))
+		
+		WS.verifyResponseStatusCode(rslt, 200)
+		
+		WS.verifyElementPropertyValue(rslt, 'message', 'list building')
+	}
+}

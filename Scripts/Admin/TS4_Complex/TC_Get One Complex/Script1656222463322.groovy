@@ -17,9 +17,53 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-rslt = WS.sendRequest(findTestObject('Postman/Admin/Complex/Get One'))
+for(int i=0;i<4;i++)
+{
+	//no auth
+	if(i==0)
+	{
+		GlobalVariable.token=""
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Complex/Get One'))
+		
+		WS.verifyResponseStatusCode(rslt, 401)
+	}
+	//valid
+	else if(i==1)
+	{
+		GlobalVariable.admin_ComplexID=1
+		WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Complex/Get One'))
+		
+		WS.verifyResponseStatusCode(rslt, 200)
+		
+		'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
+		WS.verifyElementPropertyValue(rslt, 'message', 'list complex')
+	}
+	//invalidID
+	else if(i==2)
+	{
+		GlobalVariable.admin_ComplexID=notFound
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Complex/Get One'))
+		
+		WS.verifyResponseStatusCode(rslt, 404)
+		
+		'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
+		WS.verifyElementPropertyValue(rslt, 'message', 'complex not found')
+		
+	}
+	//malformed
+	else
+	{
+		GlobalVariable.admin_ComplexID=string
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Complex/Get One'))
+		
+		WS.verifyResponseStatusCode(rslt, 400)
+		
+		'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
+		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+	}
+	
+	
+}
 
-WS.verifyResponseStatusCode(rslt, 200)
-
-WS.verifyElementPropertyValue(rslt, 'data.name', 'Anggrek Permai')
 

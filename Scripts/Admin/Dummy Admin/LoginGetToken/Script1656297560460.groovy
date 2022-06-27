@@ -17,9 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Get All'))
+GlobalVariable.admin_uname = "superadmin"
+GlobalVariable.admin_password = "12345"
+rslt = WS.sendRequest(findTestObject('Postman/Admin/Auth/Login'))
 
-WS.verifyResponseStatusCode(rslt, 200)
+def slurper = new groovy.json.JsonSlurper()
+def result = slurper.parseText(rslt.getResponseBodyContent())
 
-WS.verifyElementPropertyValue(rslt, 'message', 'list building')
+def value= result.data.token
 
+GlobalVariable.token = value
+
+println(GlobalVariable.token)

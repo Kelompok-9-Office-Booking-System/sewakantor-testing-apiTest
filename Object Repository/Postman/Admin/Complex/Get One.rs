@@ -23,7 +23,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/v1/admin/complexes/1</restUrl>
+   <restUrl>${url}/v1/admin/complexes/${complexID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -38,6 +38,13 @@
       <id>c4d6883f-d821-4087-b696-819fc5e1c50d</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_ComplexID</defaultValue>
+      <description></description>
+      <id>914c249b-99e8-4bc1-9d98-1304f16766a9</id>
+      <masked>false</masked>
+      <name>complexID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

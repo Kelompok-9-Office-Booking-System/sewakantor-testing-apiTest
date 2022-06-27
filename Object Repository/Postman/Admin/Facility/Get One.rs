@@ -23,7 +23,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/v1/admin/facilities/2</restUrl>
+   <restUrl>${url}/v1/admin/facilities/${facilityID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -38,6 +38,13 @@
       <id>56cc07ef-4c23-49ce-bed2-1ddea2f09de3</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_FacilityID</defaultValue>
+      <description></description>
+      <id>71ba3400-39cb-4646-94ab-6ac906182799</id>
+      <masked>false</masked>
+      <name>facilityID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

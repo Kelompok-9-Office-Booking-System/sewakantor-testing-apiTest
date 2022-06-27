@@ -17,9 +17,45 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Get All'))
+for (int i = 0; i < 4; i++) {
+    //no auth
+    if (i == 0) {
+        GlobalVariable.token = ''
 
-WS.verifyResponseStatusCode(rslt, 200)
+        rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Get One'))
 
-WS.verifyElementPropertyValue(rslt, 'data.name', ['Jakarta'])
+        WS.verifyResponseStatusCode(rslt, 401) //valid
+        //invalidID
+        //malformed
+    } else if (i == 1) {
+        GlobalVariable.admin_CityID = 1
+
+        WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
+
+        rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Get One'))
+
+        WS.verifyResponseStatusCode(rslt, 200)
+
+        'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
+        WS.verifyElementPropertyValue(rslt, 'message', 'list city')
+    } else if (i == 2) {
+        GlobalVariable.admin_CityID = notFound
+
+        rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Get One'))
+
+        WS.verifyResponseStatusCode(rslt, 404)
+
+        'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
+        WS.verifyElementPropertyValue(rslt, 'message', 'city not found')
+    } else {
+        GlobalVariable.admin_CityID = string
+
+        rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Get One'))
+
+        WS.verifyResponseStatusCode(rslt, 400)
+
+        'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
+        WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+    }
+}
 

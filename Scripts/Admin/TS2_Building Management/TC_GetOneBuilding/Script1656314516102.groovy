@@ -18,45 +18,48 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 
+
+
+
 for(int i=0;i<4;i++)
 {
 	//no auth
 	if(i==0)
 	{
 		GlobalVariable.token=""
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get One'))
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Get One'))
 		
 		WS.verifyResponseStatusCode(rslt, 401)
 	}
 	//valid
 	else if(i==1)
 	{
-		GlobalVariable.admin_FacilityID=1
+		GlobalVariable.admin_BuildingID=1
 		WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get One'))
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Get One'))
 		
 		WS.verifyResponseStatusCode(rslt, 200)
 		
 		'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
-		WS.verifyElementPropertyValue(rslt, 'message', 'list facility')
+		WS.verifyElementPropertyValue(rslt, 'message', 'list building')
 	}
 	//invalidID
 	else if(i==2)
 	{
-		GlobalVariable.admin_FacilityID=notFound
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get One'))
+		GlobalVariable.admin_BuildingID=notFoundID
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Get One'))
 		
 		WS.verifyResponseStatusCode(rslt, 404)
 		
 		'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
-		WS.verifyElementPropertyValue(rslt, 'message', 'facility not found')
+		WS.verifyElementPropertyValue(rslt, 'message', 'building not found')
 		
 	}
 	//malformed
 	else
 	{
-		GlobalVariable.admin_FacilityID=string
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get One'))
+		GlobalVariable.admin_BuildingID=stringID
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Get One'))
 		
 		WS.verifyResponseStatusCode(rslt, 400)
 		

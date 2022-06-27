@@ -13,14 +13,14 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Internet&quot;,
+      &quot;value&quot;: &quot;Wifi&quot;,
       &quot;type&quot;: &quot;text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;icon&quot;,
-      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\72415f8c-3e06-40fc-b5a6-32fd76c7b567-shutterstock-1270572721.jpg&quot;,
-      &quot;type&quot;: &quot;file&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\Screenshot 2022-05-16 205949.png&quot;,
+      &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
   ]

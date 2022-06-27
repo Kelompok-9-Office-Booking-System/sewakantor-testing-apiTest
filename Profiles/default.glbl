@@ -11,7 +11,47 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU2MjM5ODAyLCJpYXQiOjE2NTYyMjE4MDJ9.RLVFE4OZHMSOvouGBQRyaYBgsRJk3pQyyjAGvJm_whIAV_p5an_ERtogmaR9kDtOs_PweFgfwzDLXDm_Fv-1BQ'</initValue>
+      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU2MzMzMDUzLCJpYXQiOjE2NTYzMTUwNTN9.thBTQYK_X4vQ8uHaQXDzFrKlBokF943cQf7elj5RtY_jq6uVQuFx4MUJB9YunIRftN7TyHYZ1WrfLSgqOqFH6A'</initValue>
       <name>token</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'superadmin'</initValue>
+      <name>admin_uname</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'12345'</initValue>
+      <name>admin_password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>admin_BuildingID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>admin_NotFoundID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'satu'</initValue>
+      <name>admin_stringID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>0</initValue>
+      <name>admin_CityID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>admin_ComplexID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>admin_FacilityID</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

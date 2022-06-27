@@ -23,7 +23,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/v1/admin/cities/1</restUrl>
+   <restUrl>${url}/v1/admin/cities/${cityID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -38,6 +38,13 @@
       <id>2637c8c6-566f-415d-8696-fb28550358ca</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_CityID</defaultValue>
+      <description></description>
+      <id>6c8435ba-0168-44d3-805d-c9f068933ea7</id>
+      <masked>false</masked>
+      <name>cityID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

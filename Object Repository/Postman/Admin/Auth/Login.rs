@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;username\&quot;: \&quot;superadmin\&quot;,\n  \&quot;password\&quot;: 12345\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;username\&quot;: \&quot;${username}\&quot;,\n  \&quot;password\&quot;: \&quot;${password}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -42,6 +42,20 @@
       <id>c22e2b0b-ca99-4c4a-be5a-d87884e75552</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_uname</defaultValue>
+      <description></description>
+      <id>478f3074-8702-4043-b2f6-88d7b7966e42</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_password</defaultValue>
+      <description></description>
+      <id>1436dd84-27ec-4397-a900-0d3035451c85</id>
+      <masked>false</masked>
+      <name>password</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

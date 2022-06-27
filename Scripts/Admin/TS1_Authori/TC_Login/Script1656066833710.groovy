@@ -17,9 +17,43 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-rslt = WS.sendRequest(findTestObject('Postman/Admin/Auth/Login'))
+for(int i=0;i<4;i++)
+{
+	GlobalVariable.admin_uname=username[i]
+	GlobalVariable.admin_password=password[i]
+	
+	rslt = WS.sendRequest(findTestObject('Postman/Admin/Auth/Login'))
+	//invalid password
+	if(i==0)
+	{
+		WS.verifyResponseStatusCode(rslt, 400)		
+		WS.verifyElementPropertyValue(rslt, 'message', 'password salah')
+	}
+	//invalid uname
+	else if(i==1)
+	{
+		WS.verifyResponseStatusCode(rslt, 404)
+		WS.verifyElementPropertyValue(rslt, 'message', 'user tidak terdaftar')
+	}
+	else if(i==2)
+	{
+		WS.verifyResponseStatusCode(rslt, 400)
+		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+	}
+	else
+	{
+		WS.verifyResponseStatusCode(rslt, 200)
+		WS.verifyElementPropertyValue(rslt, 'data.username', username[i])
+	}
+	
+}
 
-WS.verifyResponseStatusCode(rslt, 200)
 
-WS.verifyElementPropertyValue(rslt, 'data.username', 'superadmin')
+def slurper = new groovy.json.JsonSlurper()
+def result = slurper.parseText(rslt.getResponseBodyContent())
 
+def value= result.data.token
+
+GlobalVariable.token = value
+
+println(GlobalVariable.token)

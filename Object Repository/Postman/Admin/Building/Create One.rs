@@ -14,43 +14,43 @@
     {
       &quot;name&quot;: &quot;name&quot;,
       &quot;value&quot;: &quot;Tempo Scan Tower&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;description&quot;,
       &quot;value&quot;: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit a sem sit amet tincidunt. Donec sit amet leo sit amet urna viverra sagittis.&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;address&quot;,
       &quot;value&quot;: &quot;Jl. HR. Rasuna Said Kav. 3-4 Tempo Scan Tower 32nd floor, Jakarta, 12950&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;complexId&quot;,
       &quot;value&quot;: &quot;1&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;images&quot;,
-      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\Screenshot 2022-05-16 205949.png&quot;,
-      &quot;type&quot;: &quot;file&quot;,
+      &quot;value&quot;: &quot;D:\\downlooooooo\\nurse.png&quot;,
+      &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;facilities&quot;,
       &quot;value&quot;: &quot;1&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;facilities&quot;,
       &quot;value&quot;: &quot;2&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
   ]

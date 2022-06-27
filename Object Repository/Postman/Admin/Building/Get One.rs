@@ -23,7 +23,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/v1/admin/buildings/2</restUrl>
+   <restUrl>${url}/v1/admin/buildings/${buildID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -38,6 +38,13 @@
       <id>90d0ff86-0d6b-4364-a9d6-67eff30bc46a</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_BuildingID</defaultValue>
+      <description></description>
+      <id>0fb0c201-3b28-4b1e-bc4e-0cdb5c9fcb2b</id>
+      <masked>false</masked>
+      <name>buildID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
