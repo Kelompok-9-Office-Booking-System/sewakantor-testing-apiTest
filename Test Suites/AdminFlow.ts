@@ -36,6 +36,18 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/TS3_City/TC_Create One</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>887553b6-09ff-46a8-8985-d9db249cfc7a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>88986263-e956-4a84-88f0-ffe8c4961c8f</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>1a96d616-9e17-4527-a214-773556155851</guid>

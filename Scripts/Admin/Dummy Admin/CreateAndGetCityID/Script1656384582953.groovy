@@ -17,38 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+GlobalVariable.admin_CityName="Jakarta Barat"
 
-//WebUI.callTestCase(findTestCase('Admin/Dummy Admin/CreateAndGetCityID'), [:], FailureHandling.STOP_ON_FAILURE)
-def dump=GlobalVariable.admin_CreateID
-for(int i=0; i<3;i++)
-{
-	// no auth delete
-	if(i==0)
-	{
-		GlobalVariable.token = ''
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Delete'))
-		WS.verifyResponseStatusCode(rslt, 401)
-	}
-	// not found id delete
-	if(i==1)
-	{
-		GlobalVariable.admin_CreateID=-1
-		WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Delete'))
-		
-		WS.verifyResponseStatusCode(rslt, 404)
-		
-		WS.verifyElementPropertyValue(rslt, 'message', 'city not found')
-	}
-	// valid delete
-	if(i==2)
-	{
-		GlobalVariable.admin_CreateID=dump
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Delete'))
-		
-		WS.verifyResponseStatusCode(rslt, 200)
-		
-		WS.verifyElementPropertyValue(rslt, 'message', 'city deleted successfully')
-	}
-	// valid delete
-}
+WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
+rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Create One'))
+def slurper = new groovy.json.JsonSlurper()
+def result = slurper.parseText(rslt.getResponseBodyContent())
+
+def value= result.data.id
+
+GlobalVariable.admin_CreateID= value
+
+println(GlobalVariable.admin_CreateID)

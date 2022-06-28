@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU2MzMzMDUzLCJpYXQiOjE2NTYzMTUwNTN9.thBTQYK_X4vQ8uHaQXDzFrKlBokF943cQf7elj5RtY_jq6uVQuFx4MUJB9YunIRftN7TyHYZ1WrfLSgqOqFH6A'</initValue>
+      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU2NDAyMDQ4LCJpYXQiOjE2NTYzODQwNDh9.-GC47Af4zNtrB7kSBVdqMs9xD-39XSfNFaeott5WOEegUHHWbMDqLHhcp0f5Jk5yrxTaT-G2uLFsRFBWXEzBnA'</initValue>
       <name>token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -41,7 +41,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>0</initValue>
+      <initValue>1</initValue>
       <name>admin_CityID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -56,7 +56,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>0</initValue>
+      <initValue>1</initValue>
       <name>admin_CreateID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Unique</description>
+      <initValue>''</initValue>
+      <name>admin_CityName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

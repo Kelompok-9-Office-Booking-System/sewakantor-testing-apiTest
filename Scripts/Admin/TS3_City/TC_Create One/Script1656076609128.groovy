@@ -17,12 +17,94 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Create One'))
+for(int i=0;i<8;i++)
+{
+//invalid token
+	
+	if(i==0)
+	{
+		GlobalVariable.token=""
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Create One'))
+		WS.verifyResponseStatusCode(rslt, 401)
+	}
+//long name[256b]
+	else if(i==1)
+	{
+		WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
+		GlobalVariable.admin_CityName = name255
+		println(GlobalVariable.admin_CityName )
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 200)
+		
+		WS.verifyElementPropertyValue(rslt, 'message', 'city saved successfully')
+		
+	}
+//long name[257b]
+	else if(i==2)
+	{
+		GlobalVariable.admin_CityName=name256
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 500)
+		
+		WS.verifyElementPropertyValue(rslt, 'error', 'Internal Server Error')
+	}
+//blank data
+	else if(i==3)
+	{
+		GlobalVariable.admin_CityName=""
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 400)
+		
+		WS.verifyElementPropertyValue(rslt, 'errors[0].error', 'name must not be empty')
+	}
 
-WS.verifyResponseStatusCode(rslt, 200)
+//duplicated name
+	else if(i==4)
+	{
+		GlobalVariable.admin_CityName="Jakarta"
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 500)
+		
+		WS.verifyElementPropertyValue(rslt, 'error', 'Internal Server Error')
+	}
+	
+//duplicated with uppercases
+	else if(i==5)
+	{
+		GlobalVariable.admin_CityName="JAKARTA"
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 200)
+		
+		WS.verifyElementPropertyValue(rslt, 'message', 'city saved successfully')
+	}
 
-WS.verifyElementPropertyValue(rslt, 'data.name', 'Bandung')
-
+//numerical case
+	else if(i==6)
+	{
+		GlobalVariable.admin_CityName="123"
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 200)
+		
+		WS.verifyElementPropertyValue(rslt, 'message', 'city saved successfully')
+	}
+//valid create one
+	else if(i==7)
+	{
+		GlobalVariable.admin_CityName="Bawli"
+		WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/City/Create One'))
+			
+		WS.verifyResponseStatusCode(rslt, 200)
+			
+		WS.verifyElementPropertyValue(rslt, 'message', 'city saved successfully')
+	}
+}
 
 def slurper = new groovy.json.JsonSlurper()
 def result = slurper.parseText(rslt.getResponseBodyContent())

@@ -13,7 +13,7 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Kota Badung&quot;,
+      &quot;value&quot;: &quot;${name}&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -61,6 +61,13 @@
       <id>a66d92ff-2ac6-4e0b-87b2-45f81284be7e</id>
       <masked>false</masked>
       <name>createID</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_CityName</defaultValue>
+      <description></description>
+      <id>9569e8c9-3fdf-4914-8f7a-31256c676a0b</id>
+      <masked>false</masked>
+      <name>name</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

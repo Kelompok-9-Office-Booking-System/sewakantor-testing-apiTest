@@ -13,7 +13,7 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Bandung&quot;,
+      &quot;value&quot;: &quot;${name}&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -54,6 +54,13 @@
       <id>39e46838-9862-4b6c-adf7-ce21b027d986</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_CityName</defaultValue>
+      <description></description>
+      <id>088eb57a-aad8-4de6-97b0-0c99112ca39d</id>
+      <masked>false</masked>
+      <name>name</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

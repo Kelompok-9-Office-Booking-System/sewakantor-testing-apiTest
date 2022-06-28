@@ -43,6 +43,18 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/TS3_City/TC_Create One</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>887553b6-09ff-46a8-8985-d9db249cfc7a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>88986263-e956-4a84-88f0-ffe8c4961c8f</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>d0544320-5ac4-446a-a2bb-8eb5b9ac07f3</guid>
@@ -50,6 +62,18 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Admin/TS3_City/TC_Update City</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>887553b6-09ff-46a8-8985-d9db249cfc7a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>88986263-e956-4a84-88f0-ffe8c4961c8f</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>21b44076-47d8-488d-bde2-401d708ed539</guid>
