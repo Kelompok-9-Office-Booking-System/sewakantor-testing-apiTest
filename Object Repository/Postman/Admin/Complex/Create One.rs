@@ -13,26 +13,26 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Artapurra&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;value&quot;: &quot;${name}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;description&quot;,
-      &quot;value&quot;: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit a sem sit amet tincidunt. Donec sit amet leo sit amet urna viverra sagittis.&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;value&quot;: &quot;${desc}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;image&quot;,
-      &quot;value&quot;: &quot;&quot;,
-      &quot;type&quot;: &quot;file&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\working image.jpg&quot;,
+      &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;cityId&quot;,
-      &quot;value&quot;: &quot;1&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;value&quot;: &quot;${cityID}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
   ]
@@ -72,6 +72,27 @@
       <id>98cda402-f530-4665-a84c-86d4ac677ec2</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_complexName</defaultValue>
+      <description></description>
+      <id>668eb625-4e9e-4a3d-9ad7-57d9f68eec05</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_complexDesc</defaultValue>
+      <description></description>
+      <id>a2175a8e-3727-4fbe-a232-982b4021ba59</id>
+      <masked>false</masked>
+      <name>desc</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_CityID</defaultValue>
+      <description></description>
+      <id>9c9b40b1-de96-42fb-849d-472d9b114c82</id>
+      <masked>false</masked>
+      <name>cityID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

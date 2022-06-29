@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU2NDAyMDQ4LCJpYXQiOjE2NTYzODQwNDh9.-GC47Af4zNtrB7kSBVdqMs9xD-39XSfNFaeott5WOEegUHHWbMDqLHhcp0f5Jk5yrxTaT-G2uLFsRFBWXEzBnA'</initValue>
+      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU2NTAxMzI2LCJpYXQiOjE2NTY0ODMzMjZ9.dvBo1CifxwiibJYsCrXfUxeLFF_yPouRM4R3f1-tb_WjkCRycqWaI9ZmoVU4E09XFPcjHQY_IzHNDdYBoT4VnQ'</initValue>
       <name>token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -41,7 +41,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>1</initValue>
+      <initValue>0</initValue>
       <name>admin_CityID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -63,5 +63,35 @@
       <description>Unique</description>
       <initValue>''</initValue>
       <name>admin_CityName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>admin_buildingName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>admin_buildingDesc</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>admin_buildingAddress</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>admin_buildingComplexID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>admin_complexName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>admin_complexDesc</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -13,7 +13,7 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Tempo Scan Tower&quot;,
+      &quot;value&quot;: &quot;Tempo Scan T&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
@@ -37,7 +37,7 @@
     },
     {
       &quot;name&quot;: &quot;images&quot;,
-      &quot;value&quot;: &quot;D:\\downlooooooo\\nurse.png&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\working image.jpg&quot;,
       &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },

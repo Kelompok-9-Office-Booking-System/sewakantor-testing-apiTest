@@ -13,30 +13,38 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Anggrek Permai&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;value&quot;: &quot;${name}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;description&quot;,
-      &quot;value&quot;: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit a sem sit amet tincidunt. Donec sit amet leo sit amet urna viverra sagittis. Morbi neque purus, volutpat sit amet augue eget, finibus faucibus lacus. Sed sed metus sit amet turpis gravida vulputate.&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;value&quot;: &quot;${desc}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;image&quot;,
-      &quot;type&quot;: &quot;file&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\working image.jpg&quot;,
+      &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;cityId&quot;,
-      &quot;value&quot;: &quot;1&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;value&quot;: &quot;${cityID}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
   ]
 }</httpBodyContent>
    <httpBodyType>form-data</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <webElementGuid>74ed9a1d-c5ed-409d-abed-bb407d711a2b</webElementGuid>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
@@ -49,7 +57,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${url}/v1/admin/complexes/1</restUrl>
+   <restUrl>${url}/v1/admin/complexes/${complexID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -64,6 +72,34 @@
       <id>b754b30a-3a84-46e0-8fa2-073bb771980b</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_ComplexID</defaultValue>
+      <description></description>
+      <id>1af5c3ef-68dd-4ee5-80c2-371a5152100a</id>
+      <masked>false</masked>
+      <name>complexID</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_complexName</defaultValue>
+      <description></description>
+      <id>6769573a-639b-466a-8255-120a9b9ba49c</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_complexDesc</defaultValue>
+      <description></description>
+      <id>c6e89a7b-796f-431f-8b7d-edfca97d1bd0</id>
+      <masked>false</masked>
+      <name>desc</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_CityID</defaultValue>
+      <description></description>
+      <id>307037a2-7b19-42ef-8f6f-b00be007c378</id>
+      <masked>false</masked>
+      <name>cityID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
