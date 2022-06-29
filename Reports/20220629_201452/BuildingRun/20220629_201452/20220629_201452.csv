@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+BuildingRun,,,,2022-06-29 20:14:57,2022-06-29 20:15:38,40.777s,FAILED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding,,,,2022-06-29 20:14:58,2022-06-29 20:15:09,10.923s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-29 20:14:59,2022-06-29 20:15:09,10.054s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding,,,,2022-06-29 20:15:09,2022-06-29 20:15:13,4.657s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-29 20:15:10,2022-06-29 20:15:13,3.773s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_Create Building,,,,2022-06-29 20:15:13,2022-06-29 20:15:23,9.880s,PASSED
+"admin_buildingComplexID = ""1""",,,,2022-06-29 20:15:14,2022-06-29 20:15:14,0.002s,PASSED
+"admin_buildingName = ""nama""",,,,2022-06-29 20:15:14,2022-06-29 20:15:14,0.002s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-06-29 20:15:14,2022-06-29 20:15:14,0.001s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-06-29 20:15:14,2022-06-29 20:15:14,0.001s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-06-29 20:15:14,2022-06-29 20:15:23,9.139s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding,,,,2022-06-29 20:15:23,2022-06-29 20:15:35,11.318s,FAILED
+dump = admin_BuildingID,,,,2022-06-29 20:15:24,2022-06-29 20:15:24,0.001s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-06-29 20:15:24,2022-06-29 20:15:35,10.638s,FAILED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_Delete Building,,,,2022-06-29 20:15:35,2022-06-29 20:15:38,3.426s,PASSED
+dump = admin_BuildingID,,,,2022-06-29 20:15:35,2022-06-29 20:15:35,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-06-29 20:15:35,2022-06-29 20:15:38,2.757s,PASSED

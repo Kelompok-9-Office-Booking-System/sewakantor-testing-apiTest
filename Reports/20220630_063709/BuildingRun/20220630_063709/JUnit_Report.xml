@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="BuildingRun" time="26.841" tests="5" failures="1" errors="0">
+   <testsuite name="BuildingRun" tests="5" failures="1" errors="0" time="26.841" skipped="0" timestamp="2022-06-30 06:37:11" hostname="user - izzazainf" id="Test Suites/BuildingRun">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\git\\sewakantor-testing-apiTest\\Reports\\20220630_063709\\BuildingRun\\20220630_063709"/>
+         <property name="logFiles" value="C:\\Users\\user\\git\\sewakantor-testing-apiTest\\Reports\\20220630_063709\\BuildingRun\\20220630_063709\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - izzazainf"/>
+         <property name="hostAddress" value="192.168.43.13"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.3.5.208"/>
+      </properties>
+      <testcase name="Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding" time="6.541" classname="Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding" status="PASSED">
+         <system-out><![CDATA[2022-06-30 06:37:11 - [TEST_CASE][PASSED] - Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding: Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding
+
+2022-06-30 06:37:12 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-06-30 06:37:12 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-06-30 06:37:12 - [TEST_STEP][PASSED] - token = "": null
+
+2022-06-30 06:37:12 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get All")): Send request successfully
+
+2022-06-30 06:37:14 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\0.har
+
+2022-06-30 06:37:14 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-06-30 06:37:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:14 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:14 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-06-30 06:37:14 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:14 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-06-30 06:37:15 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-06-30 06:37:15 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-06-30 06:37:15 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-06-30 06:37:16 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\1.har
+
+2022-06-30 06:37:16 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:16 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-30 06:37:16 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-06-30 06:37:16 - [TEST_STEP][PASSED] - value = token: null
+
+2022-06-30 06:37:16 - [TEST_STEP][PASSED] - token = value: null
+
+2022-06-30 06:37:16 - [TEST_STEP][PASSED] - println(token): null
+
+2022-06-30 06:37:16 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:16 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get All")): Send request successfully
+
+2022-06-30 06:37:18 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\2.har
+
+2022-06-30 06:37:18 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-06-30 06:37:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list building"): Verify element property value successfully
+
+2022-06-30 06:37:18 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding" time="3.14" classname="Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding" status="PASSED">
+         <system-out><![CDATA[2022-06-30 06:37:18 - [TEST_CASE][PASSED] - Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding: Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding
+
+2022-06-30 06:37:18 - [TEST_STEP][PASSED] - for ([i = 0, i < 4, (i++)]): Verify element property value successfully
+
+2022-06-30 06:37:18 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-06-30 06:37:18 - [TEST_STEP][PASSED] - token = "": null
+
+2022-06-30 06:37:18 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get One")): Send request successfully
+
+2022-06-30 06:37:19 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\3.har
+
+2022-06-30 06:37:19 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-06-30 06:37:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:19 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:19 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-06-30 06:37:19 - [TEST_STEP][PASSED] - admin_BuildingID = 1: null
+
+2022-06-30 06:37:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:19 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-06-30 06:37:19 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-06-30 06:37:19 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-06-30 06:37:19 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-06-30 06:37:20 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\4.har
+
+2022-06-30 06:37:20 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - value = token: null
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - token = value: null
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - println(token): null
+
+2022-06-30 06:37:20 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get One")): Send request successfully
+
+2022-06-30 06:37:20 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\5.har
+
+2022-06-30 06:37:20 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-06-30 06:37:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list building"): Verify element property value successfully
+
+2022-06-30 06:37:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - admin_BuildingID = notFoundID: null
+
+2022-06-30 06:37:20 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get One")): Send request successfully
+
+2022-06-30 06:37:21 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\6.har
+
+2022-06-30 06:37:21 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-06-30 06:37:21 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "building not found"): Verify element property value successfully
+
+2022-06-30 06:37:21 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - else: Verify element property value successfully
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - admin_BuildingID = stringID: null
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get One")): Send request successfully
+
+2022-06-30 06:37:21 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\7.har
+
+2022-06-30 06:37:21 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-06-30 06:37:21 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-06-30 06:37:21 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS2_Building Management/TC_Create Building" time="6.834" classname="Test Cases/Admin/TS2_Building Management/TC_Create Building" status="PASSED">
+         <system-out><![CDATA[2022-06-30 06:37:21 - [TEST_CASE][PASSED] - Test Cases/Admin/TS2_Building Management/TC_Create Building: Test Cases/Admin/TS2_Building Management/TC_Create Building
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - admin_buildingComplexID = "1": null
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - admin_buildingName = "nama": null
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - admin_buildingAddress = "jalan": null
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - admin_buildingDesc = "desc": null
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - for ([i = 0, i < 8, (i++)]): null
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - token = "": null
+
+2022-06-30 06:37:21 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-06-30 06:37:22 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\8.har
+
+2022-06-30 06:37:22 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:22 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-06-30 06:37:22 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:22 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:22 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-06-30 06:37:22 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:22 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-06-30 06:37:22 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-06-30 06:37:22 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-06-30 06:37:22 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-06-30 06:37:23 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\9.har
+
+2022-06-30 06:37:23 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:23 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-30 06:37:23 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-06-30 06:37:23 - [TEST_STEP][PASSED] - value = token: null
+
+2022-06-30 06:37:23 - [TEST_STEP][PASSED] - token = value: null
+
+2022-06-30 06:37:23 - [TEST_STEP][PASSED] - println(token): null
+
+2022-06-30 06:37:23 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:23 - [TEST_STEP][PASSED] - admin_buildingName = "": null
+
+2022-06-30 06:37:23 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-06-30 06:37:24 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\10.har
+
+2022-06-30 06:37:24 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-06-30 06:37:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-06-30 06:37:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:24 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:24 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-06-30 06:37:24 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:24 - [TEST_STEP][PASSED] - admin_buildingName = "Anggrek Permai": null
+
+2022-06-30 06:37:24 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-06-30 06:37:25 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\11.har
+
+2022-06-30 06:37:25 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-06-30 06:37:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Verify element property value successfully
+
+2022-06-30 06:37:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - admin_buildingName = "Building Name": null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - admin_buildingDesc = "": null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-06-30 06:37:25 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\12.har
+
+2022-06-30 06:37:25 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-06-30 06:37:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-06-30 06:37:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - admin_buildingDesc = "Building Description": null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - admin_buildingAddress = "": null
+
+2022-06-30 06:37:25 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-06-30 06:37:26 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\13.har
+
+2022-06-30 06:37:26 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-06-30 06:37:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-06-30 06:37:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - admin_buildingAddress = "Building Address": null
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - else if (i == 5): Verify response status code successfully
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - admin_buildingComplexID = "": null
+
+2022-06-30 06:37:26 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-06-30 06:37:27 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\14.har
+
+2022-06-30 06:37:27 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-06-30 06:37:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:27 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:27 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-06-30 06:37:27 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:27 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-06-30 06:37:27 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-06-30 06:37:27 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-06-30 06:37:27 - [TEST_STEP][PASSED] - else if (i == 6): null
+
+2022-06-30 06:37:27 - [TEST_STEP][PASSED] - admin_buildingComplexID = "0": null
+
+2022-06-30 06:37:27 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-06-30 06:37:28 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\15.har
+
+2022-06-30 06:37:28 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-06-30 06:37:28 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Verify element property value successfully
+
+2022-06-30 06:37:28 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - admin_buildingComplexID = "1": null
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - if (i == 0): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding" time="7.694" classname="Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '500' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_UpdateBuilding.run(TC_UpdateBuilding:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656545829220.run(TempTestSuite1656545829220.groovy:36)
+"/>
+         <system-out><![CDATA[2022-06-30 06:37:28 - [TEST_CASE][FAILED] - Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding: Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '500' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_UpdateBuilding.run(TC_UpdateBuilding:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656545829220.run(TempTestSuite1656545829220.groovy:36)
+
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - admin_buildingComplexID = "1": null
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - admin_buildingName = "Building Name": null
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - admin_buildingAddress = "jalan": null
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - admin_buildingDesc = "desc": null
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - dump = admin_BuildingID: null
+
+2022-06-30 06:37:28 - [TEST_STEP][FAILED] - for ([i = 0, i < 8, (i++)]): null
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:28 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-06-30 06:37:28 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-06-30 06:37:29 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\16.har
+
+2022-06-30 06:37:29 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:29 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-30 06:37:29 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-06-30 06:37:29 - [TEST_STEP][PASSED] - value = token: null
+
+2022-06-30 06:37:29 - [TEST_STEP][PASSED] - token = value: null
+
+2022-06-30 06:37:29 - [TEST_STEP][PASSED] - println(token): null
+
+2022-06-30 06:37:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:29 - [TEST_STEP][PASSED] - admin_BuildingID = "0": null
+
+2022-06-30 06:37:29 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-06-30 06:37:30 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\17.har
+
+2022-06-30 06:37:30 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-06-30 06:37:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "building not found"): Verify element property value successfully
+
+2022-06-30 06:37:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - admin_BuildingID = dump: null
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - if (i == 1): Verify response status code successfully
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - token = "": null
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-06-30 06:37:30 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\18.har
+
+2022-06-30 06:37:30 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-06-30 06:37:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:30 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-06-30 06:37:30 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-06-30 06:37:31 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\19.har
+
+2022-06-30 06:37:31 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:31 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-30 06:37:31 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-06-30 06:37:31 - [TEST_STEP][PASSED] - value = token: null
+
+2022-06-30 06:37:31 - [TEST_STEP][PASSED] - token = value: null
+
+2022-06-30 06:37:31 - [TEST_STEP][PASSED] - println(token): null
+
+2022-06-30 06:37:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:31 - [TEST_STEP][PASSED] - admin_buildingName = "": null
+
+2022-06-30 06:37:31 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-06-30 06:37:32 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\20.har
+
+2022-06-30 06:37:32 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-06-30 06:37:32 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-06-30 06:37:32 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:32 - [TEST_STEP][FAILED] - else if (i == 3): null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - admin_buildingComplexID = "1": null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - admin_buildingAddress = "jalan": null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - admin_buildingDesc = "desc": null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - admin_buildingName = "BCA Tower": null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-06-30 06:37:32 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\21.har
+
+2022-06-30 06:37:32 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:32 - [TEST_STEP][FAILED] - verifyResponseStatusCode(rslt, 500): Expected status code is '500' but actual status code is '400'
+
+2022-06-30 06:37:32 - [MESSAGE][FAILED] - Expected status code is '500' but actual status code is '400'
+
+2022-06-30 06:37:32 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Expected element property value 'Internal Server Error' is not equal with actual property value 'null'
+
+2022-06-30 06:37:32 - [MESSAGE][FAILED] - Expected element property value 'Internal Server Error' is not equal with actual property value 'null'
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - admin_buildingName = "Building Name": null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - admin_buildingDesc = "": null
+
+2022-06-30 06:37:32 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-06-30 06:37:33 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\22.har
+
+2022-06-30 06:37:33 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-06-30 06:37:33 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-06-30 06:37:33 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - admin_buildingDesc = "Building Description": null
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - admin_buildingAddress = "": null
+
+2022-06-30 06:37:33 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-06-30 06:37:34 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\23.har
+
+2022-06-30 06:37:34 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-06-30 06:37:34 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-06-30 06:37:34 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - admin_buildingAddress = "Building Address": null
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - else if (i == 6): Verify response status code successfully
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - admin_buildingComplexID = "": null
+
+2022-06-30 06:37:34 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-06-30 06:37:35 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\24.har
+
+2022-06-30 06:37:35 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:35 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-06-30 06:37:35 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:35 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:35 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-06-30 06:37:35 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-06-30 06:37:35 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-06-30 06:37:35 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-06-30 06:37:35 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-06-30 06:37:35 - [TEST_STEP][PASSED] - else if (i == 6): null
+
+2022-06-30 06:37:35 - [TEST_STEP][FAILED] - else if (i == 7): null
+
+2022-06-30 06:37:35 - [TEST_STEP][PASSED] - admin_buildingComplexID = "0": null
+
+2022-06-30 06:37:35 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-06-30 06:37:36 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\25.har
+
+2022-06-30 06:37:36 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:36 - [TEST_STEP][FAILED] - verifyResponseStatusCode(rslt, 404): Expected status code is '404' but actual status code is '400'
+
+2022-06-30 06:37:36 - [MESSAGE][FAILED] - Expected status code is '404' but actual status code is '400'
+
+2022-06-30 06:37:36 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Expected element property value 'complex not found' is not equal with actual property value 'Malformed request'
+
+2022-06-30 06:37:36 - [MESSAGE][FAILED] - Expected element property value 'complex not found' is not equal with actual property value 'Malformed request'
+
+2022-06-30 06:37:36 - [TEST_STEP][PASSED] - admin_buildingComplexID = "1": null]]></system-out>
+         <system-err><![CDATA[2022-06-30 06:37:28 - [TEST_CASE][FAILED] - Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding: Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '500' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_UpdateBuilding.run(TC_UpdateBuilding:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656545829220.run(TempTestSuite1656545829220.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS2_Building Management/TC_Delete Building" time="2.359" classname="Test Cases/Admin/TS2_Building Management/TC_Delete Building" status="PASSED">
+         <system-out><![CDATA[2022-06-30 06:37:36 - [TEST_CASE][PASSED] - Test Cases/Admin/TS2_Building Management/TC_Delete Building: Test Cases/Admin/TS2_Building Management/TC_Delete Building
+
+2022-06-30 06:37:36 - [TEST_STEP][PASSED] - dump = admin_BuildingID: null
+
+2022-06-30 06:37:36 - [TEST_STEP][PASSED] - for ([i = 0, i < 3, (i++)]): null
+
+2022-06-30 06:37:36 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-06-30 06:37:36 - [TEST_STEP][PASSED] - token = "": null
+
+2022-06-30 06:37:36 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Delete")): Send request successfully
+
+2022-06-30 06:37:37 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\26.har
+
+2022-06-30 06:37:37 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-06-30 06:37:37 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:37 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-06-30 06:37:37 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\27.har
+
+2022-06-30 06:37:37 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - value = token: null
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - token = value: null
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - println(token): null
+
+2022-06-30 06:37:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - admin_BuildingID = "0": null
+
+2022-06-30 06:37:37 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Delete")): Send request successfully
+
+2022-06-30 06:37:38 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220630_063709\BuildingRun\20220630_063709\requests\main\28.har
+
+2022-06-30 06:37:38 - [MESSAGE][PASSED] - Send request successfully
+
+2022-06-30 06:37:38 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-06-30 06:37:38 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-06-30 06:37:38 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "building not found"): Verify element property value successfully
+
+2022-06-30 06:37:38 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-06-30 06:37:38 - [TEST_STEP][PASSED] - admin_BuildingID = dump: null
+
+2022-06-30 06:37:38 - [TEST_STEP][PASSED] - if (i == 0): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-06-30 06:37:11 - [TEST_SUITE][FAILED] - BuildingRun: Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '500' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_UpdateBuilding.run(TC_UpdateBuilding:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656545829220.run(TempTestSuite1656545829220.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-06-30 06:37:11 - [TEST_SUITE][FAILED] - BuildingRun: Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '500' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_UpdateBuilding.run(TC_UpdateBuilding:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656545829220.run(TempTestSuite1656545829220.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

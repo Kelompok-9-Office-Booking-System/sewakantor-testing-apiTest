@@ -17,11 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Create One'))
-
-WS.verifyResponseStatusCode(rslt, 200)
-
-WS.verifyElementPropertyValue(rslt, 'message', 'building saved successfully')
+GlobalVariable.admin_buildingComplexID="1"
+GlobalVariable.admin_buildingName="nama"
+GlobalVariable.admin_buildingAddress="jalan"
+GlobalVariable.admin_buildingDesc="desc"
 
 for(int i=0;i<8;i++)
 {
@@ -35,10 +34,79 @@ for(int i=0;i<8;i++)
 	}
 	else if(i==1)
 	{
+		WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
+		GlobalVariable.admin_buildingName=""
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 400)
+		
+		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+	}
+	else if(i==2)
+	{
+		GlobalVariable.admin_buildingName="Anggrek Permai"
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 500)
+		
+		WS.verifyElementPropertyValue(rslt, 'error', 'Internal Server Error')
+		GlobalVariable.admin_buildingName="Building Name"
+	}
+	else if(i==3)
+	{
+		GlobalVariable.admin_buildingDesc=""
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 400)
+		
+		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+		GlobalVariable.admin_buildingDesc="Building Description"
+	}
+	else if(i==4)
+	{
+		GlobalVariable.admin_buildingAddress=""
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 400)
+		
+		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+		GlobalVariable.admin_buildingAddress="Building Address"
+	}
+	
+	else if(i==5)
+	{
+		GlobalVariable.admin_buildingComplexID=""
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 400)
+		
+		//WS.verifyElementPropertyValue(rslt, 'error', 'city id must not be null')
+	}
+	
+	else if(i==6)
+	{
+		GlobalVariable.admin_buildingComplexID="0"
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Create One'))
+		
+		WS.verifyResponseStatusCode(rslt, 404)
+		
+		WS.verifyElementPropertyValue(rslt, 'message', 'complex not found')
+		GlobalVariable.admin_buildingComplexID="1"
+	}
+	/*
+	if(i==7)
+	{
+		GlobalVariable.admin_buildingComplexID="1"
+		GlobalVariable.admin_buildingName="Building Name"
+		GlobalVariable.admin_buildingAddress="jalan"
+		GlobalVariable.admin_buildingDesc="desc"
+		
 		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Create One'))
 		
 		WS.verifyResponseStatusCode(rslt, 200)
 		
 		WS.verifyElementPropertyValue(rslt, 'message', 'building saved successfully')
 	}
+	*/
+	
 }

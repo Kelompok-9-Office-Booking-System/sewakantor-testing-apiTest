@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU2NTAxMzI2LCJpYXQiOjE2NTY0ODMzMjZ9.dvBo1CifxwiibJYsCrXfUxeLFF_yPouRM4R3f1-tb_WjkCRycqWaI9ZmoVU4E09XFPcjHQY_IzHNDdYBoT4VnQ'</initValue>
+      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU2NTI1MzkzLCJpYXQiOjE2NTY1MDczOTN9.bV3xyPUGuWZiXc0qzuzrR-_m5S7oOD0H-1aPq0bTFtH8cDsfnyZmLAZGFraOaSsUcaX9TW3zrypaeVjTZyBpow'</initValue>
       <name>token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>0</initValue>
+      <initValue>31</initValue>
       <name>admin_BuildingID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -66,22 +66,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'BCA Tower'</initValue>
       <name>admin_buildingName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'[{&quot;key&quot;:&quot;description&quot;,&quot;value&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit a sem sit amet tincidunt. Donec sit amet leo sit amet urna viverra sagittis.&quot;,&quot;type&quot;:&quot;text&quot;}]'</initValue>
       <name>admin_buildingDesc</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'Jalan Jauh banget'</initValue>
       <name>admin_buildingAddress</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'1'</initValue>
       <name>admin_buildingComplexID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

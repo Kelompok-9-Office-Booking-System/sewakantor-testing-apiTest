@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+BuildingRun,,,,2022-06-29 20:06:10,2022-06-29 20:06:48,37.579s,FAILED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding,,,,2022-06-29 20:06:11,2022-06-29 20:06:21,10.249s,FAILED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-29 20:06:12,2022-06-29 20:06:21,9.323s,FAILED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding,,,,2022-06-29 20:06:21,2022-06-29 20:06:26,4.919s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-29 20:06:22,2022-06-29 20:06:26,4.201s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_Create Building,,,,2022-06-29 20:06:26,2022-06-29 20:06:36,9.557s,PASSED
+"admin_buildingComplexID = ""1""",,,,2022-06-29 20:06:27,2022-06-29 20:06:27,0.019s,PASSED
+"admin_buildingName = ""nama""",,,,2022-06-29 20:06:27,2022-06-29 20:06:27,0.001s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-06-29 20:06:27,2022-06-29 20:06:27,0.001s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-06-29 20:06:27,2022-06-29 20:06:27,0.002s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-06-29 20:06:27,2022-06-29 20:06:36,8.899s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Update Complex,,,,2022-06-29 20:06:36,2022-06-29 20:06:44,8.485s,FAILED
+dump = admin_ComplexID,,,,2022-06-29 20:06:37,2022-06-29 20:06:37,0.001s,PASSED
+"admin_complexName = ""Anggrek Permai""",,,,2022-06-29 20:06:37,2022-06-29 20:06:37,0.001s,PASSED
+"admin_complexDesc = ""ini default untuk test""",,,,2022-06-29 20:06:37,2022-06-29 20:06:37,0.000s,PASSED
+"admin_CityID = ""1""",,,,2022-06-29 20:06:37,2022-06-29 20:06:37,0.001s,PASSED
+"for ([i = 0, i < 7, (i++)])",,,,2022-06-29 20:06:37,2022-06-29 20:06:44,7.777s,FAILED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Delete Complex,,,,2022-06-29 20:06:44,2022-06-29 20:06:48,3.711s,FAILED
+dump = admin_ComplexID,,,,2022-06-29 20:06:45,2022-06-29 20:06:45,0.001s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-06-29 20:06:45,2022-06-29 20:06:48,3.074s,FAILED

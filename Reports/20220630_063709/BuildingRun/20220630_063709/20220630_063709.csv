@@ -1,0 +1,27 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+BuildingRun,,,,2022-06-30 06:37:11,2022-06-30 06:37:38,26.841s,FAILED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding,,,,2022-06-30 06:37:11,2022-06-30 06:37:18,6.541s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-06-30 06:37:12,2022-06-30 06:37:18,6.152s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding,,,,2022-06-30 06:37:18,2022-06-30 06:37:21,3.140s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-06-30 06:37:18,2022-06-30 06:37:21,2.796s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_Create Building,,,,2022-06-30 06:37:21,2022-06-30 06:37:28,6.834s,PASSED
+"admin_buildingComplexID = ""1""",,,,2022-06-30 06:37:21,2022-06-30 06:37:21,0.002s,PASSED
+"admin_buildingName = ""nama""",,,,2022-06-30 06:37:21,2022-06-30 06:37:21,0.000s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-06-30 06:37:21,2022-06-30 06:37:21,0.001s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-06-30 06:37:21,2022-06-30 06:37:21,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-06-30 06:37:21,2022-06-30 06:37:28,6.521s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding,,,,2022-06-30 06:37:28,2022-06-30 06:37:36,7.694s,FAILED
+"admin_buildingComplexID = ""1""",,,,2022-06-30 06:37:28,2022-06-30 06:37:28,0.000s,PASSED
+"admin_buildingName = ""Building Name""",,,,2022-06-30 06:37:28,2022-06-30 06:37:28,0.000s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-06-30 06:37:28,2022-06-30 06:37:28,0.000s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-06-30 06:37:28,2022-06-30 06:37:28,0.001s,PASSED
+dump = admin_BuildingID,,,,2022-06-30 06:37:28,2022-06-30 06:37:28,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-06-30 06:37:28,2022-06-30 06:37:36,7.398s,FAILED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_Delete Building,,,,2022-06-30 06:37:36,2022-06-30 06:37:38,2.359s,PASSED
+dump = admin_BuildingID,,,,2022-06-30 06:37:36,2022-06-30 06:37:36,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-06-30 06:37:36,2022-06-30 06:37:38,2.085s,PASSED
