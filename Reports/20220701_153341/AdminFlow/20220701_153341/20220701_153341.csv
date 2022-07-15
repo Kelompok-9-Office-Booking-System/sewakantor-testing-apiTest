@@ -1,0 +1,82 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+AdminFlow,,,,2022-07-01 15:33:46,2022-07-01 15:35:52,2m - 6.350s,ERROR
+,,,,,,,
+Test Cases/Admin/TS1_Authori/TC_Login,,,,2022-07-01 15:33:46,2022-07-01 15:33:59,12.285s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-01 15:33:47,2022-07-01 15:33:59,11.213s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-07-01 15:33:59,2022-07-01 15:33:59,0.010s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-07-01 15:33:59,2022-07-01 15:33:59,0.001s,PASSED
+value = token,,,,2022-07-01 15:33:59,2022-07-01 15:33:59,0.015s,PASSED
+token = value,,,,2022-07-01 15:33:59,2022-07-01 15:33:59,0.000s,PASSED
+println(token),,,,2022-07-01 15:33:59,2022-07-01 15:33:59,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get All City,,,,2022-07-01 15:33:59,2022-07-01 15:34:04,5.184s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-01 15:33:59,2022-07-01 15:34:04,4.575s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get One City,,,,2022-07-01 15:34:04,2022-07-01 15:34:10,6.547s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-01 15:34:05,2022-07-01 15:34:10,5.838s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Create One,,,,2022-07-01 15:34:10,2022-07-01 15:34:26,16.098s,FAILED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-01 15:34:11,2022-07-01 15:34:26,15.301s,FAILED
+slurper = new groovy.json.JsonSlurper(),,,,2022-07-01 15:34:26,2022-07-01 15:34:26,0.000s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-07-01 15:34:26,2022-07-01 15:34:26,0.000s,PASSED
+value = id,,,,2022-07-01 15:34:26,2022-07-01 15:34:26,0.000s,PASSED
+admin_CreateID = value,,,,2022-07-01 15:34:26,2022-07-01 15:34:26,0.000s,PASSED
+println(admin_CreateID),,,,2022-07-01 15:34:26,2022-07-01 15:34:26,0.013s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Update City,,,,2022-07-01 15:34:26,2022-07-01 15:34:42,15.044s,PASSED
+dump = admin_CreateID,,,,2022-07-01 15:34:27,2022-07-01 15:34:27,0.010s,PASSED
+"for ([i = 0, i < 9, (i++)])",,,,2022-07-01 15:34:27,2022-07-01 15:34:42,14.317s,PASSED
+admin_CreateID = dump,,,,2022-07-01 15:34:42,2022-07-01 15:34:42,0.000s,PASSED
+println(admin_CreateID),,,,2022-07-01 15:34:42,2022-07-01 15:34:42,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Delete,,,,2022-07-01 15:34:42,2022-07-01 15:34:46,4.869s,PASSED
+dump = admin_CreateID,,,,2022-07-01 15:34:42,2022-07-01 15:34:42,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-01 15:34:42,2022-07-01 15:34:46,4.282s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get All Complex,,,,2022-07-01 15:34:46,2022-07-01 15:34:50,3.696s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-01 15:34:47,2022-07-01 15:34:50,3.167s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get One Complex,,,,2022-07-01 15:34:50,2022-07-01 15:34:56,6.357s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-01 15:34:51,2022-07-01 15:34:56,5.679s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get Dropdown,,,,2022-07-01 15:34:56,2022-07-01 15:35:01,4.999s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-01 15:34:57,2022-07-01 15:35:01,4.344s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Create new Complex,,,,2022-07-01 15:35:01,2022-07-01 15:35:03,1.034s,ERROR
+"for ([i = 0, i < 7, (i++)])",,,,2022-07-01 15:35:02,2022-07-01 15:35:03,0.358s,ERROR
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Update Complex,,,,2022-07-01 15:35:03,2022-07-01 15:35:03,0.978s,ERROR
+dump = admin_ComplexID,,,,2022-07-01 15:35:03,2022-07-01 15:35:03,0.001s,PASSED
+"admin_complexName = ""Anggrek Permai""",,,,2022-07-01 15:35:03,2022-07-01 15:35:03,0.000s,PASSED
+"admin_complexDesc = ""ini default untuk test""",,,,2022-07-01 15:35:03,2022-07-01 15:35:03,0.000s,PASSED
+"admin_CityID = ""1""",,,,2022-07-01 15:35:03,2022-07-01 15:35:03,0.000s,PASSED
+"for ([i = 0, i < 7, (i++)])",,,,2022-07-01 15:35:03,2022-07-01 15:35:03,0.367s,ERROR
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Delete Complex,,,,2022-07-01 15:35:03,2022-07-01 15:35:08,4.958s,FAILED
+dump = admin_ComplexID,,,,2022-07-01 15:35:04,2022-07-01 15:35:04,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-01 15:35:04,2022-07-01 15:35:08,4.408s,FAILED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding,,,,2022-07-01 15:35:08,2022-07-01 15:35:14,5.288s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-01 15:35:09,2022-07-01 15:35:14,4.700s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding,,,,2022-07-01 15:35:14,2022-07-01 15:35:20,5.737s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-01 15:35:14,2022-07-01 15:35:20,5.060s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_Create Building,,,,2022-07-01 15:35:20,2022-07-01 15:35:30,10.346s,PASSED
+"admin_buildingComplexID = ""1""",,,,2022-07-01 15:35:20,2022-07-01 15:35:20,0.001s,PASSED
+"admin_buildingName = ""nama""",,,,2022-07-01 15:35:20,2022-07-01 15:35:20,0.000s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-07-01 15:35:20,2022-07-01 15:35:20,0.001s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-07-01 15:35:20,2022-07-01 15:35:20,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-01 15:35:20,2022-07-01 15:35:30,9.761s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding,,,,2022-07-01 15:35:30,2022-07-01 15:35:47,16.906s,FAILED
+"admin_buildingComplexID = ""1""",,,,2022-07-01 15:35:30,2022-07-01 15:35:30,0.000s,PASSED
+"admin_buildingName = ""Building Name""",,,,2022-07-01 15:35:30,2022-07-01 15:35:30,0.000s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-07-01 15:35:30,2022-07-01 15:35:30,0.000s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-07-01 15:35:30,2022-07-01 15:35:30,0.016s,PASSED
+dump = admin_BuildingID,,,,2022-07-01 15:35:30,2022-07-01 15:35:30,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-01 15:35:30,2022-07-01 15:35:47,16.296s,FAILED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_Delete Building,,,,2022-07-01 15:35:47,2022-07-01 15:35:52,5.361s,PASSED
+dump = admin_BuildingID,,,,2022-07-01 15:35:47,2022-07-01 15:35:47,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-01 15:35:47,2022-07-01 15:35:52,4.802s,PASSED

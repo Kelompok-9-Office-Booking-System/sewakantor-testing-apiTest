@@ -23,7 +23,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${url}/v1/admin/facilities/6</restUrl>
+   <restUrl>${url}/v1/admin/facilities/${facilityID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -38,6 +38,13 @@
       <id>6ae74b41-a9e9-4a4d-b1bc-e607cda2760b</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_FacilityID</defaultValue>
+      <description></description>
+      <id>9b80725b-94ca-4d39-b35c-2eb15d35c4dd</id>
+      <masked>false</masked>
+      <name>facilityID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

@@ -13,13 +13,13 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Makanan&quot;,
+      &quot;value&quot;: &quot;${name}&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;icon&quot;,
-      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\Fitriandhita_color2.avif&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\whatsapp.png&quot;,
       &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -45,7 +45,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${url}/v1/admin/facilities/7</restUrl>
+   <restUrl>${url}/v1/admin/facilities/${facilityID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -60,6 +60,20 @@
       <id>74b981a8-f9df-47d1-92f9-9e24a1c3da63</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_facilityName</defaultValue>
+      <description></description>
+      <id>35b0f166-55c4-4de4-b3aa-9c54c3fb3b69</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_FacilityID</defaultValue>
+      <description></description>
+      <id>170843bf-49a9-487a-899c-098d5ece21a2</id>
+      <masked>false</masked>
+      <name>facilityID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

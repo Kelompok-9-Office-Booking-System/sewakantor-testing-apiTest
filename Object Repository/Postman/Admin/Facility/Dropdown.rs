@@ -16,7 +16,7 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer ${GlobalVariable.token}</value>
+      <value>Bearer ${GlobalVariable.token}inv</value>
       <webElementGuid>77d5c02e-75bc-4250-9593-fa41647fb61f</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.5</katalonVersion>

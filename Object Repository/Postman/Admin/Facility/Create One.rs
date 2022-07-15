@@ -13,13 +13,13 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Wifi&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;value&quot;: &quot;${name}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;icon&quot;,
-      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\Screenshot 2022-05-16 205949.png&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\whatsapp.png&quot;,
       &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -60,6 +60,13 @@
       <id>8933144a-7691-4173-ba09-b6a37b966749</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_facilityName</defaultValue>
+      <description></description>
+      <id>b3144af9-9cf7-4511-bde1-34f72bc18c69</id>
+      <masked>false</masked>
+      <name>name</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

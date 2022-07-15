@@ -15,21 +15,21 @@
       <guid>6d734c9a-8d9f-4328-beb7-2f5060f95137</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/TS4_Complex/TC_Get All Complex</testCaseId>
+      <testCaseId>Test Cases/Admin/TS3_Complex/TC_Get All Complex</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>fb86ecef-c410-4148-a842-fe44a52eff89</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/TS4_Complex/TC_Get Dropdown</testCaseId>
+      <testCaseId>Test Cases/Admin/TS3_Complex/TC_Get Dropdown</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>24fa2991-a465-44c9-af04-27361cdcaef5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/TS4_Complex/TC_Get One Complex</testCaseId>
+      <testCaseId>Test Cases/Admin/TS3_Complex/TC_Get One Complex</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -48,21 +48,21 @@
       <guid>348a979d-23ec-4752-a439-c79d5841cb90</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/TS4_Complex/TC_Create new Complex</testCaseId>
+      <testCaseId>Test Cases/Admin/TS3_Complex/TC_Create new Complex</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>37e1567c-eedb-4dd7-baee-05300965ad6d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/TS4_Complex/TC_Update Complex</testCaseId>
+      <testCaseId>Test Cases/Admin/TS3_Complex/TC_Update Complex</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>298d1615-b7a6-4a05-9b33-d014b886b8c9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Admin/TS4_Complex/TC_Delete Complex</testCaseId>
+      <testCaseId>Test Cases/Admin/TS3_Complex/TC_Delete Complex</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

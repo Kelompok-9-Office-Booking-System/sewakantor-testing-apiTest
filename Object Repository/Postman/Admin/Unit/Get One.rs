@@ -23,7 +23,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${url}/v1/admin/units/2</restUrl>
+   <restUrl>${url}/v1/admin/units/${unitID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -38,6 +38,13 @@
       <id>161c10fd-f799-4e63-8634-579072a228d3</id>
       <masked>false</masked>
       <name>url</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_UnitID</defaultValue>
+      <description></description>
+      <id>8f8e6239-c618-406d-8229-e48cf9f2fd31</id>
+      <masked>false</masked>
+      <name>unitID</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

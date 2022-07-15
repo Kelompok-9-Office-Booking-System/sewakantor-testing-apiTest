@@ -6,12 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://54.211.120.43/api'</initValue>
+      <initValue>'https://sk-api.mbaharip.me/api'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU2NTI1MzkzLCJpYXQiOjE2NTY1MDczOTN9.bV3xyPUGuWZiXc0qzuzrR-_m5S7oOD0H-1aPq0bTFtH8cDsfnyZmLAZGFraOaSsUcaX9TW3zrypaeVjTZyBpow'</initValue>
+      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU3NTM4NTk3LCJpYXQiOjE2NTc1MjA1OTd9.IJnrPvnyf2IBnO6J-yzWsNEFesmfJCcam50mnC8lJFcvtJM48l77w_5khy8QKRC5WvQRE7WJdHxf6dQWPstqlQ'</initValue>
       <name>token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -26,11 +26,6 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>31</initValue>
-      <name>admin_BuildingID</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>0</initValue>
       <name>admin_NotFoundID</name>
    </GlobalVariableEntity>
@@ -41,42 +36,37 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>0</initValue>
-      <name>admin_CityID</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>''</initValue>
-      <name>admin_ComplexID</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>''</initValue>
-      <name>admin_FacilityID</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>1</initValue>
+      <initValue>14</initValue>
       <name>admin_CreateID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>admin_CityID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>Unique</description>
-      <initValue>''</initValue>
+      <initValue>'J4K412T4'</initValue>
       <name>admin_CityName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'BCA Tower'</initValue>
+      <initValue>3</initValue>
+      <name>admin_BuildingID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'new building named'</initValue>
       <name>admin_buildingName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'[{&quot;key&quot;:&quot;description&quot;,&quot;value&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit a sem sit amet tincidunt. Donec sit amet leo sit amet urna viverra sagittis.&quot;,&quot;type&quot;:&quot;text&quot;}]'</initValue>
+      <initValue>'building desc'</initValue>
       <name>admin_buildingDesc</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Jalan Jauh banget'</initValue>
+      <initValue>'This is building address'</initValue>
       <name>admin_buildingAddress</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -86,12 +76,77 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'8'</initValue>
+      <name>admin_ComplexID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'update complex'</initValue>
       <name>admin_complexName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'building Desc'</initValue>
       <name>admin_complexDesc</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'25'</initValue>
+      <name>admin_FacilityID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Update name'</initValue>
+      <name>admin_facilityName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>admin_UnitID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Unit name guise'</initValue>
+      <name>admin_unitName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit a sem sit amet tincidunt. Donec sit amet leo sit amet urna viverra sagittis.'</initValue>
+      <name>admin_unitDesc</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'15'</initValue>
+      <name>admin_unitCapacity</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'3'</initValue>
+      <name>admin_UnitBuildingID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2'</initValue>
+      <name>admin_unitHeight</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>admin_unitWidth</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>admin_unitLength</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ips'</initValue>
+      <name>Char255</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsa'</initValue>
+      <name>Char256</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

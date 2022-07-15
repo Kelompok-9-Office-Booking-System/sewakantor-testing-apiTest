@@ -1,0 +1,2786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AdminFlow" time="126.35" tests="17" failures="3" errors="2">
+   <testsuite name="AdminFlow" tests="17" failures="3" errors="2" time="126.35" skipped="0" timestamp="2022-07-01 15:33:46" hostname="user - izzazainf" id="Test Suites/AdminFlow">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\git\\sewakantor-testing-apiTest\\Reports\\20220701_153341\\AdminFlow\\20220701_153341"/>
+         <property name="logFiles" value="C:\\Users\\user\\git\\sewakantor-testing-apiTest\\Reports\\20220701_153341\\AdminFlow\\20220701_153341\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - izzazainf"/>
+         <property name="hostAddress" value="192.168.43.13"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.3.5.208"/>
+      </properties>
+      <testcase name="Test Cases/Admin/TS1_Authori/TC_Login" time="12.285" classname="Test Cases/Admin/TS1_Authori/TC_Login" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:33:46 - [TEST_CASE][PASSED] - Test Cases/Admin/TS1_Authori/TC_Login: Test Cases/Admin/TS1_Authori/TC_Login
+
+2022-07-01 15:33:47 - [TEST_STEP][PASSED] - for ([i = 0, i < 4, (i++)]): Verify element property value successfully
+
+2022-07-01 15:33:47 - [TEST_STEP][PASSED] - admin_uname = username[i]: null
+
+2022-07-01 15:33:48 - [TEST_STEP][PASSED] - admin_password = password[i]: null
+
+2022-07-01 15:33:48 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:33:53 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\0.har
+
+2022-07-01 15:33:54 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:33:54 - [TEST_STEP][PASSED] - if (i == 0): Verify element property value successfully
+
+2022-07-01 15:33:54 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:33:54 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:33:54 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "password salah"): Verify element property value successfully
+
+2022-07-01 15:33:54 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:33:54 - [TEST_STEP][PASSED] - admin_uname = username[i]: null
+
+2022-07-01 15:33:54 - [TEST_STEP][PASSED] - admin_password = password[i]: null
+
+2022-07-01 15:33:54 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:33:56 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\1.har
+
+2022-07-01 15:33:56 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-01 15:33:56 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "user tidak terdaftar"): Verify element property value successfully
+
+2022-07-01 15:33:56 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - admin_uname = username[i]: null
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - admin_password = password[i]: null
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:33:56 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\2.har
+
+2022-07-01 15:33:56 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:33:56 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:33:56 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - admin_uname = username[i]: null
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - admin_password = password[i]: null
+
+2022-07-01 15:33:56 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:33:59 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\3.har
+
+2022-07-01 15:33:59 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - else: Verify element property value successfully
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:33:59 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "data.username", username[i]): Verify element property value successfully
+
+2022-07-01 15:33:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - println(token): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_City/TC_Get All City" time="5.184" classname="Test Cases/Admin/TS3_City/TC_Get All City" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:33:59 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_City/TC_Get All City: Test Cases/Admin/TS3_City/TC_Get All City
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:33:59 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Get All")): Send request successfully
+
+2022-07-01 15:34:00 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\4.har
+
+2022-07-01 15:34:00 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:34:00 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:00 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:00 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-01 15:34:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:01 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:34:01 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:34:01 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:34:01 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:34:03 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\5.har
+
+2022-07-01 15:34:03 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:03 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:34:03 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:34:03 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:34:03 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:34:03 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:34:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:03 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Get All")): Send request successfully
+
+2022-07-01 15:34:04 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\6.har
+
+2022-07-01 15:34:04 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:04 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:34:04 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:04 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list city"): Verify element property value successfully
+
+2022-07-01 15:34:04 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_City/TC_Get One City" time="6.547" classname="Test Cases/Admin/TS3_City/TC_Get One City" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:34:04 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_City/TC_Get One City: Test Cases/Admin/TS3_City/TC_Get One City
+
+2022-07-01 15:34:05 - [TEST_STEP][PASSED] - for ([i = 0, i < 4, (i++)]): Verify element property value successfully
+
+2022-07-01 15:34:05 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:34:05 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:34:05 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Get One")): Send request successfully
+
+2022-07-01 15:34:06 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\7.har
+
+2022-07-01 15:34:06 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:06 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:34:06 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:06 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:06 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-01 15:34:06 - [TEST_STEP][PASSED] - admin_CityID = 1: null
+
+2022-07-01 15:34:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:06 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:34:06 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:34:06 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:34:06 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:34:07 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\8.har
+
+2022-07-01 15:34:07 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:07 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:34:07 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:34:07 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:34:07 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:34:07 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:34:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:07 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Get One")): Send request successfully
+
+2022-07-01 15:34:08 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\9.har
+
+2022-07-01 15:34:08 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:08 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:34:08 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:08 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list city"): Verify element property value successfully
+
+2022-07-01 15:34:08 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:08 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:08 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:08 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-01 15:34:08 - [TEST_STEP][PASSED] - admin_CityID = notFound: null
+
+2022-07-01 15:34:08 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Get One")): Send request successfully
+
+2022-07-01 15:34:09 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\10.har
+
+2022-07-01 15:34:09 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:09 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-01 15:34:09 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:09 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city not found"): Verify element property value successfully
+
+2022-07-01 15:34:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:09 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:09 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:09 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:09 - [TEST_STEP][PASSED] - else: Verify element property value successfully
+
+2022-07-01 15:34:09 - [TEST_STEP][PASSED] - admin_CityID = string: null
+
+2022-07-01 15:34:09 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Get One")): Send request successfully
+
+2022-07-01 15:34:10 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\11.har
+
+2022-07-01 15:34:10 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:10 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:34:10 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:10 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:34:10 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_City/TC_Create One" time="16.098" classname="Test Cases/Admin/TS3_City/TC_Create One" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/TS3_City/TC_Create One FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_Create One.run(TC_Create One:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+"/>
+         <system-out><![CDATA[2022-07-01 15:34:10 - [TEST_CASE][FAILED] - Test Cases/Admin/TS3_City/TC_Create One: Test Cases/Admin/TS3_City/TC_Create One FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_Create One.run(TC_Create One:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+
+
+2022-07-01 15:34:11 - [TEST_STEP][FAILED] - for ([i = 0, i < 8, (i++)]): null
+
+2022-07-01 15:34:11 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:34:11 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:34:11 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Create One")): Send request successfully
+
+2022-07-01 15:34:13 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\12.har
+
+2022-07-01 15:34:13 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:13 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:34:13 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:13 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:13 - [TEST_STEP][FAILED] - else if (i == 1): null
+
+2022-07-01 15:34:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:13 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:34:13 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:34:13 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:34:13 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:34:14 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\13.har
+
+2022-07-01 15:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:14 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:34:14 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:34:14 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:34:14 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:34:14 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:34:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:14 - [TEST_STEP][PASSED] - admin_CityName = name255: null
+
+2022-07-01 15:34:14 - [TEST_STEP][PASSED] - println(admin_CityName): null
+
+2022-07-01 15:34:14 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Create One")): Send request successfully
+
+2022-07-01 15:34:16 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\14.har
+
+2022-07-01 15:34:16 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:16 - [TEST_STEP][FAILED] - verifyResponseStatusCode(rslt, 200): Expected status code is '200' but actual status code is '500'
+
+2022-07-01 15:34:16 - [MESSAGE][FAILED] - Expected status code is '200' but actual status code is '500'
+
+2022-07-01 15:34:16 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "city saved successfully"): Expected element property value 'city saved successfully' is not equal with actual property value 'null'
+
+2022-07-01 15:34:16 - [MESSAGE][FAILED] - Expected element property value 'city saved successfully' is not equal with actual property value 'null'
+
+2022-07-01 15:34:16 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:16 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:16 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-01 15:34:16 - [TEST_STEP][PASSED] - admin_CityName = name256: null
+
+2022-07-01 15:34:16 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Create One")): Send request successfully
+
+2022-07-01 15:34:17 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\15.har
+
+2022-07-01 15:34:17 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-01 15:34:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Verify element property value successfully
+
+2022-07-01 15:34:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:17 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:17 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:17 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:17 - [TEST_STEP][PASSED] - else if (i == 3): Verify element property value successfully
+
+2022-07-01 15:34:17 - [TEST_STEP][PASSED] - admin_CityName = "": null
+
+2022-07-01 15:34:17 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Create One")): Send request successfully
+
+2022-07-01 15:34:18 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\16.har
+
+2022-07-01 15:34:18 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:34:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "errors[0].error", "name must not be empty"): Verify element property value successfully
+
+2022-07-01 15:34:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:19 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:19 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:19 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:19 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:34:19 - [TEST_STEP][PASSED] - else if (i == 4): Verify element property value successfully
+
+2022-07-01 15:34:19 - [TEST_STEP][PASSED] - admin_CityName = "Jakarta": null
+
+2022-07-01 15:34:19 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Create One")): Send request successfully
+
+2022-07-01 15:34:20 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\17.har
+
+2022-07-01 15:34:20 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-01 15:34:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Verify element property value successfully
+
+2022-07-01 15:34:20 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:20 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:20 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:20 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:20 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:34:20 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:34:20 - [TEST_STEP][FAILED] - else if (i == 5): null
+
+2022-07-01 15:34:20 - [TEST_STEP][PASSED] - admin_CityName = "JAKARTA": null
+
+2022-07-01 15:34:20 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Create One")): Send request successfully
+
+2022-07-01 15:34:22 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\18.har
+
+2022-07-01 15:34:22 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:22 - [TEST_STEP][FAILED] - verifyResponseStatusCode(rslt, 200): Expected status code is '200' but actual status code is '500'
+
+2022-07-01 15:34:22 - [MESSAGE][FAILED] - Expected status code is '200' but actual status code is '500'
+
+2022-07-01 15:34:22 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "city saved successfully"): Expected element property value 'city saved successfully' is not equal with actual property value 'null'
+
+2022-07-01 15:34:22 - [MESSAGE][FAILED] - Expected element property value 'city saved successfully' is not equal with actual property value 'null'
+
+2022-07-01 15:34:22 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:22 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:22 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:22 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:34:22 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:34:22 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-01 15:34:22 - [TEST_STEP][FAILED] - else if (i == 6): null
+
+2022-07-01 15:34:22 - [TEST_STEP][PASSED] - admin_CityName = "123": null
+
+2022-07-01 15:34:22 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Create One")): Send request successfully
+
+2022-07-01 15:34:23 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\19.har
+
+2022-07-01 15:34:23 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:23 - [TEST_STEP][FAILED] - verifyResponseStatusCode(rslt, 200): Expected status code is '200' but actual status code is '500'
+
+2022-07-01 15:34:23 - [MESSAGE][FAILED] - Expected status code is '200' but actual status code is '500'
+
+2022-07-01 15:34:23 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "city saved successfully"): Expected element property value 'city saved successfully' is not equal with actual property value 'null'
+
+2022-07-01 15:34:23 - [MESSAGE][FAILED] - Expected element property value 'city saved successfully' is not equal with actual property value 'null'
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - else if (i == 6): null
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - else if (i == 7): Verify element property value successfully
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - admin_CityName = "Bawli": null
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:23 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:34:23 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:34:26 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\20.har
+
+2022-07-01 15:34:26 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:34:26 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Create One")): Send request successfully
+
+2022-07-01 15:34:26 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\21.har
+
+2022-07-01 15:34:26 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:34:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city saved successfully"): Verify element property value successfully
+
+2022-07-01 15:34:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - value = id: null
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - admin_CreateID = value: null
+
+2022-07-01 15:34:26 - [TEST_STEP][PASSED] - println(admin_CreateID): null]]></system-out>
+         <system-err><![CDATA[2022-07-01 15:34:10 - [TEST_CASE][FAILED] - Test Cases/Admin/TS3_City/TC_Create One: Test Cases/Admin/TS3_City/TC_Create One FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_Create One.run(TC_Create One:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_City/TC_Update City" time="15.044" classname="Test Cases/Admin/TS3_City/TC_Update City" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:34:26 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_City/TC_Update City: Test Cases/Admin/TS3_City/TC_Update City
+
+2022-07-01 15:34:27 - [TEST_STEP][PASSED] - dump = admin_CreateID: null
+
+2022-07-01 15:34:27 - [TEST_STEP][PASSED] - for ([i = 0, i < 9, (i++)]): Verify element property value successfully
+
+2022-07-01 15:34:27 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:34:27 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:34:27 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Update")): Send request successfully
+
+2022-07-01 15:34:28 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\22.har
+
+2022-07-01 15:34:28 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:28 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:34:28 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:28 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:28 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-01 15:34:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:28 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:34:28 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:34:28 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:34:28 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:34:29 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\23.har
+
+2022-07-01 15:34:29 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:29 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:34:29 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:34:29 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:34:29 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:34:29 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:34:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:29 - [TEST_STEP][PASSED] - admin_CityName = fill255: null
+
+2022-07-01 15:34:29 - [TEST_STEP][PASSED] - println(admin_CityName): null
+
+2022-07-01 15:34:29 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Update")): Send request successfully
+
+2022-07-01 15:34:30 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\24.har
+
+2022-07-01 15:34:30 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:34:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city updated successfully"): Verify element property value successfully
+
+2022-07-01 15:34:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:30 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:30 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:30 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-01 15:34:30 - [TEST_STEP][PASSED] - admin_CityName = name256: null
+
+2022-07-01 15:34:30 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Update")): Send request successfully
+
+2022-07-01 15:34:31 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\25.har
+
+2022-07-01 15:34:31 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:31 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-01 15:34:31 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:31 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Verify element property value successfully
+
+2022-07-01 15:34:31 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:31 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:31 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:31 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:31 - [TEST_STEP][PASSED] - else if (i == 3): Verify element property value successfully
+
+2022-07-01 15:34:31 - [TEST_STEP][PASSED] - admin_CityName = "": null
+
+2022-07-01 15:34:31 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Update")): Send request successfully
+
+2022-07-01 15:34:34 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\26.har
+
+2022-07-01 15:34:34 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:34:34 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:34 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:34:34 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:34 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:34 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:34 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:34 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:34:34 - [TEST_STEP][PASSED] - else if (i == 4): Verify element property value successfully
+
+2022-07-01 15:34:34 - [TEST_STEP][PASSED] - admin_CityName = "Jakarta": null
+
+2022-07-01 15:34:34 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Update")): Send request successfully
+
+2022-07-01 15:34:35 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\27.har
+
+2022-07-01 15:34:35 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:35 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-01 15:34:35 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:35 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Verify element property value successfully
+
+2022-07-01 15:34:35 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:35 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:35 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:35 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:35 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:34:35 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:34:35 - [TEST_STEP][PASSED] - else if (i == 5): Verify element property value successfully
+
+2022-07-01 15:34:35 - [TEST_STEP][PASSED] - admin_CityName = "BAWLI": null
+
+2022-07-01 15:34:35 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Update")): Send request successfully
+
+2022-07-01 15:34:37 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\28.har
+
+2022-07-01 15:34:37 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:34:37 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city updated successfully"): Verify element property value successfully
+
+2022-07-01 15:34:37 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - else if (i == 6): Verify element property value successfully
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - admin_CityName = "BAWLI1234": null
+
+2022-07-01 15:34:37 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Update")): Send request successfully
+
+2022-07-01 15:34:38 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\29.har
+
+2022-07-01 15:34:38 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:34:38 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city updated successfully"): Verify element property value successfully
+
+2022-07-01 15:34:38 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - else if (i == 6): null
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - else if (i == 7): Verify element property value successfully
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - admin_CityName = "Kab Bandung": null
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:38 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:34:38 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:34:39 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\30.har
+
+2022-07-01 15:34:39 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:39 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:34:39 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:34:39 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:34:39 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:34:39 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:34:39 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:39 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Update")): Send request successfully
+
+2022-07-01 15:34:40 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\31.har
+
+2022-07-01 15:34:40 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:34:40 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city updated successfully"): Verify element property value successfully
+
+2022-07-01 15:34:40 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - else if (i == 6): null
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - else if (i == 7): null
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - else if (i == 8): Verify element property value successfully
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - admin_CreateID = 0: null
+
+2022-07-01 15:34:40 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Update")): Send request successfully
+
+2022-07-01 15:34:41 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\32.har
+
+2022-07-01 15:34:41 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:41 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-01 15:34:41 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city not found"): Verify element property value successfully
+
+2022-07-01 15:34:42 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:42 - [TEST_STEP][PASSED] - admin_CreateID = dump: null
+
+2022-07-01 15:34:42 - [TEST_STEP][PASSED] - println(admin_CreateID): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_City/TC_Delete" time="4.869" classname="Test Cases/Admin/TS3_City/TC_Delete" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:34:42 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_City/TC_Delete: Test Cases/Admin/TS3_City/TC_Delete
+
+2022-07-01 15:34:42 - [TEST_STEP][PASSED] - dump = admin_CreateID: null
+
+2022-07-01 15:34:42 - [TEST_STEP][PASSED] - for ([i = 0, i < 3, (i++)]): Verify element property value successfully
+
+2022-07-01 15:34:42 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:34:42 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:34:42 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Delete")): Send request successfully
+
+2022-07-01 15:34:43 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\33.har
+
+2022-07-01 15:34:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:43 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:34:43 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:43 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-01 15:34:43 - [TEST_STEP][PASSED] - if (i == 2): null
+
+2022-07-01 15:34:43 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:43 - [TEST_STEP][PASSED] - if (i == 1): Verify element property value successfully
+
+2022-07-01 15:34:43 - [TEST_STEP][PASSED] - admin_CreateID = -1: null
+
+2022-07-01 15:34:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:43 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:34:43 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:34:43 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:34:43 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:34:44 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\34.har
+
+2022-07-01 15:34:44 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:44 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:34:44 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:34:44 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:34:44 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:34:44 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:34:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:44 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Delete")): Send request successfully
+
+2022-07-01 15:34:45 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\35.har
+
+2022-07-01 15:34:45 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-01 15:34:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:45 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city not found"): Verify element property value successfully
+
+2022-07-01 15:34:45 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:45 - [TEST_STEP][PASSED] - if (i == 2): null
+
+2022-07-01 15:34:45 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:45 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-01 15:34:45 - [TEST_STEP][PASSED] - if (i == 2): Verify element property value successfully
+
+2022-07-01 15:34:45 - [TEST_STEP][PASSED] - admin_CreateID = dump: null
+
+2022-07-01 15:34:45 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/City/Delete")): Send request successfully
+
+2022-07-01 15:34:46 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\36.har
+
+2022-07-01 15:34:46 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:46 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:34:46 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:46 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city deleted successfully"): Verify element property value successfully
+
+2022-07-01 15:34:46 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Complex/TC_Get All Complex" time="3.696" classname="Test Cases/Admin/TS4_Complex/TC_Get All Complex" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:34:46 - [TEST_CASE][PASSED] - Test Cases/Admin/TS4_Complex/TC_Get All Complex: Test Cases/Admin/TS4_Complex/TC_Get All Complex
+
+2022-07-01 15:34:47 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-07-01 15:34:47 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:34:47 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:34:47 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get All")): Send request successfully
+
+2022-07-01 15:34:48 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\37.har
+
+2022-07-01 15:34:48 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:48 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:34:48 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:48 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:48 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-01 15:34:48 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:48 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:34:48 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:34:48 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:34:48 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:34:49 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\38.har
+
+2022-07-01 15:34:49 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:49 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:34:49 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:34:49 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:34:49 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:34:49 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:34:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:49 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get All")): Send request successfully
+
+2022-07-01 15:34:50 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\39.har
+
+2022-07-01 15:34:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:34:50 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:50 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list complex"): Verify element property value successfully
+
+2022-07-01 15:34:50 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Complex/TC_Get One Complex" time="6.357" classname="Test Cases/Admin/TS4_Complex/TC_Get One Complex" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:34:50 - [TEST_CASE][PASSED] - Test Cases/Admin/TS4_Complex/TC_Get One Complex: Test Cases/Admin/TS4_Complex/TC_Get One Complex
+
+2022-07-01 15:34:51 - [TEST_STEP][PASSED] - for ([i = 0, i < 4, (i++)]): Verify element property value successfully
+
+2022-07-01 15:34:51 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:34:51 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:34:51 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-01 15:34:52 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\40.har
+
+2022-07-01 15:34:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:34:52 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:52 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:52 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-01 15:34:52 - [TEST_STEP][PASSED] - admin_ComplexID = 1: null
+
+2022-07-01 15:34:52 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:52 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:34:52 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:34:52 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:34:52 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:34:53 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\41.har
+
+2022-07-01 15:34:53 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:53 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:34:53 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:34:53 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:34:53 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:34:53 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:34:53 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:53 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-01 15:34:54 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\42.har
+
+2022-07-01 15:34:54 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:54 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:34:54 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:54 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list complex"): Verify element property value successfully
+
+2022-07-01 15:34:54 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:54 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:54 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:54 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-01 15:34:54 - [TEST_STEP][PASSED] - admin_ComplexID = notFound: null
+
+2022-07-01 15:34:54 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-01 15:34:55 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\43.har
+
+2022-07-01 15:34:55 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:55 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-01 15:34:55 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:55 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Verify element property value successfully
+
+2022-07-01 15:34:55 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:34:55 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:55 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:34:55 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:34:55 - [TEST_STEP][PASSED] - else: Verify element property value successfully
+
+2022-07-01 15:34:55 - [TEST_STEP][PASSED] - admin_ComplexID = string: null
+
+2022-07-01 15:34:55 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-01 15:34:56 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\44.har
+
+2022-07-01 15:34:56 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:34:56 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:56 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:34:56 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Complex/TC_Get Dropdown" time="4.999" classname="Test Cases/Admin/TS4_Complex/TC_Get Dropdown" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:34:56 - [TEST_CASE][PASSED] - Test Cases/Admin/TS4_Complex/TC_Get Dropdown: Test Cases/Admin/TS4_Complex/TC_Get Dropdown
+
+2022-07-01 15:34:57 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-07-01 15:34:57 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:34:57 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:34:57 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Dropdown")): Send request successfully
+
+2022-07-01 15:34:59 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\45.har
+
+2022-07-01 15:34:59 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:34:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:34:59 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:34:59 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:34:59 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-01 15:34:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:34:59 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:34:59 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:34:59 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:34:59 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:35:00 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\46.har
+
+2022-07-01 15:35:00 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:00 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:35:00 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:35:00 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:35:00 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:35:00 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:35:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:00 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Dropdown")): Send request successfully
+
+2022-07-01 15:35:01 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\47.har
+
+2022-07-01 15:35:01 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:01 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:35:01 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:01 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "dropdown complex"): Verify element property value successfully
+
+2022-07-01 15:35:01 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Complex/TC_Create new Complex" time="1.034" classname="Test Cases/Admin/TS4_Complex/TC_Create new Complex" status="ERROR">
+         <error type="ERROR" message="Test Cases/Admin/TS4_Complex/TC_Create new Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Create new Complex.run(TC_Create new Complex:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.&lt;init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	... 19 more
+"/>
+         <system-out><![CDATA[2022-07-01 15:35:01 - [TEST_CASE][ERROR] - Test Cases/Admin/TS4_Complex/TC_Create new Complex: Test Cases/Admin/TS4_Complex/TC_Create new Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Create new Complex.run(TC_Create new Complex:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	... 19 more
+
+
+2022-07-01 15:35:02 - [TEST_STEP][ERROR] - for ([i = 0, i < 7, (i++)]): Test Cases/Admin/TS4_Complex/TC_Create new Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Create new Complex.run(TC_Create new Complex:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at Script1656468392781.run(Script1656468392781.groovy:26)
+	... 13 more
+
+
+2022-07-01 15:35:02 - [TEST_STEP][ERROR] - if (i == 0): Test Cases/Admin/TS4_Complex/TC_Create new Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Create new Complex.run(TC_Create new Complex:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at Script1656468392781.run(Script1656468392781.groovy:26)
+	... 13 more
+
+
+2022-07-01 15:35:02 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:35:02 - [TEST_STEP][ERROR] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Test Cases/Admin/TS4_Complex/TC_Create new Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Create new Complex.run(TC_Create new Complex:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at Script1656468392781.run(Script1656468392781.groovy:26)
+	... 13 more
+
+
+2022-07-01 15:35:03 - [MESSAGE][ERROR] - Test Cases/Admin/TS4_Complex/TC_Create new Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Create new Complex.run(TC_Create new Complex:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at Script1656468392781.run(Script1656468392781.groovy:26)
+	... 13 more]]></system-out>
+         <system-err><![CDATA[2022-07-01 15:35:01 - [TEST_CASE][ERROR] - Test Cases/Admin/TS4_Complex/TC_Create new Complex: Test Cases/Admin/TS4_Complex/TC_Create new Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Create new Complex.run(TC_Create new Complex:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Complex/TC_Update Complex" time="0.978" classname="Test Cases/Admin/TS4_Complex/TC_Update Complex" status="ERROR">
+         <error type="ERROR" message="Test Cases/Admin/TS4_Complex/TC_Update Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Update Complex.run(TC_Update Complex:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.&lt;init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	... 19 more
+"/>
+         <system-out><![CDATA[2022-07-01 15:35:03 - [TEST_CASE][ERROR] - Test Cases/Admin/TS4_Complex/TC_Update Complex: Test Cases/Admin/TS4_Complex/TC_Update Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Update Complex.run(TC_Update Complex:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	... 19 more
+
+
+2022-07-01 15:35:03 - [TEST_STEP][PASSED] - dump = admin_ComplexID: null
+
+2022-07-01 15:35:03 - [TEST_STEP][PASSED] - admin_complexName = "Anggrek Permai": null
+
+2022-07-01 15:35:03 - [TEST_STEP][PASSED] - admin_complexDesc = "ini default untuk test": null
+
+2022-07-01 15:35:03 - [TEST_STEP][PASSED] - admin_CityID = "1": null
+
+2022-07-01 15:35:03 - [TEST_STEP][ERROR] - for ([i = 0, i < 7, (i++)]): Test Cases/Admin/TS4_Complex/TC_Update Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Update Complex.run(TC_Update Complex:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at Script1656472714580.run(Script1656472714580.groovy:34)
+	... 13 more
+
+
+2022-07-01 15:35:03 - [TEST_STEP][ERROR] - if (i == 0): Test Cases/Admin/TS4_Complex/TC_Update Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Update Complex.run(TC_Update Complex:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at Script1656472714580.run(Script1656472714580.groovy:34)
+	... 13 more
+
+
+2022-07-01 15:35:03 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:35:03 - [TEST_STEP][ERROR] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Test Cases/Admin/TS4_Complex/TC_Update Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Update Complex.run(TC_Update Complex:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at Script1656472714580.run(Script1656472714580.groovy:34)
+	... 13 more
+
+
+2022-07-01 15:35:03 - [MESSAGE][ERROR] - Test Cases/Admin/TS4_Complex/TC_Update Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Update Complex.run(TC_Update Complex:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at Script1656472714580.run(Script1656472714580.groovy:34)
+	... 13 more]]></system-out>
+         <system-err><![CDATA[2022-07-01 15:35:03 - [TEST_CASE][ERROR] - Test Cases/Admin/TS4_Complex/TC_Update Complex: Test Cases/Admin/TS4_Complex/TC_Update Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:71)
+	at com.kms.katalon.core.testobject.ObjectRepository.findRequestObject(ObjectRepository.java:460)
+	at com.kms.katalon.core.testobject.ObjectRepository.readTestObjectFile(ObjectRepository.java:229)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:183)
+	at com.kms.katalon.core.testobject.ObjectRepository.findTestObject(ObjectRepository.java:136)
+	at com.kms.katalon.core.testobject.ObjectRepository$findTestObject.callStatic(Unknown Source)
+	at TC_Update Complex.run(TC_Update Complex:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\user\Downloads\working image.jpg (The system cannot find the file specified)
+	at com.kms.katalon.core.testobject.impl.HttpFormDataBodyContent.<init>(HttpFormDataBodyContent.java:44)
+	at com.kms.katalon.core.testobject.internal.impl.HttpBodyContentReader.fromSource(HttpBodyContentReader.java:69)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Complex/TC_Delete Complex" time="4.958" classname="Test Cases/Admin/TS4_Complex/TC_Delete Complex" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/TS4_Complex/TC_Delete Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_Delete Complex.run(TC_Delete Complex:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+"/>
+         <system-out><![CDATA[2022-07-01 15:35:03 - [TEST_CASE][FAILED] - Test Cases/Admin/TS4_Complex/TC_Delete Complex: Test Cases/Admin/TS4_Complex/TC_Delete Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_Delete Complex.run(TC_Delete Complex:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+
+
+2022-07-01 15:35:04 - [TEST_STEP][PASSED] - dump = admin_ComplexID: null
+
+2022-07-01 15:35:04 - [TEST_STEP][FAILED] - for ([i = 0, i < 3, (i++)]): null
+
+2022-07-01 15:35:04 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:35:04 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:35:04 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Delete")): Send request successfully
+
+2022-07-01 15:35:05 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\48.har
+
+2022-07-01 15:35:05 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:05 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:35:05 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:05 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:05 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:35:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:05 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:35:05 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:35:05 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:35:05 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:35:06 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\49.har
+
+2022-07-01 15:35:06 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:06 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:35:06 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:35:06 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:35:06 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:35:06 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:35:06 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:06 - [TEST_STEP][PASSED] - admin_ComplexID = "0": null
+
+2022-07-01 15:35:06 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Delete")): Send request successfully
+
+2022-07-01 15:35:07 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\50.har
+
+2022-07-01 15:35:07 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:07 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-01 15:35:07 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:07 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Verify element property value successfully
+
+2022-07-01 15:35:07 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:07 - [TEST_STEP][PASSED] - admin_ComplexID = dump: null
+
+2022-07-01 15:35:07 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:07 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:35:07 - [TEST_STEP][FAILED] - else: null
+
+2022-07-01 15:35:07 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Delete")): Send request successfully
+
+2022-07-01 15:35:08 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\51.har
+
+2022-07-01 15:35:08 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:08 - [TEST_STEP][FAILED] - verifyResponseStatusCode(rslt, 200): Expected status code is '200' but actual status code is '400'
+
+2022-07-01 15:35:08 - [MESSAGE][FAILED] - Expected status code is '200' but actual status code is '400'
+
+2022-07-01 15:35:08 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "complex deleted successfully"): Expected element property value 'complex deleted successfully' is not equal with actual property value 'Malformed request'
+
+2022-07-01 15:35:08 - [MESSAGE][FAILED] - Expected element property value 'complex deleted successfully' is not equal with actual property value 'Malformed request']]></system-out>
+         <system-err><![CDATA[2022-07-01 15:35:03 - [TEST_CASE][FAILED] - Test Cases/Admin/TS4_Complex/TC_Delete Complex: Test Cases/Admin/TS4_Complex/TC_Delete Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_Delete Complex.run(TC_Delete Complex:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding" time="5.288" classname="Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:35:08 - [TEST_CASE][PASSED] - Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding: Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding
+
+2022-07-01 15:35:09 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-07-01 15:35:09 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:35:09 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:35:09 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get All")): Send request successfully
+
+2022-07-01 15:35:11 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\52.har
+
+2022-07-01 15:35:11 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:11 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:35:11 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:11 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:11 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-01 15:35:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:11 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:35:11 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:35:11 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:35:11 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:35:12 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\53.har
+
+2022-07-01 15:35:12 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:12 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:35:12 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:35:12 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:35:12 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:35:12 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:35:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:12 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get All")): Send request successfully
+
+2022-07-01 15:35:14 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\54.har
+
+2022-07-01 15:35:14 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:35:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:14 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list building"): Verify element property value successfully
+
+2022-07-01 15:35:14 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding" time="5.737" classname="Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:35:14 - [TEST_CASE][PASSED] - Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding: Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding
+
+2022-07-01 15:35:14 - [TEST_STEP][PASSED] - for ([i = 0, i < 4, (i++)]): Verify element property value successfully
+
+2022-07-01 15:35:14 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:35:14 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:35:14 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get One")): Send request successfully
+
+2022-07-01 15:35:15 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\55.har
+
+2022-07-01 15:35:15 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:35:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:15 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:15 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-01 15:35:15 - [TEST_STEP][PASSED] - admin_BuildingID = 1: null
+
+2022-07-01 15:35:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:15 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:35:15 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:35:15 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:35:15 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:35:16 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\56.har
+
+2022-07-01 15:35:16 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:16 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:35:16 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:35:16 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:35:16 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:35:16 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:35:16 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:16 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get One")): Send request successfully
+
+2022-07-01 15:35:17 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\57.har
+
+2022-07-01 15:35:17 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-01 15:35:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list building"): Verify element property value successfully
+
+2022-07-01 15:35:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:17 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:17 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:35:17 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-01 15:35:17 - [TEST_STEP][PASSED] - admin_BuildingID = notFoundID: null
+
+2022-07-01 15:35:17 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get One")): Send request successfully
+
+2022-07-01 15:35:18 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\58.har
+
+2022-07-01 15:35:18 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:18 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-01 15:35:18 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:18 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "building not found"): Verify element property value successfully
+
+2022-07-01 15:35:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:19 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:19 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:35:19 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:19 - [TEST_STEP][PASSED] - else: Verify element property value successfully
+
+2022-07-01 15:35:19 - [TEST_STEP][PASSED] - admin_BuildingID = stringID: null
+
+2022-07-01 15:35:19 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Get One")): Send request successfully
+
+2022-07-01 15:35:19 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\59.har
+
+2022-07-01 15:35:19 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:35:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:35:20 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS2_Building Management/TC_Create Building" time="10.346" classname="Test Cases/Admin/TS2_Building Management/TC_Create Building" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:35:20 - [TEST_CASE][PASSED] - Test Cases/Admin/TS2_Building Management/TC_Create Building: Test Cases/Admin/TS2_Building Management/TC_Create Building
+
+2022-07-01 15:35:20 - [TEST_STEP][PASSED] - admin_buildingComplexID = "1": null
+
+2022-07-01 15:35:20 - [TEST_STEP][PASSED] - admin_buildingName = "nama": null
+
+2022-07-01 15:35:20 - [TEST_STEP][PASSED] - admin_buildingAddress = "jalan": null
+
+2022-07-01 15:35:20 - [TEST_STEP][PASSED] - admin_buildingDesc = "desc": null
+
+2022-07-01 15:35:20 - [TEST_STEP][PASSED] - for ([i = 0, i < 8, (i++)]): null
+
+2022-07-01 15:35:20 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:35:20 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:35:20 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-07-01 15:35:21 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\60.har
+
+2022-07-01 15:35:21 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:21 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:35:21 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:21 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:21 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-01 15:35:21 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:21 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:35:21 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:35:21 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:35:21 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:35:22 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\61.har
+
+2022-07-01 15:35:22 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:22 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:35:22 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:35:22 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:35:22 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:35:22 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:35:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:22 - [TEST_STEP][PASSED] - admin_buildingName = "": null
+
+2022-07-01 15:35:22 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-07-01 15:35:23 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\62.har
+
+2022-07-01 15:35:23 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:35:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:23 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:35:23 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:23 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:23 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:35:23 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:23 - [TEST_STEP][PASSED] - admin_buildingName = "Anggrek Permai": null
+
+2022-07-01 15:35:23 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-07-01 15:35:24 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\63.har
+
+2022-07-01 15:35:24 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-01 15:35:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Verify element property value successfully
+
+2022-07-01 15:35:24 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:24 - [TEST_STEP][PASSED] - admin_buildingName = "Building Name": null
+
+2022-07-01 15:35:24 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:24 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:35:24 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:24 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:35:24 - [TEST_STEP][PASSED] - admin_buildingDesc = "": null
+
+2022-07-01 15:35:24 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-07-01 15:35:26 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\64.har
+
+2022-07-01 15:35:26 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:35:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:35:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:26 - [TEST_STEP][PASSED] - admin_buildingDesc = "Building Description": null
+
+2022-07-01 15:35:26 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:26 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:35:26 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:26 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:35:26 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:35:26 - [TEST_STEP][PASSED] - admin_buildingAddress = "": null
+
+2022-07-01 15:35:26 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-07-01 15:35:27 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\65.har
+
+2022-07-01 15:35:27 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:35:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:35:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - admin_buildingAddress = "Building Address": null
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - else if (i == 5): Verify response status code successfully
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - admin_buildingComplexID = "": null
+
+2022-07-01 15:35:27 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-07-01 15:35:28 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\66.har
+
+2022-07-01 15:35:28 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:28 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:35:28 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:28 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:28 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:35:28 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:28 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:35:28 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:35:28 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-01 15:35:28 - [TEST_STEP][PASSED] - else if (i == 6): null
+
+2022-07-01 15:35:28 - [TEST_STEP][PASSED] - admin_buildingComplexID = "0": null
+
+2022-07-01 15:35:28 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Create One")): Send request successfully
+
+2022-07-01 15:35:30 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\67.har
+
+2022-07-01 15:35:30 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-01 15:35:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Verify element property value successfully
+
+2022-07-01 15:35:30 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - admin_buildingComplexID = "1": null
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - if (i == 0): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding" time="16.906" classname="Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '500' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_UpdateBuilding.run(TC_UpdateBuilding:66)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+"/>
+         <system-out><![CDATA[2022-07-01 15:35:30 - [TEST_CASE][FAILED] - Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding: Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '500' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_UpdateBuilding.run(TC_UpdateBuilding:66)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)
+
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - admin_buildingComplexID = "1": null
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - admin_buildingName = "Building Name": null
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - admin_buildingAddress = "jalan": null
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - admin_buildingDesc = "desc": null
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - dump = admin_BuildingID: null
+
+2022-07-01 15:35:30 - [TEST_STEP][FAILED] - for ([i = 0, i < 8, (i++)]): null
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:31 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:35:31 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:35:31 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:35:31 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:35:32 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\68.har
+
+2022-07-01 15:35:32 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:32 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:35:32 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:35:32 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:35:32 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:35:32 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:35:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:32 - [TEST_STEP][PASSED] - admin_BuildingID = "0": null
+
+2022-07-01 15:35:32 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-07-01 15:35:33 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\69.har
+
+2022-07-01 15:35:33 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:33 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-01 15:35:33 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "building not found"): Verify element property value successfully
+
+2022-07-01 15:35:33 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:33 - [TEST_STEP][PASSED] - admin_BuildingID = dump: null
+
+2022-07-01 15:35:33 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-01 15:35:33 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:33 - [TEST_STEP][PASSED] - if (i == 1): Verify response status code successfully
+
+2022-07-01 15:35:33 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:35:33 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-07-01 15:35:34 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\70.har
+
+2022-07-01 15:35:34 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:35:34 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:34 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:34 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-01 15:35:34 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-01 15:35:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:34 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:35:34 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:35:34 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:35:34 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:35:35 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\71.har
+
+2022-07-01 15:35:35 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:35 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:35:35 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:35:35 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:35:35 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:35:35 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:35:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:35 - [TEST_STEP][PASSED] - admin_buildingName = "": null
+
+2022-07-01 15:35:35 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-07-01 15:35:37 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\72.har
+
+2022-07-01 15:35:37 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:37 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:35:37 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:37 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:35:37 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:37 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:37 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-01 15:35:37 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:37 - [TEST_STEP][FAILED] - else if (i == 3): null
+
+2022-07-01 15:35:37 - [TEST_STEP][PASSED] - admin_buildingName = "BCA Tower": null
+
+2022-07-01 15:35:37 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-07-01 15:35:39 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\73.har
+
+2022-07-01 15:35:39 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:39 - [TEST_STEP][FAILED] - verifyResponseStatusCode(rslt, 500): Expected status code is '500' but actual status code is '400'
+
+2022-07-01 15:35:39 - [MESSAGE][FAILED] - Expected status code is '500' but actual status code is '400'
+
+2022-07-01 15:35:39 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Expected element property value 'Internal Server Error' is not equal with actual property value 'null'
+
+2022-07-01 15:35:39 - [MESSAGE][FAILED] - Expected element property value 'Internal Server Error' is not equal with actual property value 'null'
+
+2022-07-01 15:35:39 - [TEST_STEP][PASSED] - admin_buildingName = "Building Name": null
+
+2022-07-01 15:35:39 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:39 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-01 15:35:39 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:39 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:35:39 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:35:39 - [TEST_STEP][PASSED] - admin_buildingDesc = "": null
+
+2022-07-01 15:35:39 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-07-01 15:35:41 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\74.har
+
+2022-07-01 15:35:41 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:35:41 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:35:41 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - admin_buildingDesc = "Building Description": null
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - admin_buildingAddress = "": null
+
+2022-07-01 15:35:41 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-07-01 15:35:43 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\75.har
+
+2022-07-01 15:35:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:35:43 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Verify element property value successfully
+
+2022-07-01 15:35:43 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - admin_buildingAddress = "Building Address": null
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - else if (i == 6): Verify response status code successfully
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - admin_buildingComplexID = "": null
+
+2022-07-01 15:35:43 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-07-01 15:35:45 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\76.har
+
+2022-07-01 15:35:45 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-01 15:35:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:45 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:45 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-01 15:35:45 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-01 15:35:45 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-01 15:35:45 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-01 15:35:45 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-01 15:35:45 - [TEST_STEP][PASSED] - else if (i == 6): null
+
+2022-07-01 15:35:45 - [TEST_STEP][FAILED] - else if (i == 7): null
+
+2022-07-01 15:35:45 - [TEST_STEP][PASSED] - admin_buildingComplexID = "0": null
+
+2022-07-01 15:35:45 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Update")): Send request successfully
+
+2022-07-01 15:35:47 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\77.har
+
+2022-07-01 15:35:47 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:47 - [TEST_STEP][FAILED] - verifyResponseStatusCode(rslt, 404): Expected status code is '404' but actual status code is '400'
+
+2022-07-01 15:35:47 - [MESSAGE][FAILED] - Expected status code is '404' but actual status code is '400'
+
+2022-07-01 15:35:47 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Expected element property value 'complex not found' is not equal with actual property value 'Malformed request'
+
+2022-07-01 15:35:47 - [MESSAGE][FAILED] - Expected element property value 'complex not found' is not equal with actual property value 'Malformed request'
+
+2022-07-01 15:35:47 - [TEST_STEP][PASSED] - admin_buildingComplexID = "1": null]]></system-out>
+         <system-err><![CDATA[2022-07-01 15:35:30 - [TEST_CASE][FAILED] - Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding: Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '500' but actual status code is '400'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_UpdateBuilding.run(TC_UpdateBuilding:66)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS2_Building Management/TC_Delete Building" time="5.361" classname="Test Cases/Admin/TS2_Building Management/TC_Delete Building" status="PASSED">
+         <system-out><![CDATA[2022-07-01 15:35:47 - [TEST_CASE][PASSED] - Test Cases/Admin/TS2_Building Management/TC_Delete Building: Test Cases/Admin/TS2_Building Management/TC_Delete Building
+
+2022-07-01 15:35:47 - [TEST_STEP][PASSED] - dump = admin_BuildingID: null
+
+2022-07-01 15:35:47 - [TEST_STEP][PASSED] - for ([i = 0, i < 3, (i++)]): null
+
+2022-07-01 15:35:47 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-01 15:35:47 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-01 15:35:47 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Delete")): Send request successfully
+
+2022-07-01 15:35:49 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\78.har
+
+2022-07-01 15:35:49 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:49 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-01 15:35:49 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:49 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-01 15:35:49 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-01 15:35:49 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:49 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-01 15:35:49 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-01 15:35:49 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-01 15:35:49 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-01 15:35:51 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\79.har
+
+2022-07-01 15:35:51 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:51 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-01 15:35:51 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-01 15:35:51 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-01 15:35:51 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-01 15:35:51 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-01 15:35:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-01 15:35:51 - [TEST_STEP][PASSED] - admin_BuildingID = "0": null
+
+2022-07-01 15:35:51 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Building/Delete")): Send request successfully
+
+2022-07-01 15:35:52 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220701_153341\AdminFlow\20220701_153341\requests\main\80.har
+
+2022-07-01 15:35:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-01 15:35:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-01 15:35:52 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-01 15:35:52 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "building not found"): Verify element property value successfully
+
+2022-07-01 15:35:52 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-01 15:35:52 - [TEST_STEP][PASSED] - admin_BuildingID = dump: null
+
+2022-07-01 15:35:52 - [TEST_STEP][PASSED] - if (i == 0): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-01 15:33:46 - [TEST_SUITE][FAILED] - AdminFlow: Test Cases/Admin/TS3_City/TC_Create One FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_Create One.run(TC_Create One:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-07-01 15:33:46 - [TEST_SUITE][FAILED] - AdminFlow: Test Cases/Admin/TS3_City/TC_Create One FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected status code is '200' but actual status code is '500'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyStatusCode(VerifyResponseStatusCodeKeyword.groovy:52)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.access$1(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.doCall(VerifyResponseStatusCodeKeyword.groovy:42)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword$_verifyResponseStatusCode_closure1.call(VerifyResponseStatusCodeKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.verifyResponseStatusCode(VerifyResponseStatusCodeKeyword.groovy:37)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyResponseStatusCodeKeyword.execute(VerifyResponseStatusCodeKeyword.groovy:32)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyResponseStatusCode(WSBuiltInKeywords.groovy:344)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyResponseStatusCode$0.call(Unknown Source)
+	at TC_Create One.run(TC_Create One:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1656664421647.run(TempTestSuite1656664421647.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

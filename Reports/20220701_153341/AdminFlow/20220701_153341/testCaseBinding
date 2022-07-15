@@ -1,0 +1,17 @@
+{"testCaseName":"Test Cases/Admin/TS1_Authori/TC_Login","testCaseId":"Test Cases/Admin/TS1_Authori/TC_Login","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS3_City/TC_Get All City","testCaseId":"Test Cases/Admin/TS3_City/TC_Get All City","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS3_City/TC_Get One City","testCaseId":"Test Cases/Admin/TS3_City/TC_Get One City","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS3_City/TC_Create One","testCaseId":"Test Cases/Admin/TS3_City/TC_Create One","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS3_City/TC_Update City","testCaseId":"Test Cases/Admin/TS3_City/TC_Update City","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS3_City/TC_Delete","testCaseId":"Test Cases/Admin/TS3_City/TC_Delete","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS4_Complex/TC_Get All Complex","testCaseId":"Test Cases/Admin/TS4_Complex/TC_Get All Complex","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS4_Complex/TC_Get One Complex","testCaseId":"Test Cases/Admin/TS4_Complex/TC_Get One Complex","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS4_Complex/TC_Get Dropdown","testCaseId":"Test Cases/Admin/TS4_Complex/TC_Get Dropdown","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS4_Complex/TC_Create new Complex","testCaseId":"Test Cases/Admin/TS4_Complex/TC_Create new Complex","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS4_Complex/TC_Update Complex","testCaseId":"Test Cases/Admin/TS4_Complex/TC_Update Complex","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS4_Complex/TC_Delete Complex","testCaseId":"Test Cases/Admin/TS4_Complex/TC_Delete Complex","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding","testCaseId":"Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding","testCaseId":"Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS2_Building Management/TC_Create Building","testCaseId":"Test Cases/Admin/TS2_Building Management/TC_Create Building","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding","testCaseId":"Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding","iterationVariableName":""}
+{"testCaseName":"Test Cases/Admin/TS2_Building Management/TC_Delete Building","testCaseId":"Test Cases/Admin/TS2_Building Management/TC_Delete Building","iterationVariableName":""}

@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ComplexRun,,,,2022-07-01 15:31:00,2022-07-01 15:31:27,26.811s,ERROR
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get All Complex,,,,2022-07-01 15:31:01,2022-07-01 15:31:10,9.139s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-01 15:31:01,2022-07-01 15:31:10,8.355s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get Dropdown,,,,2022-07-01 15:31:10,2022-07-01 15:31:15,4.980s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-01 15:31:10,2022-07-01 15:31:15,4.411s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get One Complex,,,,2022-07-01 15:31:15,2022-07-01 15:31:19,4.430s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-01 15:31:15,2022-07-01 15:31:19,3.791s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Create new Complex,,,,2022-07-01 15:31:19,2022-07-01 15:31:20,1.090s,ERROR
+"for ([i = 0, i < 7, (i++)])",,,,2022-07-01 15:31:20,2022-07-01 15:31:20,0.461s,ERROR
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Update Complex,,,,2022-07-01 15:31:20,2022-07-01 15:31:21,1.040s,ERROR
+dump = admin_ComplexID,,,,2022-07-01 15:31:21,2022-07-01 15:31:21,0.001s,PASSED
+"admin_complexName = ""Anggrek Permai""",,,,2022-07-01 15:31:21,2022-07-01 15:31:21,0.001s,PASSED
+"admin_complexDesc = ""ini default untuk test""",,,,2022-07-01 15:31:21,2022-07-01 15:31:21,0.002s,PASSED
+"admin_CityID = ""1""",,,,2022-07-01 15:31:21,2022-07-01 15:31:21,0.001s,PASSED
+"for ([i = 0, i < 7, (i++)])",,,,2022-07-01 15:31:21,2022-07-01 15:31:21,0.378s,ERROR
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Delete Complex,,,,2022-07-01 15:31:21,2022-07-01 15:31:27,5.476s,FAILED
+dump = admin_ComplexID,,,,2022-07-01 15:31:22,2022-07-01 15:31:22,0.002s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-01 15:31:22,2022-07-01 15:31:27,4.910s,FAILED

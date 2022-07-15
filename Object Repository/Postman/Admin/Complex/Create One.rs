@@ -25,7 +25,7 @@
     },
     {
       &quot;name&quot;: &quot;image&quot;,
-      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\working image.jpg&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\whatsapp.png&quot;,
       &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },

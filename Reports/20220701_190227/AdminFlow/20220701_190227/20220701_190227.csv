@@ -1,0 +1,87 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+AdminFlow,,,,2022-07-01 19:02:33,2022-07-01 19:04:21,1m - 47.373s,ERROR
+,,,,,,,
+Test Cases/Admin/TS1_Authori/TC_Login,,,,2022-07-01 19:02:34,2022-07-01 19:02:45,10.976s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-01 19:02:35,2022-07-01 19:02:45,9.583s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-07-01 19:02:45,2022-07-01 19:02:45,0.004s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-07-01 19:02:45,2022-07-01 19:02:45,0.018s,PASSED
+value = token,,,,2022-07-01 19:02:45,2022-07-01 19:02:45,0.002s,PASSED
+token = value,,,,2022-07-01 19:02:45,2022-07-01 19:02:45,0.002s,PASSED
+println(token),,,,2022-07-01 19:02:45,2022-07-01 19:02:45,0.007s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get All City,,,,2022-07-01 19:02:45,2022-07-01 19:02:49,4.145s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-01 19:02:46,2022-07-01 19:02:49,3.413s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Get One City,,,,2022-07-01 19:02:49,2022-07-01 19:02:54,4.740s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-01 19:02:50,2022-07-01 19:02:54,3.995s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Create One,,,,2022-07-01 19:02:54,2022-07-01 19:03:04,10.274s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-01 19:02:55,2022-07-01 19:03:04,9.384s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-07-01 19:03:04,2022-07-01 19:03:04,0.000s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-07-01 19:03:04,2022-07-01 19:03:04,0.001s,PASSED
+value = id,,,,2022-07-01 19:03:04,2022-07-01 19:03:04,0.000s,PASSED
+admin_CreateID = value,,,,2022-07-01 19:03:04,2022-07-01 19:03:04,0.001s,PASSED
+println(admin_CreateID),,,,2022-07-01 19:03:04,2022-07-01 19:03:04,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Update City,,,,2022-07-01 19:03:04,2022-07-01 19:03:15,10.374s,PASSED
+dump = admin_CreateID,,,,2022-07-01 19:03:05,2022-07-01 19:03:05,0.001s,PASSED
+"for ([i = 0, i < 9, (i++)])",,,,2022-07-01 19:03:05,2022-07-01 19:03:15,9.596s,PASSED
+admin_CreateID = dump,,,,2022-07-01 19:03:15,2022-07-01 19:03:15,0.000s,PASSED
+println(admin_CreateID),,,,2022-07-01 19:03:15,2022-07-01 19:03:15,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_City/TC_Delete,,,,2022-07-01 19:03:15,2022-07-01 19:03:18,3.802s,PASSED
+dump = admin_CreateID,,,,2022-07-01 19:03:15,2022-07-01 19:03:15,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-01 19:03:15,2022-07-01 19:03:18,3.139s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get All Complex,,,,2022-07-01 19:03:19,2022-07-01 19:03:22,3.084s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-01 19:03:19,2022-07-01 19:03:22,2.434s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get One Complex,,,,2022-07-01 19:03:22,2022-07-01 19:03:26,4.459s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-01 19:03:22,2022-07-01 19:03:26,3.747s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Get Dropdown,,,,2022-07-01 19:03:26,2022-07-01 19:03:30,3.449s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-01 19:03:27,2022-07-01 19:03:30,2.745s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Create new Complex,,,,2022-07-01 19:03:30,2022-07-01 19:03:42,12.322s,PASSED
+"for ([i = 0, i < 7, (i++)])",,,,2022-07-01 19:03:30,2022-07-01 19:03:42,11.577s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-07-01 19:03:42,2022-07-01 19:03:42,0.001s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-07-01 19:03:42,2022-07-01 19:03:42,0.002s,PASSED
+value = id,,,,2022-07-01 19:03:42,2022-07-01 19:03:42,0.001s,PASSED
+admin_ComplexID = value,,,,2022-07-01 19:03:42,2022-07-01 19:03:42,0.001s,PASSED
+println(admin_ComplexID),,,,2022-07-01 19:03:42,2022-07-01 19:03:42,0.001s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Update Complex,,,,2022-07-01 19:03:42,2022-07-01 19:03:43,1.269s,ERROR
+dump = admin_ComplexID,,,,2022-07-01 19:03:43,2022-07-01 19:03:43,0.000s,PASSED
+"admin_complexName = ""Anggrek Permai""",,,,2022-07-01 19:03:43,2022-07-01 19:03:43,0.001s,PASSED
+"admin_complexDesc = ""ini default untuk test""",,,,2022-07-01 19:03:43,2022-07-01 19:03:43,0.000s,PASSED
+"admin_CityID = ""1""",,,,2022-07-01 19:03:43,2022-07-01 19:03:43,0.000s,PASSED
+"for ([i = 0, i < 7, (i++)])",,,,2022-07-01 19:03:43,2022-07-01 19:03:43,0.508s,ERROR
+,,,,,,,
+Test Cases/Admin/TS4_Complex/TC_Delete Complex,,,,2022-07-01 19:03:43,2022-07-01 19:03:47,3.837s,PASSED
+dump = admin_ComplexID,,,,2022-07-01 19:03:44,2022-07-01 19:03:44,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-01 19:03:44,2022-07-01 19:03:47,3.206s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetAlllBuilding,,,,2022-07-01 19:03:47,2022-07-01 19:03:50,3.386s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-01 19:03:48,2022-07-01 19:03:50,2.744s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_GetOneBuilding,,,,2022-07-01 19:03:51,2022-07-01 19:03:55,4.440s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-01 19:03:51,2022-07-01 19:03:55,3.741s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_Create Building,,,,2022-07-01 19:03:55,2022-07-01 19:04:06,10.996s,PASSED
+"admin_buildingComplexID = ""1""",,,,2022-07-01 19:03:56,2022-07-01 19:03:56,0.001s,PASSED
+"admin_buildingName = ""nama""",,,,2022-07-01 19:03:56,2022-07-01 19:03:56,0.000s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-07-01 19:03:56,2022-07-01 19:03:56,0.001s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-07-01 19:03:56,2022-07-01 19:03:56,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-01 19:03:56,2022-07-01 19:04:06,10.295s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_UpdateBuilding,,,,2022-07-01 19:04:06,2022-07-01 19:04:17,11.275s,FAILED
+"admin_buildingComplexID = ""1""",,,,2022-07-01 19:04:07,2022-07-01 19:04:07,0.001s,PASSED
+"admin_buildingName = ""Building Name""",,,,2022-07-01 19:04:07,2022-07-01 19:04:07,0.000s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-07-01 19:04:07,2022-07-01 19:04:07,0.001s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-07-01 19:04:07,2022-07-01 19:04:07,0.001s,PASSED
+dump = admin_BuildingID,,,,2022-07-01 19:04:07,2022-07-01 19:04:07,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-01 19:04:07,2022-07-01 19:04:17,10.548s,FAILED
+,,,,,,,
+Test Cases/Admin/TS2_Building Management/TC_Delete Building,,,,2022-07-01 19:04:17,2022-07-01 19:04:21,3.420s,PASSED
+dump = admin_BuildingID,,,,2022-07-01 19:04:18,2022-07-01 19:04:18,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-01 19:04:18,2022-07-01 19:04:21,2.720s,PASSED

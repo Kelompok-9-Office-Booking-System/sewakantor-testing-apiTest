@@ -13,48 +13,70 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;Tempo Scan Tower&quot;,
-      &quot;type&quot;: &quot;text&quot;,
-      &quot;contentType&quot;: &quot;&quot;
-    },
-    {
-      &quot;name&quot;: &quot;description&quot;,
-      &quot;value&quot;: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit a sem sit amet tincidunt. Donec sit amet leo sit amet urna viverra sagittis.&quot;,
-      &quot;type&quot;: &quot;text&quot;,
-      &quot;contentType&quot;: &quot;&quot;
-    },
-    {
-      &quot;name&quot;: &quot;address&quot;,
-      &quot;value&quot;: &quot;Jl. HR. Rasuna Said Kav. 3-4 Tempo Scan Tower 32nd floor, Jakarta, 12950&quot;,
-      &quot;type&quot;: &quot;text&quot;,
-      &quot;contentType&quot;: &quot;&quot;
-    },
-    {
-      &quot;name&quot;: &quot;complexId&quot;,
-      &quot;value&quot;: &quot;1&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;value&quot;: &quot;${name}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
       &quot;name&quot;: &quot;images&quot;,
-      &quot;type&quot;: &quot;file&quot;,
+      &quot;value&quot;: &quot;C:\\Users\\user\\Downloads\\whatsapp.png&quot;,
+      &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
-      &quot;name&quot;: &quot;facilities&quot;,
-      &quot;value&quot;: &quot;1&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;name&quot;: &quot;buildingId&quot;,
+      &quot;value&quot;: &quot;${buildingID}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
     {
-      &quot;name&quot;: &quot;facilities&quot;,
-      &quot;value&quot;: &quot;2&quot;,
-      &quot;type&quot;: &quot;text&quot;,
+      &quot;name&quot;: &quot;capacity&quot;,
+      &quot;value&quot;: &quot;${capacity}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;description&quot;,
+      &quot;value&quot;: &quot;${desc}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;height&quot;,
+      &quot;value&quot;: &quot;${height}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;length&quot;,
+      &quot;value&quot;: &quot;${length}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;width&quot;,
+      &quot;value&quot;: &quot;${width}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
   ]
 }</httpBodyContent>
    <httpBodyType>form-data</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <webElementGuid>55d056da-c21f-484f-a43c-08b1fbf237df</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer ${GlobalVariable.token}</value>
+      <webElementGuid>c1ee3fa5-2701-4f19-816f-b284fe143c10</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.3.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
@@ -75,5 +97,67 @@
       <masked>false</masked>
       <name>url</name>
    </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_unitName</defaultValue>
+      <description></description>
+      <id>e002900c-04b8-486e-b399-0c903b66afbb</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_unitDesc</defaultValue>
+      <description></description>
+      <id>2be0cc74-f932-43c5-adf8-ba2118e97557</id>
+      <masked>false</masked>
+      <name>desc</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_UnitBuildingID</defaultValue>
+      <description></description>
+      <id>92008791-3b0a-4e15-95ee-156bca296b11</id>
+      <masked>false</masked>
+      <name>buildingID</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_unitCapacity</defaultValue>
+      <description></description>
+      <id>7a39c95b-33ad-4115-bdf0-d3c7ba199144</id>
+      <masked>false</masked>
+      <name>capacity</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_unitLength</defaultValue>
+      <description></description>
+      <id>9c51d9ee-2fdd-4c46-9a80-812d329d3894</id>
+      <masked>false</masked>
+      <name>length</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_unitWidth</defaultValue>
+      <description></description>
+      <id>5722f309-6d97-4e02-ae7b-59d29950f459</id>
+      <masked>false</masked>
+      <name>width</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_unitHeight</defaultValue>
+      <description></description>
+      <id>738ccf89-aea0-46cf-a9f5-072b4965b7e9</id>
+      <masked>false</masked>
+      <name>height</name>
+   </variables>
+   <verificationScript>import static org.assertj.core.api.Assertions.*
+
+import com.kms.katalon.core.testobject.RequestObject
+import com.kms.katalon.core.testobject.ResponseObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webservice.verification.WSResponseManager
+
+import groovy.json.JsonSlurper
+import internal.GlobalVariable as GlobalVariable
+
+RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
+
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
