@@ -41,7 +41,7 @@ for(i=0;i<3;i++)
 		
 		GlobalVariable.admin_BuildingID=dump
 	}
-	/*
+	
 	else
 	{
 		rslt = WS.sendRequest(findTestObject('Postman/Admin/Building/Delete'))
@@ -50,7 +50,6 @@ for(i=0;i<3;i++)
 		
 		WS.verifyElementPropertyValue(rslt , 'message', 'building deleted successfully')
 	}
-	*/
 	
 }
 

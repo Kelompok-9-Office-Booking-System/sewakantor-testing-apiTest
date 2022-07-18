@@ -56,7 +56,7 @@ for(int i=0;i<8;i++)
 		
 		WS.verifyResponseStatusCode(rslt, 400)
 		
-		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+		WS.verifyElementPropertyValue(rslt, 'message', 'name must not be empty')
 	}
 	else if(i==3)
 	{		
@@ -75,7 +75,7 @@ for(int i=0;i<8;i++)
 		
 		WS.verifyResponseStatusCode(rslt, 400)
 		
-		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+		WS.verifyElementPropertyValue(rslt, 'message', 'description must not be empty')
 		GlobalVariable.admin_buildingDesc="Building Description"
 	}
 	else if(i==5)
@@ -85,7 +85,7 @@ for(int i=0;i<8;i++)
 		
 		WS.verifyResponseStatusCode(rslt, 400)
 		
-		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+		WS.verifyElementPropertyValue(rslt, 'message', 'address must not be empty')
 		GlobalVariable.admin_buildingAddress="Building Address"
 	}
 	
@@ -96,7 +96,7 @@ for(int i=0;i<8;i++)
 		
 		WS.verifyResponseStatusCode(rslt, 400)
 		
-		//WS.verifyElementPropertyValue(rslt, 'error', 'city id must not be null')
+		WS.verifyElementPropertyValue(rslt, 'message', 'complex id must not be null')
 	}
 	
 	else if(i==7)
@@ -110,7 +110,7 @@ for(int i=0;i<8;i++)
 		WS.verifyElementPropertyValue(rslt, 'message', 'complex not found')
 		GlobalVariable.admin_buildingComplexID="1"
 	}
-	/*
+
 	if(i==8)
 	{
 		GlobalVariable.admin_buildingComplexID="1"
@@ -123,5 +123,5 @@ for(int i=0;i<8;i++)
 		WS.verifyResponseStatusCode(rslt, 200)
 		
 		WS.verifyElementPropertyValue(rslt, 'message', 'building saved successfully')
-	}*/
+	}
 }

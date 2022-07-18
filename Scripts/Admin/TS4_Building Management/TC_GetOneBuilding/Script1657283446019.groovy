@@ -64,7 +64,7 @@ for(int i=0;i<4;i++)
 		WS.verifyResponseStatusCode(rslt, 400)
 		
 		'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
-		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+		WS.verifyElementPropertyValue(rslt, 'status', 'BAD_REQUEST')
 	}
 	
 	

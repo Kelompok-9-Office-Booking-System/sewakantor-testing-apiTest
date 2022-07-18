@@ -1,0 +1,32 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+BuildingRun,,,,2022-07-18 19:32:29,2022-07-18 19:33:55,1m - 25.947s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Building Management/TC_GetAlllBuilding,,,,2022-07-18 19:32:30,2022-07-18 19:32:45,15.253s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-18 19:32:31,2022-07-18 19:32:45,14.321s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Building Management/TC_GetOneBuilding,,,,2022-07-18 19:32:45,2022-07-18 19:32:56,11.324s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-18 19:32:46,2022-07-18 19:32:56,10.592s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Building Management/TC_Create Building,,,,2022-07-18 19:32:56,2022-07-18 19:33:19,22.818s,PASSED
+"admin_buildingComplexID = ""1""",,,,2022-07-18 19:32:57,2022-07-18 19:32:57,0.001s,PASSED
+"admin_buildingName = ""nama""",,,,2022-07-18 19:32:57,2022-07-18 19:32:57,0.000s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-07-18 19:32:57,2022-07-18 19:32:57,0.000s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-07-18 19:32:57,2022-07-18 19:32:57,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-18 19:32:57,2022-07-18 19:33:19,22.050s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-07-18 19:33:19,2022-07-18 19:33:19,0.000s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-07-18 19:33:19,2022-07-18 19:33:19,0.000s,PASSED
+value = id,,,,2022-07-18 19:33:19,2022-07-18 19:33:19,0.000s,PASSED
+admin_BuildingID = value,,,,2022-07-18 19:33:19,2022-07-18 19:33:19,0.000s,PASSED
+println(admin_BuildingID),,,,2022-07-18 19:33:19,2022-07-18 19:33:19,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Building Management/TC_UpdateBuilding,,,,2022-07-18 19:33:19,2022-07-18 19:33:47,27.513s,PASSED
+"admin_buildingComplexID = ""1""",,,,2022-07-18 19:33:20,2022-07-18 19:33:20,0.000s,PASSED
+"admin_buildingName = ""Building Name""",,,,2022-07-18 19:33:20,2022-07-18 19:33:20,0.000s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-07-18 19:33:20,2022-07-18 19:33:20,0.000s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-07-18 19:33:20,2022-07-18 19:33:20,0.000s,PASSED
+dump = admin_BuildingID,,,,2022-07-18 19:33:20,2022-07-18 19:33:20,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-18 19:33:20,2022-07-18 19:33:47,26.799s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Building Management/TC_Delete Building,,,,2022-07-18 19:33:47,2022-07-18 19:33:55,8.420s,PASSED
+dump = admin_BuildingID,,,,2022-07-18 19:33:47,2022-07-18 19:33:47,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-18 19:33:47,2022-07-18 19:33:55,7.791s,PASSED

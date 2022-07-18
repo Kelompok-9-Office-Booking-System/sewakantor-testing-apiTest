@@ -1,0 +1,34 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+BuildingRun,,,,2022-07-18 19:30:10,2022-07-18 19:31:26,1m - 15.358s,FAILED
+,,,,,,,
+Test Cases/Admin/TS4_Building Management/TC_GetAlllBuilding,,,,2022-07-18 19:30:11,2022-07-18 19:30:23,12.264s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-18 19:30:12,2022-07-18 19:30:23,11.283s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Building Management/TC_GetOneBuilding,,,,2022-07-18 19:30:23,2022-07-18 19:30:33,10.383s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-18 19:30:24,2022-07-18 19:30:33,9.672s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Building Management/TC_Create Building,,,,2022-07-18 19:30:33,2022-07-18 19:30:56,22.745s,PASSED
+"admin_buildingComplexID = ""1""",,,,2022-07-18 19:30:34,2022-07-18 19:30:34,0.001s,PASSED
+"admin_buildingName = ""nama""",,,,2022-07-18 19:30:34,2022-07-18 19:30:34,0.000s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-07-18 19:30:34,2022-07-18 19:30:34,0.000s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-07-18 19:30:34,2022-07-18 19:30:34,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-18 19:30:34,2022-07-18 19:30:54,20.273s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-07-18 19:30:54,2022-07-18 19:30:54,0.000s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-07-18 19:30:54,2022-07-18 19:30:54,0.000s,PASSED
+value = id,,,,2022-07-18 19:30:54,2022-07-18 19:30:54,0.000s,PASSED
+admin_BuildingID = value,,,,2022-07-18 19:30:54,2022-07-18 19:30:55,0.012s,PASSED
+println(admin_BuildingID),,,,2022-07-18 19:30:55,2022-07-18 19:30:55,0.000s,PASSED
+"rslt = sendRequest(findTestObject(""Postman/Admin/Building/Delete""))",,,,2022-07-18 19:30:55,2022-07-18 19:30:56,1.632s,PASSED
+"verifyResponseStatusCode(rslt, 200)",,,,2022-07-18 19:30:56,2022-07-18 19:30:56,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Building Management/TC_UpdateBuilding,,,,2022-07-18 19:30:56,2022-07-18 19:31:18,21.941s,FAILED
+"admin_buildingComplexID = ""1""",,,,2022-07-18 19:30:57,2022-07-18 19:30:57,0.001s,PASSED
+"admin_buildingName = ""Building Name""",,,,2022-07-18 19:30:57,2022-07-18 19:30:57,0.000s,PASSED
+"admin_buildingAddress = ""jalan""",,,,2022-07-18 19:30:57,2022-07-18 19:30:57,0.002s,PASSED
+"admin_buildingDesc = ""desc""",,,,2022-07-18 19:30:57,2022-07-18 19:30:57,0.000s,PASSED
+dump = admin_BuildingID,,,,2022-07-18 19:30:57,2022-07-18 19:30:57,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-18 19:30:57,2022-07-18 19:31:18,21.195s,FAILED
+,,,,,,,
+Test Cases/Admin/TS4_Building Management/TC_Delete Building,,,,2022-07-18 19:31:18,2022-07-18 19:31:26,7.427s,FAILED
+dump = admin_BuildingID,,,,2022-07-18 19:31:19,2022-07-18 19:31:19,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-18 19:31:19,2022-07-18 19:31:26,6.833s,FAILED

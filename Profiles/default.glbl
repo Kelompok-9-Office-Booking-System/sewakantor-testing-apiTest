@@ -51,7 +51,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>3</initValue>
+      <initValue>9</initValue>
       <name>admin_BuildingID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
