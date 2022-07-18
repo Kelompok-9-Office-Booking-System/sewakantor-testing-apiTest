@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ComplexRun" time="54.188" tests="6" failures="3" errors="0">
+   <testsuite name="ComplexRun" tests="6" failures="3" errors="0" time="54.188" skipped="0" timestamp="2022-07-18 18:47:16" hostname="user - izzazainf" id="Test Suites/ComplexRun">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\git\\sewakantor-testing-apiTest\\Reports\\20220718_184714\\ComplexRun\\20220718_184714"/>
+         <property name="logFiles" value="C:\\Users\\user\\git\\sewakantor-testing-apiTest\\Reports\\20220718_184714\\ComplexRun\\20220718_184714\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - izzazainf"/>
+         <property name="hostAddress" value="192.168.43.13"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Get All Complex" time="7.387" classname="Test Cases/Admin/TS3_Complex/TC_Get All Complex" status="PASSED">
+         <system-out><![CDATA[2022-07-18 18:47:16 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_Complex/TC_Get All Complex: Test Cases/Admin/TS3_Complex/TC_Get All Complex
+
+2022-07-18 18:47:17 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-07-18 18:47:17 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 18:47:17 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 18:47:18 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get All")): Send request successfully
+
+2022-07-18 18:47:20 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\0.har
+
+2022-07-18 18:47:20 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 18:47:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:20 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:20 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-18 18:47:20 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:47:20 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 18:47:21 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 18:47:21 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 18:47:21 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 18:47:22 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\1.har
+
+2022-07-18 18:47:22 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:22 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 18:47:22 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 18:47:22 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 18:47:22 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 18:47:22 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 18:47:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:47:22 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get All")): Send request successfully
+
+2022-07-18 18:47:24 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\2.har
+
+2022-07-18 18:47:24 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:24 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 18:47:24 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:24 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list complex"): Verify element property value successfully
+
+2022-07-18 18:47:24 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Get Dropdown" time="4.834" classname="Test Cases/Admin/TS3_Complex/TC_Get Dropdown" status="PASSED">
+         <system-out><![CDATA[2022-07-18 18:47:24 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_Complex/TC_Get Dropdown: Test Cases/Admin/TS3_Complex/TC_Get Dropdown
+
+2022-07-18 18:47:24 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-07-18 18:47:24 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 18:47:24 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 18:47:24 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Dropdown")): Send request successfully
+
+2022-07-18 18:47:25 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\3.har
+
+2022-07-18 18:47:25 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 18:47:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:25 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:25 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-18 18:47:25 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:47:25 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 18:47:25 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 18:47:25 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 18:47:25 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 18:47:27 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\4.har
+
+2022-07-18 18:47:27 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:27 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 18:47:27 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 18:47:27 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 18:47:27 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 18:47:27 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 18:47:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:47:27 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Dropdown")): Send request successfully
+
+2022-07-18 18:47:29 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\5.har
+
+2022-07-18 18:47:29 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:29 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 18:47:29 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:29 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "dropdown complex"): Verify element property value successfully
+
+2022-07-18 18:47:29 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Get One Complex" time="7.561" classname="Test Cases/Admin/TS3_Complex/TC_Get One Complex" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/TS3_Complex/TC_Get One Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: &quot;satu&quot;'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Get One Complex.run(TC_Get One Complex:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)
+"/>
+         <system-out><![CDATA[2022-07-18 18:47:29 - [TEST_CASE][FAILED] - Test Cases/Admin/TS3_Complex/TC_Get One Complex: Test Cases/Admin/TS3_Complex/TC_Get One Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "satu"'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Get One Complex.run(TC_Get One Complex:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)
+
+
+2022-07-18 18:47:29 - [TEST_STEP][FAILED] - for ([i = 0, i < 4, (i++)]): Expected element property value 'Malformed request' is not equal with actual property value 'Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "satu"'
+
+2022-07-18 18:47:29 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 18:47:29 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 18:47:29 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-18 18:47:30 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\6.har
+
+2022-07-18 18:47:30 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 18:47:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:30 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:30 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-18 18:47:30 - [TEST_STEP][PASSED] - admin_ComplexID = 1: null
+
+2022-07-18 18:47:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:47:30 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 18:47:30 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 18:47:30 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 18:47:30 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 18:47:32 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\7.har
+
+2022-07-18 18:47:32 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:32 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 18:47:32 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 18:47:32 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 18:47:32 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 18:47:32 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 18:47:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:47:32 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-18 18:47:33 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\8.har
+
+2022-07-18 18:47:33 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:33 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 18:47:33 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:33 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list complex"): Verify element property value successfully
+
+2022-07-18 18:47:33 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 18:47:33 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:33 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:33 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-18 18:47:33 - [TEST_STEP][PASSED] - admin_ComplexID = notFound: null
+
+2022-07-18 18:47:33 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-18 18:47:35 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\9.har
+
+2022-07-18 18:47:35 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:35 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-18 18:47:35 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:35 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Verify element property value successfully
+
+2022-07-18 18:47:35 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 18:47:35 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:35 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:35 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 18:47:35 - [TEST_STEP][FAILED] - else: Expected element property value 'Malformed request' is not equal with actual property value 'Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "satu"'
+
+2022-07-18 18:47:35 - [TEST_STEP][PASSED] - admin_ComplexID = string: null
+
+2022-07-18 18:47:35 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-18 18:47:36 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\10.har
+
+2022-07-18 18:47:36 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:36 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-18 18:47:36 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:36 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Expected element property value 'Malformed request' is not equal with actual property value 'Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "satu"'
+
+2022-07-18 18:47:36 - [MESSAGE][FAILED] - Expected element property value 'Malformed request' is not equal with actual property value 'Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "satu"']]></system-out>
+         <system-err><![CDATA[2022-07-18 18:47:29 - [TEST_CASE][FAILED] - Test Cases/Admin/TS3_Complex/TC_Get One Complex: Test Cases/Admin/TS3_Complex/TC_Get One Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "satu"'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Get One Complex.run(TC_Get One Complex:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Create new Complex" time="13.964" classname="Test Cases/Admin/TS3_Complex/TC_Create new Complex" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/TS3_Complex/TC_Create new Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Create new Complex.run(TC_Create new Complex:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)
+"/>
+         <system-out><![CDATA[2022-07-18 18:47:36 - [TEST_CASE][FAILED] - Test Cases/Admin/TS3_Complex/TC_Create new Complex: Test Cases/Admin/TS3_Complex/TC_Create new Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Create new Complex.run(TC_Create new Complex:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)
+
+
+2022-07-18 18:47:37 - [TEST_STEP][FAILED] - for ([i = 0, i < 7, (i++)]): null
+
+2022-07-18 18:47:37 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 18:47:37 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 18:47:37 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-18 18:47:38 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\11.har
+
+2022-07-18 18:47:38 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:38 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 18:47:38 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:38 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:38 - [TEST_STEP][FAILED] - else if (i == 1): Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+
+2022-07-18 18:47:38 - [TEST_STEP][PASSED] - admin_complexName = "": null
+
+2022-07-18 18:47:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:47:38 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 18:47:38 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 18:47:38 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 18:47:38 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 18:47:40 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\12.har
+
+2022-07-18 18:47:40 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:40 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 18:47:40 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 18:47:40 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 18:47:40 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 18:47:40 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 18:47:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:47:40 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-18 18:47:42 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\13.har
+
+2022-07-18 18:47:42 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:42 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-18 18:47:42 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:42 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+
+2022-07-18 18:47:42 - [MESSAGE][FAILED] - Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+
+2022-07-18 18:47:42 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:42 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:42 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 18:47:42 - [TEST_STEP][PASSED] - admin_complexName = "Anggrek Permai": null
+
+2022-07-18 18:47:42 - [TEST_STEP][PASSED] - admin_complexDesc = "ini default untuk test": null
+
+2022-07-18 18:47:42 - [TEST_STEP][PASSED] - admin_CityID = "1": null
+
+2022-07-18 18:47:42 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-18 18:47:43 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\14.har
+
+2022-07-18 18:47:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:43 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-18 18:47:43 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:43 - [TEST_STEP][PASSED] - admin_complexName = "Artapura": null
+
+2022-07-18 18:47:43 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:43 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:43 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 18:47:43 - [TEST_STEP][FAILED] - else if (i == 3): null
+
+2022-07-18 18:47:43 - [TEST_STEP][PASSED] - admin_complexDesc = "": null
+
+2022-07-18 18:47:43 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-18 18:47:45 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\15.har
+
+2022-07-18 18:47:45 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-18 18:47:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:45 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Expected element property value 'Malformed request' is not equal with actual property value 'description must not be empty'
+
+2022-07-18 18:47:45 - [MESSAGE][FAILED] - Expected element property value 'Malformed request' is not equal with actual property value 'description must not be empty'
+
+2022-07-18 18:47:45 - [TEST_STEP][PASSED] - admin_complexDesc = "Lorem ipsum dolor sit amet": null
+
+2022-07-18 18:47:45 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:45 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:45 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 18:47:45 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 18:47:45 - [TEST_STEP][FAILED] - else if (i == 4): Expected element property value 'Malformed request' is not equal with actual property value 'city id must not be null'
+
+2022-07-18 18:47:45 - [TEST_STEP][PASSED] - admin_CityID = "": null
+
+2022-07-18 18:47:45 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-18 18:47:47 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\16.har
+
+2022-07-18 18:47:47 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:47 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-18 18:47:47 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:47 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Expected element property value 'Malformed request' is not equal with actual property value 'city id must not be null'
+
+2022-07-18 18:47:47 - [MESSAGE][FAILED] - Expected element property value 'Malformed request' is not equal with actual property value 'city id must not be null'
+
+2022-07-18 18:47:47 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:47 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:47 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 18:47:47 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 18:47:47 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-18 18:47:47 - [TEST_STEP][PASSED] - else if (i == 5): Verify element property value successfully
+
+2022-07-18 18:47:47 - [TEST_STEP][PASSED] - admin_CityID = "0": null
+
+2022-07-18 18:47:47 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-18 18:47:48 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\17.har
+
+2022-07-18 18:47:48 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:48 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-18 18:47:48 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:48 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city not found"): Verify element property value successfully
+
+2022-07-18 18:47:49 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - else if (i == 6): Verify element property value successfully
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - admin_complexName = "Artapura": null
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - admin_complexDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsu": null
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - admin_CityID = "1": null
+
+2022-07-18 18:47:49 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-18 18:47:50 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\18.har
+
+2022-07-18 18:47:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 18:47:50 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:50 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex saved successfully"): Verify element property value successfully
+
+2022-07-18 18:47:50 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 18:47:50 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 18:47:50 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 18:47:50 - [TEST_STEP][PASSED] - value = id: null
+
+2022-07-18 18:47:50 - [TEST_STEP][PASSED] - admin_ComplexID = value: null
+
+2022-07-18 18:47:50 - [TEST_STEP][PASSED] - println(admin_ComplexID): null]]></system-out>
+         <system-err><![CDATA[2022-07-18 18:47:36 - [TEST_CASE][FAILED] - Test Cases/Admin/TS3_Complex/TC_Create new Complex: Test Cases/Admin/TS3_Complex/TC_Create new Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Create new Complex.run(TC_Create new Complex:39)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Update Complex" time="14.093" classname="Test Cases/Admin/TS3_Complex/TC_Update Complex" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Admin/TS3_Complex/TC_Update Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Update Complex.run(TC_Update Complex:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)
+"/>
+         <system-out><![CDATA[2022-07-18 18:47:50 - [TEST_CASE][FAILED] - Test Cases/Admin/TS3_Complex/TC_Update Complex: Test Cases/Admin/TS3_Complex/TC_Update Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Update Complex.run(TC_Update Complex:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)
+
+
+2022-07-18 18:47:51 - [TEST_STEP][PASSED] - dump = admin_ComplexID: null
+
+2022-07-18 18:47:51 - [TEST_STEP][PASSED] - admin_complexName = "Anggrek Permai": null
+
+2022-07-18 18:47:51 - [TEST_STEP][PASSED] - admin_complexDesc = "ini default untuk test": null
+
+2022-07-18 18:47:51 - [TEST_STEP][PASSED] - admin_CityID = "1": null
+
+2022-07-18 18:47:51 - [TEST_STEP][FAILED] - for ([i = 0, i < 7, (i++)]): null
+
+2022-07-18 18:47:51 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 18:47:51 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 18:47:51 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-18 18:47:52 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\19.har
+
+2022-07-18 18:47:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 18:47:52 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:52 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:52 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:52 - [TEST_STEP][PASSED] - admin_ComplexID = "0": null
+
+2022-07-18 18:47:52 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:47:52 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 18:47:52 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 18:47:52 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 18:47:52 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 18:47:54 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\20.har
+
+2022-07-18 18:47:54 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:54 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 18:47:54 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 18:47:54 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 18:47:54 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 18:47:54 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 18:47:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:47:54 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-18 18:47:56 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\21.har
+
+2022-07-18 18:47:56 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-18 18:47:56 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:56 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Verify element property value successfully
+
+2022-07-18 18:47:56 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 18:47:56 - [TEST_STEP][PASSED] - admin_ComplexID = dump: null
+
+2022-07-18 18:47:56 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:56 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:56 - [TEST_STEP][FAILED] - else if (i == 2): Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+
+2022-07-18 18:47:56 - [TEST_STEP][PASSED] - admin_complexName = "": null
+
+2022-07-18 18:47:56 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-18 18:47:58 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\22.har
+
+2022-07-18 18:47:58 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-18 18:47:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:58 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+
+2022-07-18 18:47:58 - [MESSAGE][FAILED] - Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+
+2022-07-18 18:47:58 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:58 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:58 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 18:47:58 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 18:47:58 - [TEST_STEP][PASSED] - admin_complexName = "Anggrek Permai": null
+
+2022-07-18 18:47:58 - [TEST_STEP][PASSED] - admin_complexDesc = "ini default untuk test": null
+
+2022-07-18 18:47:58 - [TEST_STEP][PASSED] - admin_CityID = "1": null
+
+2022-07-18 18:47:58 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-18 18:47:59 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\23.har
+
+2022-07-18 18:47:59 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:47:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-18 18:47:59 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:47:59 - [TEST_STEP][PASSED] - admin_complexName = "Artapura": null
+
+2022-07-18 18:47:59 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:47:59 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:47:59 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 18:47:59 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 18:47:59 - [TEST_STEP][FAILED] - else if (i == 4): null
+
+2022-07-18 18:47:59 - [TEST_STEP][PASSED] - admin_complexDesc = "": null
+
+2022-07-18 18:47:59 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-18 18:48:01 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\24.har
+
+2022-07-18 18:48:01 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:48:01 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-18 18:48:01 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:48:01 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Expected element property value 'Malformed request' is not equal with actual property value 'description must not be empty'
+
+2022-07-18 18:48:01 - [MESSAGE][FAILED] - Expected element property value 'Malformed request' is not equal with actual property value 'description must not be empty'
+
+2022-07-18 18:48:01 - [TEST_STEP][PASSED] - admin_complexDesc = "Lorem ipsum dolor sit amet": null
+
+2022-07-18 18:48:01 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:48:01 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:48:01 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 18:48:01 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 18:48:01 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-18 18:48:01 - [TEST_STEP][FAILED] - else if (i == 5): Expected element property value 'Malformed request' is not equal with actual property value 'city id must not be null'
+
+2022-07-18 18:48:01 - [TEST_STEP][PASSED] - admin_CityID = "": null
+
+2022-07-18 18:48:01 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-18 18:48:03 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\25.har
+
+2022-07-18 18:48:03 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:48:03 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-18 18:48:03 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:48:03 - [TEST_STEP][FAILED] - verifyElementPropertyValue(rslt, "message", "Malformed request"): Expected element property value 'Malformed request' is not equal with actual property value 'city id must not be null'
+
+2022-07-18 18:48:03 - [MESSAGE][FAILED] - Expected element property value 'Malformed request' is not equal with actual property value 'city id must not be null'
+
+2022-07-18 18:48:03 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:48:03 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:48:03 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 18:48:03 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 18:48:03 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-18 18:48:03 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-18 18:48:03 - [TEST_STEP][PASSED] - else if (i == 6): Verify element property value successfully
+
+2022-07-18 18:48:03 - [TEST_STEP][PASSED] - admin_CityID = "0": null
+
+2022-07-18 18:48:03 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-18 18:48:04 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\26.har
+
+2022-07-18 18:48:04 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:48:04 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-18 18:48:04 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:48:04 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city not found"): Verify element property value successfully
+
+2022-07-18 18:48:04 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[2022-07-18 18:47:50 - [TEST_CASE][FAILED] - Test Cases/Admin/TS3_Complex/TC_Update Complex: Test Cases/Admin/TS3_Complex/TC_Update Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'name must not be empty'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Update Complex.run(TC_Update Complex:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Delete Complex" time="6.045" classname="Test Cases/Admin/TS3_Complex/TC_Delete Complex" status="PASSED">
+         <system-out><![CDATA[2022-07-18 18:48:04 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_Complex/TC_Delete Complex: Test Cases/Admin/TS3_Complex/TC_Delete Complex
+
+2022-07-18 18:48:05 - [TEST_STEP][PASSED] - dump = admin_ComplexID: null
+
+2022-07-18 18:48:05 - [TEST_STEP][PASSED] - for ([i = 0, i < 3, (i++)]): Verify element property value successfully
+
+2022-07-18 18:48:05 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 18:48:05 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 18:48:05 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Delete")): Send request successfully
+
+2022-07-18 18:48:06 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\27.har
+
+2022-07-18 18:48:06 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:48:06 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 18:48:06 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:48:06 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:48:06 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:48:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:48:06 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 18:48:06 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 18:48:06 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 18:48:06 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 18:48:08 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\28.har
+
+2022-07-18 18:48:08 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:48:08 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 18:48:08 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 18:48:08 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 18:48:08 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 18:48:08 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 18:48:08 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 18:48:08 - [TEST_STEP][PASSED] - admin_ComplexID = "0": null
+
+2022-07-18 18:48:08 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Delete")): Send request successfully
+
+2022-07-18 18:48:09 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\29.har
+
+2022-07-18 18:48:09 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:48:09 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-18 18:48:09 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:48:09 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Verify element property value successfully
+
+2022-07-18 18:48:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 18:48:09 - [TEST_STEP][PASSED] - admin_ComplexID = dump: null
+
+2022-07-18 18:48:09 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 18:48:09 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 18:48:09 - [TEST_STEP][PASSED] - else: Verify element property value successfully
+
+2022-07-18 18:48:09 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Delete")): Send request successfully
+
+2022-07-18 18:48:10 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_184714\ComplexRun\20220718_184714\requests\main\30.har
+
+2022-07-18 18:48:10 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 18:48:10 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 18:48:10 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 18:48:10 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex deleted successfully"): Verify element property value successfully
+
+2022-07-18 18:48:10 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-18 18:47:16 - [TEST_SUITE][FAILED] - ComplexRun: Test Cases/Admin/TS3_Complex/TC_Get One Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "satu"'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Get One Complex.run(TC_Get One Complex:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-07-18 18:47:16 - [TEST_SUITE][FAILED] - ComplexRun: Test Cases/Admin/TS3_Complex/TC_Get One Complex FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected element property value 'Malformed request' is not equal with actual property value 'Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "satu"'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:39)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.doCall(VerifyElementPropertyValueKeyword.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword$_verifyElementPropertyValue_closure1.call(VerifyElementPropertyValueKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.verifyElementPropertyValue(VerifyElementPropertyValueKeyword.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementPropertyValueKeyword.execute(VerifyElementPropertyValueKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementPropertyValue(WSBuiltInKeywords.groovy:190)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementPropertyValue$1.call(Unknown Source)
+	at TC_Get One Complex.run(TC_Get One Complex:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:445)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:436)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:415)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:407)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:284)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1658144834417.run(TempTestSuite1658144834417.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

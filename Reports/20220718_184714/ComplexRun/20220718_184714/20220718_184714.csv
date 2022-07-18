@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ComplexRun,,,,2022-07-18 18:47:16,2022-07-18 18:48:10,54.188s,FAILED
+,,,,,,,
+Test Cases/Admin/TS3_Complex/TC_Get All Complex,,,,2022-07-18 18:47:16,2022-07-18 18:47:24,7.387s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-18 18:47:17,2022-07-18 18:47:24,7.021s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_Complex/TC_Get Dropdown,,,,2022-07-18 18:47:24,2022-07-18 18:47:29,4.834s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-18 18:47:24,2022-07-18 18:47:29,4.550s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_Complex/TC_Get One Complex,,,,2022-07-18 18:47:29,2022-07-18 18:47:36,7.561s,FAILED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-18 18:47:29,2022-07-18 18:47:36,7.232s,FAILED
+,,,,,,,
+Test Cases/Admin/TS3_Complex/TC_Create new Complex,,,,2022-07-18 18:47:36,2022-07-18 18:47:50,13.964s,FAILED
+"for ([i = 0, i < 7, (i++)])",,,,2022-07-18 18:47:37,2022-07-18 18:47:50,13.673s,FAILED
+slurper = new groovy.json.JsonSlurper(),,,,2022-07-18 18:47:50,2022-07-18 18:47:50,0.001s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-07-18 18:47:50,2022-07-18 18:47:50,0.000s,PASSED
+value = id,,,,2022-07-18 18:47:50,2022-07-18 18:47:50,0.001s,PASSED
+admin_ComplexID = value,,,,2022-07-18 18:47:50,2022-07-18 18:47:50,0.001s,PASSED
+println(admin_ComplexID),,,,2022-07-18 18:47:50,2022-07-18 18:47:50,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS3_Complex/TC_Update Complex,,,,2022-07-18 18:47:50,2022-07-18 18:48:04,14.093s,FAILED
+dump = admin_ComplexID,,,,2022-07-18 18:47:51,2022-07-18 18:47:51,0.001s,PASSED
+"admin_complexName = ""Anggrek Permai""",,,,2022-07-18 18:47:51,2022-07-18 18:47:51,0.000s,PASSED
+"admin_complexDesc = ""ini default untuk test""",,,,2022-07-18 18:47:51,2022-07-18 18:47:51,0.000s,PASSED
+"admin_CityID = ""1""",,,,2022-07-18 18:47:51,2022-07-18 18:47:51,0.000s,PASSED
+"for ([i = 0, i < 7, (i++)])",,,,2022-07-18 18:47:51,2022-07-18 18:48:04,13.738s,FAILED
+,,,,,,,
+Test Cases/Admin/TS3_Complex/TC_Delete Complex,,,,2022-07-18 18:48:04,2022-07-18 18:48:10,6.045s,PASSED
+dump = admin_ComplexID,,,,2022-07-18 18:48:05,2022-07-18 18:48:05,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-18 18:48:05,2022-07-18 18:48:10,5.789s,PASSED

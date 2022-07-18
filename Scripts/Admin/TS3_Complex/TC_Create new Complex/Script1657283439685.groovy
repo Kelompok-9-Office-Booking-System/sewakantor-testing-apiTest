@@ -36,7 +36,7 @@ for (i = 0; i < 7; i++) {
 
         WS.verifyResponseStatusCode(rslt, 400)
 
-        WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+        WS.verifyElementPropertyValue(rslt, 'message', 'name must not be empty')
     } 
     else if(i==2)
 	{
@@ -57,7 +57,7 @@ for (i = 0; i < 7; i++) {
 		
 		WS.verifyResponseStatusCode(rslt, 400)
 		
-		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+		WS.verifyElementPropertyValue(rslt, 'message', 'description must not be empty')
 		GlobalVariable.admin_complexDesc="Lorem ipsum dolor sit amet"
 	}
     //blank city
@@ -68,7 +68,7 @@ for (i = 0; i < 7; i++) {
 		
 		WS.verifyResponseStatusCode(rslt, 400)
 		
-		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+		WS.verifyElementPropertyValue(rslt, 'message', 'city id must not be null')
 	}
     //notfound city
     
