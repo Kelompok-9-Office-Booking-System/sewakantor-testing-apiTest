@@ -3,7 +3,7 @@
    <description></description>
    <name>updateOne</name>
    <tag></tag>
-   <elementGuidId>ad09a5e2-80af-4af6-99bc-d507c48216b9</elementGuidId>
+   <elementGuidId>35f8dce4-83a0-4d03-a357-b9b0ef1af169</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -17,7 +17,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>58db47a0-9cb7-46f5-92c9-4ecf4eb56cc2</webElementGuid>
+      <webElementGuid>655734dd-1b74-4c66-9ca9-08c4eb576e05</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -25,13 +25,13 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>73860846-e0a6-4453-b339-5287b572dd76</webElementGuid>
+      <webElementGuid>67adae90-409f-4677-82ca-5fac394385d6</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.3.5</katalonVersion>
+   <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${baseUrl}/api/v1/admin/units/:id?buildingId=27676890&amp;capacity=93633455&amp;description=ullamco officia&amp;height=44438266.45860165&amp;images=laboris magna Duis ut dolore&amp;images=consectetur commodo in reprehenderit&amp;length=44438266.45860165&amp;name=ullamco officia&amp;width=44438266.45860165</restUrl>
+   <restUrl>${baseUrl}/api/v1/admin/units/:id?buildingId=85232930&amp;capacity=21272792&amp;description=dolor laborum aute culpa&amp;height=44745261.073301375&amp;images=aliquip Lorem fugiat&amp;images=deserunt sunt laborum&amp;length=44745261.073301375&amp;name=dolor laborum aute culpa&amp;price=4260160&amp;priceType=dolor laborum aute culpa&amp;unitType=dolor laborum aute culpa&amp;width=44745261.073301375</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -43,7 +43,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>16ff7f27-41d1-4965-937a-f8cc21a2c445</id>
+      <id>f43d5002-c167-4c3c-8066-7b81e7843618</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>

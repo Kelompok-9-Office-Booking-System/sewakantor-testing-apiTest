@@ -3,7 +3,7 @@
    <description></description>
    <name>createOne</name>
    <tag></tag>
-   <elementGuidId>aa25970e-3a33-4ea3-a9fc-4509558ec77b</elementGuidId>
+   <elementGuidId>bb247327-ae9a-4cc5-be27-d1fe42324447</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -17,7 +17,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>a5e07fed-3640-4e1c-ad9c-0d69cbcd8d13</webElementGuid>
+      <webElementGuid>6cc31f4d-b219-4c40-9d27-69a87a59b2e4</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -25,13 +25,13 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>c0bfc502-7722-47af-b219-f782b3e71dc3</webElementGuid>
+      <webElementGuid>09c87540-f00c-4636-9bd0-dd11e48965f7</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.3.5</katalonVersion>
+   <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${baseUrl}/api/v1/admin/buildings?address=ullamco officia&amp;complexId=27676890&amp;description=ullamco officia&amp;facilities=98073013&amp;facilities=66018847&amp;images=laboris magna Duis ut dolore&amp;images=consectetur commodo in reprehenderit&amp;name=ullamco officia</restUrl>
+   <restUrl>${baseUrl}/api/v1/admin/buildings?address=&amp;complexId=85232930&amp;description=dolor laborum aute culpa&amp;facilities=27468036&amp;facilities=62847504&amp;images=aliquip Lorem fugiat&amp;images=deserunt sunt laborum&amp;name=dolor laborum aute culpa</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -43,7 +43,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>5b5c9664-4964-4868-8362-4903d190def3</id>
+      <id>04992f96-8831-4f11-874a-faf1151da0c3</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>

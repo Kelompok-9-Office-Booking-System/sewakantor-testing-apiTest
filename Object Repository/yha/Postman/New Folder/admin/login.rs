@@ -3,14 +3,14 @@
    <description></description>
    <name>login</name>
    <tag></tag>
-   <elementGuidId>b83e2a80-9c97-4037-873e-6b887552b80f</elementGuidId>
+   <elementGuidId>5b8d6c2e-59e7-4a24-8134-80b454dd33cb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;password\&quot;: \&quot;labore ut ipsu\&quot;,\n  \&quot;username\&quot;: \&quot;ad anim\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;password\&quot;: \&quot;mollit ullamco cupidatat Excepteur\&quot;,\n  \&quot;username\&quot;: \&quot;ea\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,7 +21,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>9616676d-43c8-4992-b8d9-439b7ec45b41</webElementGuid>
+      <webElementGuid>38f82235-c196-4c73-9e4f-044493369539</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>391c7175-8682-4c12-bc4a-13f7c94cfc98</webElementGuid>
+      <webElementGuid>f18540c6-8f65-43f6-a661-d053306d38fe</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -37,9 +37,9 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>633ee7fb-849c-4729-b2cd-77ef4cd94757</webElementGuid>
+      <webElementGuid>458856f6-3ab7-4d9d-8296-f7173b0fa047</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.3.5</katalonVersion>
+   <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
@@ -55,7 +55,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>c391f1da-4f5a-4d43-8771-84c3c11a1907</id>
+      <id>54b221d5-9734-46ee-8b6e-6a57f5e7582a</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>

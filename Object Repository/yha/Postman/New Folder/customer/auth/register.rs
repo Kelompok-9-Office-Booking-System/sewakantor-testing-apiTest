@@ -3,14 +3,14 @@
    <description></description>
    <name>register</name>
    <tag></tag>
-   <elementGuidId>8d192d85-a2dc-4b58-940c-f85891822ef4</elementGuidId>
+   <elementGuidId>35f3cdb8-408d-48d6-9b08-a78ffa9a55d8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;email\&quot;: \&quot;SoZF497@tC\&quot;,\n  \&quot;firstName\&quot;: \&quot;es\&quot;,\n  \&quot;password\&quot;: \&quot;aliquip sit minim Ut pariatur\&quot;,\n  \&quot;lastName\&quot;: \&quot;commodo amet qui ipsum\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;email\&quot;: \&quot;ti~xDV`4FIC@r0mIfuW\&quot;,\n  \&quot;firstName\&quot;: \&quot;ea dolor Excepteur ad\&quot;,\n  \&quot;password\&quot;: \&quot;exercitation tempor\&quot;,\n  \&quot;lastName\&quot;: \&quot;dolor ea amet\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,7 +21,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>0ffb05f7-e267-41b8-9f03-b37d03a5900e</webElementGuid>
+      <webElementGuid>5e16ff1f-3c51-4b6b-ba2d-5ee4fa05f54e</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>51a05ed4-59d3-40d6-a075-8c2a5d49b813</webElementGuid>
+      <webElementGuid>9fb654cd-3278-434a-9749-9834cfc4af0e</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -37,9 +37,9 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>1129c9b8-07e0-4ac5-b5ab-6d7f0c3619d4</webElementGuid>
+      <webElementGuid>8e3fbd0c-0aa8-410f-88fa-cce2666939c2</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.3.5</katalonVersion>
+   <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
@@ -55,7 +55,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>5faf9c54-eb53-4204-971e-a6380845a379</id>
+      <id>cc497f97-ccc3-4ec1-adc3-d87276a75a18</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>

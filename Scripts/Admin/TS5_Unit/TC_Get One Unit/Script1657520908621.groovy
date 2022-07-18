@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+def dump=GlobalVariable.admin_UnitID
 for (int i = 0; i < 4; i++) {
     //no auth
     if (i == 0) {
@@ -28,7 +29,7 @@ for (int i = 0; i < 4; i++) {
         //invalidID
         //malformed
     } else if (i == 1) {
-        GlobalVariable.admin_UnitID = 1
+        GlobalVariable.admin_UnitID = dump
 
         WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -55,9 +56,11 @@ for (int i = 0; i < 4; i++) {
         WS.verifyResponseStatusCode(rslt, 400)
 
         'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
-        WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+        WS.verifyElementPropertyValue(rslt, 'status', 'BAD_REQUEST')
     }
 }
+
+GlobalVariable.admin_UnitID  = dump
 
 
 

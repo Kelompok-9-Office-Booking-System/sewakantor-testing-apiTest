@@ -3,7 +3,7 @@
    <description></description>
    <name>updateOne</name>
    <tag></tag>
-   <elementGuidId>7e4857e8-cc08-40c6-a13d-fb86f025a5ac</elementGuidId>
+   <elementGuidId>3e441732-da76-4875-8573-0d29920381f1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -21,7 +21,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>4e40a471-ad0d-45a0-83d8-82d715edef30</webElementGuid>
+      <webElementGuid>51254d3a-7b8b-4cd4-acf5-bc69c755f325</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/octet-stream</value>
-      <webElementGuid>ebb83f53-1c25-4f76-8397-e441e35ad0ec</webElementGuid>
+      <webElementGuid>4310e3a9-7e1b-47a3-b2de-bd2688ebe444</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -37,13 +37,13 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>0b136243-fe07-49c5-bbd9-ddb40bc7d313</webElementGuid>
+      <webElementGuid>8e3b6074-129a-4ac5-b35f-9374800c3507</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.3.5</katalonVersion>
+   <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${baseUrl}/api/v1/admin/complexes/:id?cityId=27676890&amp;description=ullamco officia&amp;name=ullamco officia</restUrl>
+   <restUrl>${baseUrl}/api/v1/admin/complexes/:id?cityId=85232930&amp;description=dolor laborum aute culpa&amp;name=dolor laborum aute culpa</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -55,7 +55,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>7d002693-ddbe-4198-8c51-b82774e06095</id>
+      <id>a3798ca0-f7f2-412c-a6de-8e11e14a5cc8</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>

@@ -3,7 +3,7 @@
    <description></description>
    <name>updateOne</name>
    <tag></tag>
-   <elementGuidId>6d62967b-364f-42db-b7a6-1fdc37b0d706</elementGuidId>
+   <elementGuidId>5c696fe4-0c2e-4332-8c58-06d7e1fe8741</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -17,7 +17,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>8a2daa02-95db-475a-9018-b0047638dd88</webElementGuid>
+      <webElementGuid>0210daa0-7059-4eb6-8037-8e1bbdcfc1cb</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -25,13 +25,13 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>2153c6ce-71c1-49e3-b793-8d75499b52b2</webElementGuid>
+      <webElementGuid>b1143ba8-2ae0-4183-bab3-7407245b4695</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.3.5</katalonVersion>
+   <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${baseUrl}/api/v1/admin/cities/:id?name=ullamco officia</restUrl>
+   <restUrl>${baseUrl}/api/v1/admin/cities/:id?name=dolor laborum aute culpa</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -43,7 +43,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>bf2e04ec-8019-49ea-bda0-58762249bb47</id>
+      <id>fec0cb23-6bb9-4b4e-ab33-0565f9fbb6a6</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>

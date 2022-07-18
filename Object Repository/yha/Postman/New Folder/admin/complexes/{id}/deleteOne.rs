@@ -3,7 +3,7 @@
    <description></description>
    <name>deleteOne</name>
    <tag></tag>
-   <elementGuidId>536be297-14ca-4387-a323-86e8e3facb44</elementGuidId>
+   <elementGuidId>df364369-8059-4c70-af65-5c930c2aa798</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -17,7 +17,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>309cf138-2aa6-4dac-8228-ff0083f3c431</webElementGuid>
+      <webElementGuid>1f73112f-5948-4b20-8ba6-70084190414e</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -25,9 +25,9 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>7c8be831-8127-4ce1-bea6-e89d58105a05</webElementGuid>
+      <webElementGuid>4b885f85-0b6d-450b-8724-f47956f0857d</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.3.5</katalonVersion>
+   <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
@@ -43,7 +43,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>1025fafb-0408-498e-85e0-e2b5bed7d3b6</id>
+      <id>936aabab-19f5-480b-86b1-09beec874a04</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>

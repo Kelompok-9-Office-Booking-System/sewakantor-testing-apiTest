@@ -3,7 +3,7 @@
    <description></description>
    <name>getOne</name>
    <tag></tag>
-   <elementGuidId>7fd12349-083a-437a-a09f-a6330d94093e</elementGuidId>
+   <elementGuidId>d3b8a1b3-97a8-4d92-b7d3-a7978ec2cc61</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -17,7 +17,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>3b099e0e-6897-4406-b5bb-c74ec75b8c3f</webElementGuid>
+      <webElementGuid>d97321ef-3526-4249-ae4c-9f683073bca4</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -25,9 +25,9 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>2913ee73-83bb-4200-9e46-96184255ddec</webElementGuid>
+      <webElementGuid>d26310c8-326d-42c1-831d-548662db174b</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.3.5</katalonVersion>
+   <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
@@ -43,7 +43,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>723cba0d-2200-4ef9-b09b-304c0b19bc4f</id>
+      <id>1250195f-611e-405d-bb0e-6b73b0ae9dc2</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>

@@ -32,7 +32,7 @@ for(i=0;i<16;i++)
 	//255 char name
 	else if(i==1)
 	{
-		WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
+		WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.CONTINUE_ON_FAILURE)
 		
 		GlobalVariable.admin_unitName=GlobalVariable.Char255
 		rslt = WS.sendRequest(findTestObject('Postman/Admin/Unit/Create One'))
@@ -40,7 +40,7 @@ for(i=0;i<16;i++)
 		WS.verifyResponseStatusCode(rslt, 200)
 		
 		WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
-		
+		def slurper = new groovy.json.JsonSlurper()
 		def result = slurper.parseText(rslt.getResponseBodyContent())
 		
 		def value = result.data.id
@@ -80,7 +80,7 @@ for(i=0;i<16;i++)
 			WS.verifyResponseStatusCode(rslt, 200)
 					
 			WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
-			
+			def slurper = new groovy.json.JsonSlurper()
 			def result = slurper.parseText(rslt.getResponseBodyContent())
 			
 			def value = result.data.id
@@ -120,7 +120,7 @@ for(i=0;i<16;i++)
 			WS.verifyResponseStatusCode(rslt, 200)
 						
 			WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
-			
+			def slurper = new groovy.json.JsonSlurper()
 			def result = slurper.parseText(rslt.getResponseBodyContent())
 			
 			def value = result.data.id
@@ -149,7 +149,7 @@ for(i=0;i<16;i++)
 							
 			WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
 			GlobalVariable.admin_unitCapacity="20"
-			
+			def slurper = new groovy.json.JsonSlurper()
 			def result = slurper.parseText(rslt.getResponseBodyContent())
 			
 			def value = result.data.id
@@ -167,7 +167,7 @@ for(i=0;i<16;i++)
 			WS.verifyResponseStatusCode(rslt, 200)
 								
 			WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
-			
+			def slurper = new groovy.json.JsonSlurper()
 			def result = slurper.parseText(rslt.getResponseBodyContent())
 			
 			def value = result.data.id
@@ -186,7 +186,7 @@ for(i=0;i<16;i++)
 								
 			WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
 			GlobalVariable.admin_unitHeight="2"
-			
+			def slurper = new groovy.json.JsonSlurper()
 			def result = slurper.parseText(rslt.getResponseBodyContent())
 			
 			def value = result.data.id
@@ -204,7 +204,7 @@ for(i=0;i<16;i++)
 			WS.verifyResponseStatusCode(rslt, 200)
 									
 			WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
-			
+			def slurper = new groovy.json.JsonSlurper()
 			def result = slurper.parseText(rslt.getResponseBodyContent())
 			
 			def value = result.data.id
@@ -223,7 +223,7 @@ for(i=0;i<16;i++)
 								
 			WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
 			GlobalVariable.admin_unitWidth="1"
-			
+			def slurper = new groovy.json.JsonSlurper()
 			def result = slurper.parseText(rslt.getResponseBodyContent())
 			
 			def value = result.data.id
@@ -241,7 +241,7 @@ for(i=0;i<16;i++)
 			WS.verifyResponseStatusCode(rslt, 200)
 									
 			WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
-			
+			def slurper = new groovy.json.JsonSlurper()
 			def result = slurper.parseText(rslt.getResponseBodyContent())
 			
 			def value = result.data.id
@@ -260,7 +260,7 @@ for(i=0;i<16;i++)
 								
 			WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
 			GlobalVariable.admin_unitLength="2"
-			
+			def slurper = new groovy.json.JsonSlurper()
 			def result = slurper.parseText(rslt.getResponseBodyContent())
 			
 			def value = result.data.id
@@ -277,7 +277,7 @@ for(i=0;i<16;i++)
 		WS.verifyResponseStatusCode(rslt, 200)
 		
 		WS.verifyElementPropertyValue(rslt, 'message', 'unit saved successfully')
-		
+		def slurper = new groovy.json.JsonSlurper()
 		def result = slurper.parseText(rslt.getResponseBodyContent())
 		
 		def value = result.data.id

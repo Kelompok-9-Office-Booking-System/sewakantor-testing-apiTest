@@ -58,6 +58,18 @@
       &quot;value&quot;: &quot;${width}&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;price&quot;,
+      &quot;value&quot;: &quot;${price}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;priceType&quot;,
+      &quot;value&quot;: &quot;${priceType}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
     }
   ]
 }</httpBodyContent>
@@ -145,6 +157,20 @@
       <id>738ccf89-aea0-46cf-a9f5-072b4965b7e9</id>
       <masked>false</masked>
       <name>height</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_unitPrice</defaultValue>
+      <description></description>
+      <id>bedd04bd-9940-4da3-b164-0a875d48abf2</id>
+      <masked>false</masked>
+      <name>price</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_unitPriceType</defaultValue>
+      <description></description>
+      <id>7aef1b94-c550-4d25-b377-0a19d1e86313</id>
+      <masked>false</masked>
+      <name>priceType</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

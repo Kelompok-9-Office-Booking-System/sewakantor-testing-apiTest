@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>getAll</name>
+   <name>updateOne</name>
    <tag></tag>
-   <elementGuidId>dbe0e502-b129-4209-b199-076f1ae6e59a</elementGuidId>
+   <elementGuidId>e4087977-5d18-4439-abc3-51ada68f0d65</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>3be1a66b-e0e9-4417-b2b4-83d11ce4d905</webElementGuid>
+      <webElementGuid>1e085e18-d860-4fee-bd1d-350c331b6ee1</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/octet-stream</value>
+      <webElementGuid>6d6be1ea-6994-412f-9051-6d58c7a10a89</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -25,13 +37,13 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>ea577e32-8a7c-443b-a416-e375e257e05c</webElementGuid>
+      <webElementGuid>bdd8701e-2f7e-43fa-be23-b13cacd8b6ca</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${baseUrl}/api/v1/customer/spaces</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>${baseUrl}/api/v1/admin/users/:id?name=dolor laborum aute culpa&amp;password=dolor laborum aute culpa&amp;role=dolor laborum aute culpa&amp;username=dolor laborum aute culpa</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -43,7 +55,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>b2e93ed1-8065-47da-8e89-396896e9ceeb</id>
+      <id>8922f9a0-a56d-4295-882e-27c338a4b8d6</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>

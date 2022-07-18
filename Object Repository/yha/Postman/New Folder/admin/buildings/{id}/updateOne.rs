@@ -3,7 +3,7 @@
    <description></description>
    <name>updateOne</name>
    <tag></tag>
-   <elementGuidId>00d6a5f9-99c8-44c7-8edf-9479b8a537ce</elementGuidId>
+   <elementGuidId>0814caf0-f63f-4559-b289-7e178996ebe1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -17,7 +17,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>5959137f-47bf-4ad7-a194-8763418aee86</webElementGuid>
+      <webElementGuid>eb03fb1d-ac6f-4f0c-ad01-7d53d19bf99d</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -25,13 +25,13 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>d46bd2a1-d776-4969-9734-9a3dd19d07d4</webElementGuid>
+      <webElementGuid>e93a8b0b-c709-4622-a7e0-a0299186ba12</webElementGuid>
    </httpHeaderProperties>
-   <katalonVersion>8.3.5</katalonVersion>
+   <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>${baseUrl}/api/v1/admin/buildings/:id?address=ullamco officia&amp;complexId=27676890&amp;description=ullamco officia&amp;facilities=98073013&amp;facilities=66018847&amp;images=laboris magna Duis ut dolore&amp;images=consectetur commodo in reprehenderit&amp;name=ullamco officia</restUrl>
+   <restUrl>${baseUrl}/api/v1/admin/buildings/:id?address=dolor laborum aute culpa&amp;complexId=85232930&amp;description=dolor laborum aute culpa&amp;facilities=27468036&amp;facilities=62847504&amp;images=aliquip Lorem fugiat&amp;images=deserunt sunt laborum&amp;name=dolor laborum aute culpa</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -43,7 +43,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>16d4b7aa-4f98-463e-ac68-0e1c39b2b649</id>
+      <id>eb6ab89d-85a3-4ff7-9636-733a122db846</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>

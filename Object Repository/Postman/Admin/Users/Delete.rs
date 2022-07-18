@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>deleteOne</name>
+   <name>Delete</name>
    <tag></tag>
-   <elementGuidId>7a080b2c-8103-4ff7-8524-685b9ef0ca7d</elementGuidId>
+   <elementGuidId>508f685a-bab0-4dfe-9f7f-8a64929a366a</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -16,22 +16,14 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value></value>
-      <webElementGuid>c0c36257-0f7e-4598-9d31-ea79f7f5a511</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Accept</name>
-      <type>Main</type>
-      <value>*/*</value>
-      <webElementGuid>0da5825a-d9f9-4444-b348-307af262a15c</webElementGuid>
+      <value>Bearer ${GlobalVariable.token}</value>
+      <webElementGuid>9dbd0a42-1601-4bf7-bc95-60f83583a659</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>${baseUrl}/api/v1/admin/buildings/:id</restUrl>
+   <restUrl>${url}/v1/admin/users/${userID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -41,11 +33,31 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.baseUrl</defaultValue>
+      <defaultValue>GlobalVariable.admin_UserID</defaultValue>
       <description></description>
-      <id>18912be2-dd3c-4d7f-bcea-0defce7d280a</id>
+      <id>53289f0c-9abe-42a3-bb01-4986dfd28c79</id>
       <masked>false</masked>
-      <name>baseUrl</name>
+      <name>userID</name>
    </variables>
+   <variables>
+      <defaultValue>GlobalVariable.url</defaultValue>
+      <description></description>
+      <id>565397f0-04be-433d-b714-d9f5d0ffe769</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variables>
+   <verificationScript>import static org.assertj.core.api.Assertions.*
+
+import com.kms.katalon.core.testobject.RequestObject
+import com.kms.katalon.core.testobject.ResponseObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webservice.verification.WSResponseManager
+
+import groovy.json.JsonSlurper
+import internal.GlobalVariable as GlobalVariable
+
+RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
+
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

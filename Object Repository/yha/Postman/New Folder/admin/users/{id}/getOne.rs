@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>getAll</name>
+   <name>getOne</name>
    <tag></tag>
-   <elementGuidId>dbe0e502-b129-4209-b199-076f1ae6e59a</elementGuidId>
+   <elementGuidId>f798f3b8-240d-4244-b854-66e368aaabf9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -17,7 +17,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>3be1a66b-e0e9-4417-b2b4-83d11ce4d905</webElementGuid>
+      <webElementGuid>df034a37-5047-40a5-b6f5-de74f227b061</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -25,13 +25,13 @@
       <name>Accept</name>
       <type>Main</type>
       <value>*/*</value>
-      <webElementGuid>ea577e32-8a7c-443b-a416-e375e257e05c</webElementGuid>
+      <webElementGuid>64e1fb1c-dc71-4df3-964f-608c8581ecbe</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.4.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${baseUrl}/api/v1/customer/spaces</restUrl>
+   <restUrl>${baseUrl}/api/v1/admin/users/:id</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -43,7 +43,7 @@
    <variables>
       <defaultValue>GlobalVariable.baseUrl</defaultValue>
       <description></description>
-      <id>b2e93ed1-8065-47da-8e89-396896e9ceeb</id>
+      <id>e3785bc8-e3e9-4727-84cc-dff4f5d919f6</id>
       <masked>false</masked>
       <name>baseUrl</name>
    </variables>
