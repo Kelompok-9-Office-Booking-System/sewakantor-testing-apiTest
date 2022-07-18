@@ -91,7 +91,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'25'</initValue>
+      <initValue>'18'</initValue>
       <name>admin_FacilityID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

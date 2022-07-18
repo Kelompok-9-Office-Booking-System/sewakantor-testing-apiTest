@@ -33,28 +33,8 @@ for (int i = 0; i < 8; i++) {
         //long name[257b]
         //blank data
         //duplicated name
-        /*
-	//duplicated with uppercases
-		else if(i==6)
-		{
-			GlobalVariable.admin_facilityName="PARKING AREA"
-			rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Update'))
-			
-			WS.verifyResponseStatusCode(rslt, 200)
-			
-			WS.verifyElementPropertyValue(rslt, 'message', 'facility updated successfully')
-		}
+        
 	
-	//numerical case
-		else if(i==7)
-		{
-			GlobalVariable.admin_facilityName="123"
-			rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Update'))
-			
-			WS.verifyResponseStatusCode(rslt, 200)
-			
-			WS.verifyElementPropertyValue(rslt, 'message', 'facility updated successfully')
-		} */
         //valid create one
     } else if (i == 1) {
         GlobalVariable.token = ''
@@ -98,7 +78,30 @@ for (int i = 0; i < 8; i++) {
         WS.verifyResponseStatusCode(rslt, 500)
 
         WS.verifyElementPropertyValue(rslt, 'error', 'Internal Server Error')
-    } else if (i == 8) {
+    } 
+	//duplicated with uppercases
+	else if(i==6)
+	{
+		GlobalVariable.admin_facilityName="PARKING AREA"
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Update'))
+		
+		WS.verifyResponseStatusCode(rslt, 200)
+		
+		WS.verifyElementPropertyValue(rslt, 'message', 'facility updated successfully')
+	}
+
+//numerical case
+	else if(i==7)
+	{
+		GlobalVariable.admin_facilityName="123"
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Update'))
+		
+		WS.verifyResponseStatusCode(rslt, 200)
+		
+		WS.verifyElementPropertyValue(rslt, 'message', 'facility updated successfully')
+	}
+	
+	else if (i == 8) {
         GlobalVariable.admin_facilityName = 'Nama Baru'
 
         WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)

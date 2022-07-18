@@ -40,6 +40,13 @@ for(int i=0;i<8;i++)
 		
 		WS.verifyElementPropertyValue(rslt, 'message', 'facility saved successfully')
 		
+		def slurper = new groovy.json.JsonSlurper()
+		def result = slurper.parseText(rslt.getResponseBodyContent())	
+		def value= result.data.id
+		GlobalVariable.admin_FacilityID=value
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Delete'))
+		
+		
 	}
 //long name[257b]
 	else if(i==2)
@@ -72,7 +79,7 @@ for(int i=0;i<8;i++)
 		
 		WS.verifyElementPropertyValue(rslt, 'error', 'Internal Server Error')
 	}
-	/*
+
 //duplicated with uppercases
 	else if(i==5)
 	{
@@ -82,6 +89,13 @@ for(int i=0;i<8;i++)
 		WS.verifyResponseStatusCode(rslt, 200)
 		
 		WS.verifyElementPropertyValue(rslt, 'message', 'facility saved successfully')
+				def slurper = new groovy.json.JsonSlurper()
+		def result = slurper.parseText(rslt.getResponseBodyContent())
+		
+		def value= result.data.id
+		
+		GlobalVariable.admin_FacilityID=value
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Delete'))
 	}
 
 //numerical case
@@ -93,7 +107,14 @@ for(int i=0;i<8;i++)
 		WS.verifyResponseStatusCode(rslt, 200)
 		
 		WS.verifyElementPropertyValue(rslt, 'message', 'facility saved successfully')
-	} */
+		def slurper = new groovy.json.JsonSlurper()
+		def result = slurper.parseText(rslt.getResponseBodyContent())
+		
+		def value= result.data.id
+		
+		GlobalVariable.admin_FacilityID=value
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Delete'))
+	} 
 //valid create one
 	else if(i==7)
 	{
@@ -106,3 +127,10 @@ for(int i=0;i<8;i++)
 		WS.verifyElementPropertyValue(rslt, 'message', 'facility saved successfully')
 	}
 }
+
+def slurper = new groovy.json.JsonSlurper()
+def result = slurper.parseText(rslt.getResponseBodyContent())
+
+def value= result.data.id
+
+GlobalVariable.admin_FacilityID=value

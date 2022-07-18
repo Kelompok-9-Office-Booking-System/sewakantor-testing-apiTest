@@ -17,57 +17,37 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//WebUI.callTestCase(findTestCase('Admin/Dummy Admin/CreateAndGetCityID'), [:], FailureHandling.STOP_ON_FAILURE)
 def dump=GlobalVariable.admin_FacilityID
-
-
-for(int i=0;i<4;i++)
+for(int i=0; i<3;i++)
 {
-	//no auth
+	// no auth delete
 	if(i==0)
 	{
-		GlobalVariable.token=""
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get One'))
-		
+		GlobalVariable.token = ''
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Delete'))
 		WS.verifyResponseStatusCode(rslt, 401)
 	}
-	//valid
-	else if(i==1)
+	// not found id delete
+	if(i==1)
 	{
-		GlobalVariable.admin_FacilityID=dump
+		GlobalVariable.admin_FacilityID=-1
 		WebUI.callTestCase(findTestCase('Admin/Dummy Admin/LoginGetToken'), [:], FailureHandling.STOP_ON_FAILURE)
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get One'))
-		
-		WS.verifyResponseStatusCode(rslt, 200)
-		
-		'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
-		WS.verifyElementPropertyValue(rslt, 'message', 'list facility')
-	}
-	//invalidID
-	else if(i==2)
-	{
-		GlobalVariable.admin_FacilityID=notFound
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get One'))
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Delete'))
 		
 		WS.verifyResponseStatusCode(rslt, 404)
 		
-		'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
 		WS.verifyElementPropertyValue(rslt, 'message', 'facility not found')
-		
 	}
-	//malformed
-	else
+	// valid delete
+	if(i==2)
 	{
-		GlobalVariable.admin_FacilityID=string
-		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Get One'))
+		GlobalVariable.admin_FacilityID=dump
+		rslt = WS.sendRequest(findTestObject('Postman/Admin/Facility/Delete'))
 		
-		WS.verifyResponseStatusCode(rslt, 400)
+		WS.verifyResponseStatusCode(rslt, 200)
 		
-		'this validation must to change to building name for verify, \r\nthe case just can run in regression \r\n'
-		WS.verifyElementPropertyValue(rslt, 'status', 'BAD_REQUEST')
-		
+		WS.verifyElementPropertyValue(rslt, 'message', 'facility deleted successfully')
 	}
-	
-	
+	// valid delete
 }
-
-GlobalVariable.admin_FacilityID=dump
