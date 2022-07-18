@@ -33,12 +33,12 @@ for(int i=0;i<4;i++)
 	else if(i==1)
 	{
 		WS.verifyResponseStatusCode(rslt, 404)
-		WS.verifyElementPropertyValue(rslt, 'message', 'user tidak terdaftar')
+		WS.verifyElementPropertyValue(rslt, 'message', 'user not found')
 	}
 	else if(i==2)
 	{
 		WS.verifyResponseStatusCode(rslt, 400)
-		WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+		WS.verifyElementPropertyValue(rslt, 'message', 'password name must not be blank')
 	}
 	else
 	{

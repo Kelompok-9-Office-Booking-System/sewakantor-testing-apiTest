@@ -61,7 +61,7 @@ for (int i = 0; i < 9; i++) {
 
         WS.verifyResponseStatusCode(rslt, 400)
 
-        WS.verifyElementPropertyValue(rslt, 'message', 'Malformed request')
+        WS.verifyElementPropertyValue(rslt, 'message', 'name must not be empty')
     } else if (i == 4) {
         GlobalVariable.admin_CityName = 'Jakarta'
 

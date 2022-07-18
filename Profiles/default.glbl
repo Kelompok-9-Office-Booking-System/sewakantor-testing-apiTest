@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjU3NTM4NTk3LCJpYXQiOjE2NTc1MjA1OTd9.IJnrPvnyf2IBnO6J-yzWsNEFesmfJCcam50mnC8lJFcvtJM48l77w_5khy8QKRC5WvQRE7WJdHxf6dQWPstqlQ'</initValue>
+      <initValue>'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdXBlcmFkbWluIiwiZXhwIjoxNjYxNzQ0MjQ2LCJpYXQiOjE2NTgxNDQyNDZ9.Kwrt6MD8W8OiQQV8rNTb6bJzhLfttt1aB4f0Pl3erlRJObHpWq3nZrZWUR82Da3k9tsR0E3lqxjKsjfTDZRaaw'</initValue>
       <name>token</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -101,12 +101,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'1'</initValue>
+      <initValue>'5'</initValue>
       <name>admin_UnitID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Unit name guise'</initValue>
+      <initValue>''</initValue>
       <name>admin_unitName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

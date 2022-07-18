@@ -69,6 +69,14 @@
       <type>Main</type>
       <webElementGuid>cd654fcd-90e8-42f1-aa16-254886a57831</webElementGuid>
    </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer ${GlobalVariable.token}</value>
+      <webElementGuid>a89f37d7-1a2c-456d-98c7-03f97ecafe6e</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.3.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
