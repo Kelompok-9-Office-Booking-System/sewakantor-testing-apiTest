@@ -151,7 +151,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsa'</initValue>
+      <initValue>'karakter pada form ini menggunakan duaratus limapuluh enam karakter karakter pada form ini menggunakan duaratus limapuluh enam karakter karakter pada form ini menggunakan duaratus limapuluh enam karakter karakter pada form ini menggunakanasa asdas asdasd s'</initValue>
       <name>Char256</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -166,12 +166,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'testingAdmin'</initValue>
-      <name>admin_userName</name>
+      <initValue>'itsFname'</initValue>
+      <name>admin_userFName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'yeahcool'</initValue>
+      <initValue>'inipassword'</initValue>
       <name>admin_userPassword</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -181,7 +181,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'testingAdmin'</initValue>
+      <initValue>'a'</initValue>
       <name>admin_userUsername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'its name'</initValue>
+      <name>admin_userLName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

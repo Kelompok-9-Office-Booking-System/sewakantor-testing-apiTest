@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ComplexRun" time="73.769" tests="6" failures="0" errors="0">
+   <testsuite name="ComplexRun" tests="6" failures="0" errors="0" time="73.769" skipped="0" timestamp="2022-07-22 18:37:56" hostname="user - izzazainf" id="Test Suites/ComplexRun">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\git\\sewakantor-testing-apiTest\\Reports\\20220722_183750\\ComplexRun\\20220722_183750"/>
+         <property name="logFiles" value="C:\\Users\\user\\git\\sewakantor-testing-apiTest\\Reports\\20220722_183750\\ComplexRun\\20220722_183750\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - izzazainf"/>
+         <property name="hostAddress" value="192.168.43.13"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Get All Complex" time="13.786" classname="Test Cases/Admin/TS3_Complex/TC_Get All Complex" status="PASSED">
+         <system-out><![CDATA[2022-07-22 18:37:57 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_Complex/TC_Get All Complex: Test Cases/Admin/TS3_Complex/TC_Get All Complex
+
+2022-07-22 18:37:58 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-07-22 18:37:58 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-22 18:37:58 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-22 18:38:00 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get All")): Send request successfully
+
+2022-07-22 18:38:05 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\0.har
+
+2022-07-22 18:38:06 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:06 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-22 18:38:06 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:06 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:06 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-22 18:38:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:38:06 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-22 18:38:07 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-22 18:38:07 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-22 18:38:07 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-22 18:38:09 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\1.har
+
+2022-07-22 18:38:09 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:09 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-22 18:38:09 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-22 18:38:09 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-22 18:38:09 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-22 18:38:09 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-22 18:38:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:38:09 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get All")): Send request successfully
+
+2022-07-22 18:38:10 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\2.har
+
+2022-07-22 18:38:10 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:10 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-22 18:38:10 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:10 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list complex"): Verify element property value successfully
+
+2022-07-22 18:38:11 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Get Dropdown" time="6.375" classname="Test Cases/Admin/TS3_Complex/TC_Get Dropdown" status="PASSED">
+         <system-out><![CDATA[2022-07-22 18:38:11 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_Complex/TC_Get Dropdown: Test Cases/Admin/TS3_Complex/TC_Get Dropdown
+
+2022-07-22 18:38:11 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-07-22 18:38:11 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-22 18:38:11 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-22 18:38:11 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Dropdown")): Send request successfully
+
+2022-07-22 18:38:13 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\3.har
+
+2022-07-22 18:38:13 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:13 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-22 18:38:13 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:13 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:13 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-22 18:38:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:38:13 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-22 18:38:13 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-22 18:38:13 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-22 18:38:13 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-22 18:38:15 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\4.har
+
+2022-07-22 18:38:15 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:15 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-22 18:38:15 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-22 18:38:15 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-22 18:38:15 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-22 18:38:15 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-22 18:38:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:38:15 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Dropdown")): Send request successfully
+
+2022-07-22 18:38:17 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\5.har
+
+2022-07-22 18:38:17 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-22 18:38:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "dropdown complex"): Verify element property value successfully
+
+2022-07-22 18:38:17 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Get One Complex" time="9.557" classname="Test Cases/Admin/TS3_Complex/TC_Get One Complex" status="PASSED">
+         <system-out><![CDATA[2022-07-22 18:38:17 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_Complex/TC_Get One Complex: Test Cases/Admin/TS3_Complex/TC_Get One Complex
+
+2022-07-22 18:38:18 - [TEST_STEP][PASSED] - for ([i = 0, i < 4, (i++)]): Verify element property value successfully
+
+2022-07-22 18:38:18 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-22 18:38:18 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-22 18:38:18 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-22 18:38:19 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\6.har
+
+2022-07-22 18:38:19 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-22 18:38:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:19 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:19 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-22 18:38:19 - [TEST_STEP][PASSED] - admin_ComplexID = 1: null
+
+2022-07-22 18:38:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:38:19 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-22 18:38:19 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-22 18:38:19 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-22 18:38:19 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-22 18:38:22 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\7.har
+
+2022-07-22 18:38:22 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:22 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-22 18:38:22 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-22 18:38:22 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-22 18:38:22 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-22 18:38:22 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-22 18:38:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:38:22 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-22 18:38:23 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\8.har
+
+2022-07-22 18:38:23 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-22 18:38:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:23 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list complex"): Verify element property value successfully
+
+2022-07-22 18:38:23 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:38:23 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:23 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:23 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-22 18:38:23 - [TEST_STEP][PASSED] - admin_ComplexID = notFound: null
+
+2022-07-22 18:38:23 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-22 18:38:25 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\9.har
+
+2022-07-22 18:38:25 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:25 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-22 18:38:25 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:25 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Verify element property value successfully
+
+2022-07-22 18:38:25 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:38:25 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:25 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:25 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-22 18:38:25 - [TEST_STEP][PASSED] - else: Verify element property value successfully
+
+2022-07-22 18:38:25 - [TEST_STEP][PASSED] - admin_ComplexID = string: null
+
+2022-07-22 18:38:25 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Get One")): Send request successfully
+
+2022-07-22 18:38:27 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\10.har
+
+2022-07-22 18:38:27 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-22 18:38:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "status", "BAD_REQUEST"): Verify element property value successfully
+
+2022-07-22 18:38:27 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Create new Complex" time="18.041" classname="Test Cases/Admin/TS3_Complex/TC_Create new Complex" status="PASSED">
+         <system-out><![CDATA[2022-07-22 18:38:27 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_Complex/TC_Create new Complex: Test Cases/Admin/TS3_Complex/TC_Create new Complex
+
+2022-07-22 18:38:27 - [TEST_STEP][PASSED] - for ([i = 0, i < 7, (i++)]): Verify element property value successfully
+
+2022-07-22 18:38:27 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-22 18:38:27 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-22 18:38:27 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-22 18:38:30 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\11.har
+
+2022-07-22 18:38:30 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-22 18:38:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:30 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:30 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-22 18:38:30 - [TEST_STEP][PASSED] - admin_complexName = "": null
+
+2022-07-22 18:38:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:38:30 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-22 18:38:30 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-22 18:38:30 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-22 18:38:30 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-22 18:38:32 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\12.har
+
+2022-07-22 18:38:32 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:32 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-22 18:38:32 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-22 18:38:32 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-22 18:38:32 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-22 18:38:32 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-22 18:38:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:38:32 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-22 18:38:34 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\13.har
+
+2022-07-22 18:38:34 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:34 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-22 18:38:34 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:34 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "name must not be empty"): Verify element property value successfully
+
+2022-07-22 18:38:34 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:38:34 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:34 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:34 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-22 18:38:34 - [TEST_STEP][PASSED] - admin_complexName = "Anggrek Permai": null
+
+2022-07-22 18:38:34 - [TEST_STEP][PASSED] - admin_complexDesc = "ini default untuk test": null
+
+2022-07-22 18:38:34 - [TEST_STEP][PASSED] - admin_CityID = "1": null
+
+2022-07-22 18:38:34 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-22 18:38:36 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\14.har
+
+2022-07-22 18:38:36 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:36 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-22 18:38:36 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:36 - [TEST_STEP][PASSED] - admin_complexName = "Artapura": null
+
+2022-07-22 18:38:36 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:36 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:36 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-22 18:38:36 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-22 18:38:36 - [TEST_STEP][PASSED] - admin_complexDesc = "": null
+
+2022-07-22 18:38:36 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-22 18:38:38 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\15.har
+
+2022-07-22 18:38:38 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:38 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-22 18:38:38 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:38 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "description must not be empty"): Verify element property value successfully
+
+2022-07-22 18:38:38 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:38:38 - [TEST_STEP][PASSED] - admin_complexDesc = "Lorem ipsum dolor sit amet": null
+
+2022-07-22 18:38:38 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:38 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:38 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-22 18:38:38 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-22 18:38:38 - [TEST_STEP][PASSED] - else if (i == 4): Verify element property value successfully
+
+2022-07-22 18:38:38 - [TEST_STEP][PASSED] - admin_CityID = "": null
+
+2022-07-22 18:38:38 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-22 18:38:40 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\16.har
+
+2022-07-22 18:38:40 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:40 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-22 18:38:40 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:40 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city id must not be null"): Verify element property value successfully
+
+2022-07-22 18:38:40 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:38:40 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:40 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:40 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-22 18:38:40 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-22 18:38:40 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-22 18:38:40 - [TEST_STEP][PASSED] - else if (i == 5): Verify element property value successfully
+
+2022-07-22 18:38:40 - [TEST_STEP][PASSED] - admin_CityID = "0": null
+
+2022-07-22 18:38:40 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-22 18:38:43 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\17.har
+
+2022-07-22 18:38:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-22 18:38:43 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city not found"): Verify element property value successfully
+
+2022-07-22 18:38:43 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - else if (i == 6): Verify element property value successfully
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - admin_complexName = "Artapura": null
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - admin_complexDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsu": null
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - admin_CityID = "1": null
+
+2022-07-22 18:38:43 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Create One")): Send request successfully
+
+2022-07-22 18:38:45 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\18.har
+
+2022-07-22 18:38:45 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-22 18:38:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:45 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex saved successfully"): Verify element property value successfully
+
+2022-07-22 18:38:45 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:38:45 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-22 18:38:45 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-22 18:38:45 - [TEST_STEP][PASSED] - value = id: null
+
+2022-07-22 18:38:45 - [TEST_STEP][PASSED] - admin_ComplexID = value: null
+
+2022-07-22 18:38:45 - [TEST_STEP][PASSED] - println(admin_ComplexID): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Update Complex" time="17.736" classname="Test Cases/Admin/TS3_Complex/TC_Update Complex" status="PASSED">
+         <system-out><![CDATA[2022-07-22 18:38:45 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_Complex/TC_Update Complex: Test Cases/Admin/TS3_Complex/TC_Update Complex
+
+2022-07-22 18:38:46 - [TEST_STEP][PASSED] - dump = admin_ComplexID: null
+
+2022-07-22 18:38:46 - [TEST_STEP][PASSED] - admin_complexName = "Anggrek Permai": null
+
+2022-07-22 18:38:46 - [TEST_STEP][PASSED] - admin_complexDesc = "ini default untuk test": null
+
+2022-07-22 18:38:46 - [TEST_STEP][PASSED] - admin_CityID = "1": null
+
+2022-07-22 18:38:46 - [TEST_STEP][PASSED] - for ([i = 0, i < 7, (i++)]): Verify element property value successfully
+
+2022-07-22 18:38:46 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-22 18:38:46 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-22 18:38:46 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-22 18:38:48 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\19.har
+
+2022-07-22 18:38:48 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:48 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-22 18:38:48 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:48 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:48 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:48 - [TEST_STEP][PASSED] - admin_ComplexID = "0": null
+
+2022-07-22 18:38:48 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:38:48 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-22 18:38:48 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-22 18:38:48 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-22 18:38:48 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-22 18:38:50 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\20.har
+
+2022-07-22 18:38:50 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:50 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-22 18:38:50 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-22 18:38:50 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-22 18:38:50 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-22 18:38:50 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-22 18:38:50 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:38:50 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-22 18:38:52 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\21.har
+
+2022-07-22 18:38:52 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:52 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-22 18:38:52 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:52 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Verify element property value successfully
+
+2022-07-22 18:38:52 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:38:52 - [TEST_STEP][PASSED] - admin_ComplexID = dump: null
+
+2022-07-22 18:38:52 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:52 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:52 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-22 18:38:52 - [TEST_STEP][PASSED] - admin_complexName = "": null
+
+2022-07-22 18:38:52 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-22 18:38:54 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\22.har
+
+2022-07-22 18:38:54 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:54 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-22 18:38:54 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:54 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "name must not be empty"): Verify element property value successfully
+
+2022-07-22 18:38:54 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:38:54 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:54 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:54 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-22 18:38:54 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-22 18:38:54 - [TEST_STEP][PASSED] - admin_complexName = "Anggrek Permai": null
+
+2022-07-22 18:38:54 - [TEST_STEP][PASSED] - admin_complexDesc = "ini default untuk test": null
+
+2022-07-22 18:38:54 - [TEST_STEP][PASSED] - admin_CityID = "1": null
+
+2022-07-22 18:38:54 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-22 18:38:56 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\23.har
+
+2022-07-22 18:38:56 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:56 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-22 18:38:56 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:56 - [TEST_STEP][PASSED] - admin_complexName = "Artapura": null
+
+2022-07-22 18:38:56 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:56 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:56 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-22 18:38:56 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-22 18:38:56 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-22 18:38:56 - [TEST_STEP][PASSED] - admin_complexDesc = "": null
+
+2022-07-22 18:38:56 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-22 18:38:58 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\24.har
+
+2022-07-22 18:38:58 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-22 18:38:58 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "description must not be empty"): Verify element property value successfully
+
+2022-07-22 18:38:58 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - admin_complexDesc = "Lorem ipsum dolor sit amet": null
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - else if (i == 5): Verify element property value successfully
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - admin_CityID = "": null
+
+2022-07-22 18:38:58 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-22 18:39:00 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\25.har
+
+2022-07-22 18:39:00 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-22 18:39:00 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city id must not be null"): Verify element property value successfully
+
+2022-07-22 18:39:00 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - else if (i == 6): Verify element property value successfully
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - admin_CityID = "0": null
+
+2022-07-22 18:39:00 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Update")): Send request successfully
+
+2022-07-22 18:39:02 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\26.har
+
+2022-07-22 18:39:02 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:39:02 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-22 18:39:02 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:39:02 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "city not found"): Verify element property value successfully
+
+2022-07-22 18:39:02 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS3_Complex/TC_Delete Complex" time="7.6" classname="Test Cases/Admin/TS3_Complex/TC_Delete Complex" status="PASSED">
+         <system-out><![CDATA[2022-07-22 18:39:02 - [TEST_CASE][PASSED] - Test Cases/Admin/TS3_Complex/TC_Delete Complex: Test Cases/Admin/TS3_Complex/TC_Delete Complex
+
+2022-07-22 18:39:03 - [TEST_STEP][PASSED] - dump = admin_ComplexID: null
+
+2022-07-22 18:39:03 - [TEST_STEP][PASSED] - for ([i = 0, i < 3, (i++)]): Verify element property value successfully
+
+2022-07-22 18:39:03 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-22 18:39:03 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-22 18:39:03 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Delete")): Send request successfully
+
+2022-07-22 18:39:05 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\27.har
+
+2022-07-22 18:39:05 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:39:05 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-22 18:39:05 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:39:05 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:39:05 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:39:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:39:05 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-22 18:39:05 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-22 18:39:05 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-22 18:39:05 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-22 18:39:07 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\28.har
+
+2022-07-22 18:39:07 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:39:07 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-22 18:39:07 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-22 18:39:07 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-22 18:39:07 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-22 18:39:07 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-22 18:39:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-22 18:39:07 - [TEST_STEP][PASSED] - admin_ComplexID = "0": null
+
+2022-07-22 18:39:07 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Delete")): Send request successfully
+
+2022-07-22 18:39:08 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\29.har
+
+2022-07-22 18:39:08 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:39:08 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-22 18:39:08 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:39:08 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex not found"): Verify element property value successfully
+
+2022-07-22 18:39:08 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-22 18:39:08 - [TEST_STEP][PASSED] - admin_ComplexID = dump: null
+
+2022-07-22 18:39:08 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-22 18:39:08 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-22 18:39:08 - [TEST_STEP][PASSED] - else: Verify element property value successfully
+
+2022-07-22 18:39:08 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Complex/Delete")): Send request successfully
+
+2022-07-22 18:39:10 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220722_183750\ComplexRun\20220722_183750\requests\main\30.har
+
+2022-07-22 18:39:10 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-22 18:39:10 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-22 18:39:10 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-22 18:39:10 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "complex deleted successfully"): Verify element property value successfully
+
+2022-07-22 18:39:10 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-22 18:37:56 - [TEST_SUITE][PASSED] - ComplexRun: Test Cases/Admin/TS3_Complex/TC_Delete Complex]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

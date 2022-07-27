@@ -14,8 +14,8 @@
   &quot;charset&quot;: &quot;UTF-8&quot;,
   &quot;parameters&quot;: [
     {
-      &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;${name}&quot;,
+      &quot;name&quot;: &quot;firstName&quot;,
+      &quot;value&quot;: &quot;${fname}&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     },
@@ -34,6 +34,12 @@
     {
       &quot;name&quot;: &quot;username&quot;,
       &quot;value&quot;: &quot;${username}&quot;,
+      &quot;type&quot;: &quot;Text&quot;,
+      &quot;contentType&quot;: &quot;&quot;
+    },
+    {
+      &quot;name&quot;: &quot;lastName&quot;,
+      &quot;value&quot;: &quot;${lname}&quot;,
       &quot;type&quot;: &quot;Text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -77,11 +83,11 @@
       <name>url</name>
    </variables>
    <variables>
-      <defaultValue>GlobalVariable.admin_userName</defaultValue>
+      <defaultValue>GlobalVariable.admin_userFName</defaultValue>
       <description></description>
       <id>905aa32a-57af-47e0-bca9-17f61cef2e7a</id>
       <masked>false</masked>
-      <name>name</name>
+      <name>fname</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.admin_userPassword</defaultValue>
@@ -103,6 +109,13 @@
       <id>811f46bc-c808-4eaa-841b-ffd73598f8fd</id>
       <masked>false</masked>
       <name>username</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.admin_userLName</defaultValue>
+      <description></description>
+      <id>4dbe1107-ca27-4fb7-bb60-d2d8ac97b860</id>
+      <masked>false</masked>
+      <name>lname</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
