@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Create One</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6599b448-9eac-47ae-8e96-8ec938640dc9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>887553b6-09ff-46a8-8985-d9db249cfc7a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>88986263-e956-4a84-88f0-ffe8c4961c8f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ips'</defaultValue>
+      <description></description>
+      <id>887553b6-09ff-46a8-8985-d9db249cfc7a</id>
+      <masked>false</masked>
+      <name>name255</name>
+   </variable>
+   <variable>
+      <defaultValue>'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsu'</defaultValue>
+      <description></description>
+      <id>88986263-e956-4a84-88f0-ffe8c4961c8f</id>
+      <masked>false</masked>
+      <name>name256</name>
+   </variable>
+</TestCaseEntity>

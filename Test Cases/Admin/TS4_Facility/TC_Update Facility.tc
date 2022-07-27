@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Update Facility</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>965cc4e3-36a2-4e25-9852-872f4b3695e4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>634402a7-a056-471a-88e1-235338d16795</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5b397e10-66df-40cc-a6af-0ce52c370e28</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Lorem editt dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ips'</defaultValue>
+      <description></description>
+      <id>634402a7-a056-471a-88e1-235338d16795</id>
+      <masked>false</masked>
+      <name>name255</name>
+   </variable>
+   <variable>
+      <defaultValue>'Lorem editt dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsu'</defaultValue>
+      <description></description>
+      <id>5b397e10-66df-40cc-a6af-0ce52c370e28</id>
+      <masked>false</masked>
+      <name>name256</name>
+   </variable>
+</TestCaseEntity>

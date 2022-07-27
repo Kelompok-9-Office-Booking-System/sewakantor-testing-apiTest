@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+FacilityRun,,,,2022-07-18 21:00:27,2022-07-18 21:01:59,1m - 32.319s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Facility/TC_Create New Facility,,,,2022-07-18 21:00:27,2022-07-18 21:01:06,38.150s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-18 21:00:29,2022-07-18 21:01:06,37.005s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-07-18 21:01:06,2022-07-18 21:01:06,0.000s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-07-18 21:01:06,2022-07-18 21:01:06,0.000s,PASSED
+value = id,,,,2022-07-18 21:01:06,2022-07-18 21:01:06,0.000s,PASSED
+admin_FacilityID = value,,,,2022-07-18 21:01:06,2022-07-18 21:01:06,0.008s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Facility/TC_Update Facility,,,,2022-07-18 21:01:06,2022-07-18 21:01:30,24.147s,PASSED
+dump = admin_FacilityID,,,,2022-07-18 21:01:06,2022-07-18 21:01:06,0.005s,PASSED
+"admin_facilityName = ""biar ga kosong""",,,,2022-07-18 21:01:06,2022-07-18 21:01:06,0.000s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-18 21:01:06,2022-07-18 21:01:30,23.355s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Facility/TC_Get All Facility,,,,2022-07-18 21:01:30,2022-07-18 21:01:35,5.724s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-18 21:01:30,2022-07-18 21:01:35,5.093s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Facility/TC_Get Dropdown,,,,2022-07-18 21:01:35,2022-07-18 21:01:39,3.612s,PASSED
+dump = token,,,,2022-07-18 21:01:36,2022-07-18 21:01:36,0.010s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-18 21:01:36,2022-07-18 21:01:39,2.978s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Facility/TC_Get One Facility,,,,2022-07-18 21:01:39,2022-07-18 21:01:51,11.749s,PASSED
+dump = admin_FacilityID,,,,2022-07-18 21:01:40,2022-07-18 21:01:40,0.002s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-18 21:01:40,2022-07-18 21:01:51,11.051s,PASSED
+admin_FacilityID = dump,,,,2022-07-18 21:01:51,2022-07-18 21:01:51,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS4_Facility/TC_Delete Facility,,,,2022-07-18 21:01:51,2022-07-18 21:01:59,8.402s,PASSED
+dump = admin_FacilityID,,,,2022-07-18 21:01:51,2022-07-18 21:01:51,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-18 21:01:51,2022-07-18 21:01:59,7.765s,PASSED

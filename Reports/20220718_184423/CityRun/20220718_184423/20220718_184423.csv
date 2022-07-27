@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CityRun,,,,2022-07-18 18:44:25,2022-07-18 18:45:20,55.479s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_City/TC_Get All City,,,,2022-07-18 18:44:25,2022-07-18 18:44:33,7.655s,PASSED
+"for ([i = 0, i < 2, (i++)])",,,,2022-07-18 18:44:25,2022-07-18 18:44:33,7.276s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_City/TC_Get One City,,,,2022-07-18 18:44:33,2022-07-18 18:44:40,7.340s,PASSED
+"for ([i = 0, i < 4, (i++)])",,,,2022-07-18 18:44:33,2022-07-18 18:44:40,7.031s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_City/TC_Create One,,,,2022-07-18 18:44:40,2022-07-18 18:44:58,18.379s,PASSED
+"for ([i = 0, i < 8, (i++)])",,,,2022-07-18 18:44:40,2022-07-18 18:44:58,18.050s,PASSED
+slurper = new groovy.json.JsonSlurper(),,,,2022-07-18 18:44:58,2022-07-18 18:44:58,0.001s,PASSED
+result = slurper.parseText(rslt.getResponseBodyContent()),,,,2022-07-18 18:44:58,2022-07-18 18:44:58,0.000s,PASSED
+value = id,,,,2022-07-18 18:44:58,2022-07-18 18:44:58,0.000s,PASSED
+admin_CreateID = value,,,,2022-07-18 18:44:58,2022-07-18 18:44:58,0.000s,PASSED
+println(admin_CreateID),,,,2022-07-18 18:44:58,2022-07-18 18:44:58,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_City/TC_Update City,,,,2022-07-18 18:44:58,2022-07-18 18:45:14,15.877s,PASSED
+dump = admin_CreateID,,,,2022-07-18 18:44:59,2022-07-18 18:44:59,0.000s,PASSED
+"for ([i = 0, i < 9, (i++)])",,,,2022-07-18 18:44:59,2022-07-18 18:45:14,15.575s,PASSED
+admin_CreateID = dump,,,,2022-07-18 18:45:14,2022-07-18 18:45:14,0.000s,PASSED
+println(admin_CreateID),,,,2022-07-18 18:45:14,2022-07-18 18:45:14,0.000s,PASSED
+,,,,,,,
+Test Cases/Admin/TS2_City/TC_Delete,,,,2022-07-18 18:45:14,2022-07-18 18:45:20,5.930s,PASSED
+dump = admin_CreateID,,,,2022-07-18 18:45:15,2022-07-18 18:45:15,0.000s,PASSED
+"for ([i = 0, i < 3, (i++)])",,,,2022-07-18 18:45:15,2022-07-18 18:45:20,5.665s,PASSED

@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="FacilityRun" time="92.319" tests="6" failures="0" errors="0">
+   <testsuite name="FacilityRun" tests="6" failures="0" errors="0" time="92.319" skipped="0" timestamp="2022-07-18 21:00:27" hostname="user - izzazainf" id="Test Suites/FacilityRun">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\git\\sewakantor-testing-apiTest\\Reports\\20220718_210022\\FacilityRun\\20220718_210022"/>
+         <property name="logFiles" value="C:\\Users\\user\\git\\sewakantor-testing-apiTest\\Reports\\20220718_210022\\FacilityRun\\20220718_210022\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - izzazainf"/>
+         <property name="hostAddress" value="192.168.43.13"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Admin/TS4_Facility/TC_Create New Facility" time="38.15" classname="Test Cases/Admin/TS4_Facility/TC_Create New Facility" status="PASSED">
+         <system-out><![CDATA[2022-07-18 21:00:27 - [TEST_CASE][PASSED] - Test Cases/Admin/TS4_Facility/TC_Create New Facility: Test Cases/Admin/TS4_Facility/TC_Create New Facility
+
+2022-07-18 21:00:29 - [TEST_STEP][PASSED] - for ([i = 0, i < 8, (i++)]): Verify element property value successfully
+
+2022-07-18 21:00:29 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 21:00:29 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 21:00:30 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Create One")): Send request successfully
+
+2022-07-18 21:00:40 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\0.har
+
+2022-07-18 21:00:40 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:00:40 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 21:00:40 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:00:40 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:00:40 - [TEST_STEP][PASSED] - else if (i == 1): Send request successfully
+
+2022-07-18 21:00:40 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:00:40 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 21:00:41 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 21:00:41 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 21:00:41 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 21:00:43 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\1.har
+
+2022-07-18 21:00:43 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:00:43 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 21:00:43 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 21:00:43 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 21:00:43 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 21:00:43 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 21:00:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:00:43 - [TEST_STEP][PASSED] - admin_facilityName = name255: null
+
+2022-07-18 21:00:43 - [TEST_STEP][PASSED] - println(admin_facilityName): null
+
+2022-07-18 21:00:43 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Create One")): Send request successfully
+
+2022-07-18 21:00:45 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\2.har
+
+2022-07-18 21:00:45 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:00:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:00:45 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:00:45 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility saved successfully"): Verify element property value successfully
+
+2022-07-18 21:00:45 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:00:45 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 21:00:45 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 21:00:45 - [TEST_STEP][PASSED] - value = id: null
+
+2022-07-18 21:00:45 - [TEST_STEP][PASSED] - admin_FacilityID = value: null
+
+2022-07-18 21:00:45 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Delete")): Send request successfully
+
+2022-07-18 21:00:47 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\3.har
+
+2022-07-18 21:00:47 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:00:47 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:00:47 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:00:47 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-18 21:00:47 - [TEST_STEP][PASSED] - admin_facilityName = name256: null
+
+2022-07-18 21:00:47 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Create One")): Send request successfully
+
+2022-07-18 21:00:49 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\4.har
+
+2022-07-18 21:00:49 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:00:49 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-18 21:00:49 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:00:49 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Verify element property value successfully
+
+2022-07-18 21:00:49 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:00:49 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:00:49 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:00:49 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:00:49 - [TEST_STEP][PASSED] - else if (i == 3): Verify element property value successfully
+
+2022-07-18 21:00:49 - [TEST_STEP][PASSED] - admin_facilityName = "": null
+
+2022-07-18 21:00:49 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Create One")): Send request successfully
+
+2022-07-18 21:00:51 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\5.har
+
+2022-07-18 21:00:51 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:00:51 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-18 21:00:51 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:00:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "errors[0].error", "name must not be empty"): Verify element property value successfully
+
+2022-07-18 21:00:51 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:00:51 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:00:51 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:00:51 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:00:51 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 21:00:51 - [TEST_STEP][PASSED] - else if (i == 4): Verify element property value successfully
+
+2022-07-18 21:00:51 - [TEST_STEP][PASSED] - admin_facilityName = "Parking Area": null
+
+2022-07-18 21:00:51 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Create One")): Send request successfully
+
+2022-07-18 21:00:53 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\6.har
+
+2022-07-18 21:00:53 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:00:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-18 21:00:53 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:00:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Verify element property value successfully
+
+2022-07-18 21:00:53 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:00:53 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:00:53 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:00:53 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:00:53 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 21:00:53 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-18 21:00:53 - [TEST_STEP][PASSED] - else if (i == 5): Send request successfully
+
+2022-07-18 21:00:53 - [TEST_STEP][PASSED] - admin_facilityName = "PARKING AREA": null
+
+2022-07-18 21:00:53 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Create One")): Send request successfully
+
+2022-07-18 21:00:55 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\7.har
+
+2022-07-18 21:00:55 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:00:55 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:00:55 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:00:55 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility saved successfully"): Verify element property value successfully
+
+2022-07-18 21:00:55 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:00:55 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 21:00:55 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 21:00:55 - [TEST_STEP][PASSED] - value = id: null
+
+2022-07-18 21:00:55 - [TEST_STEP][PASSED] - admin_FacilityID = value: null
+
+2022-07-18 21:00:55 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Delete")): Send request successfully
+
+2022-07-18 21:00:57 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\8.har
+
+2022-07-18 21:00:57 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:00:57 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:00:57 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:00:57 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:00:57 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 21:00:57 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-18 21:00:57 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-18 21:00:57 - [TEST_STEP][PASSED] - else if (i == 6): Send request successfully
+
+2022-07-18 21:00:57 - [TEST_STEP][PASSED] - admin_facilityName = "123": null
+
+2022-07-18 21:00:57 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Create One")): Send request successfully
+
+2022-07-18 21:00:59 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\9.har
+
+2022-07-18 21:00:59 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:00:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:00:59 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:00:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility saved successfully"): Verify element property value successfully
+
+2022-07-18 21:00:59 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:00:59 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 21:00:59 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 21:00:59 - [TEST_STEP][PASSED] - value = id: null
+
+2022-07-18 21:00:59 - [TEST_STEP][PASSED] - admin_FacilityID = value: null
+
+2022-07-18 21:00:59 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Delete")): Send request successfully
+
+2022-07-18 21:01:01 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\10.har
+
+2022-07-18 21:01:01 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - else if (i == 6): null
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - else if (i == 7): Verify element property value successfully
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - admin_facilityName = "Toilet": null
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:01:01 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 21:01:01 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 21:01:03 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\11.har
+
+2022-07-18 21:01:03 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:03 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 21:01:03 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 21:01:03 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 21:01:03 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 21:01:03 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 21:01:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:01:03 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Create One")): Send request successfully
+
+2022-07-18 21:01:05 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\12.har
+
+2022-07-18 21:01:05 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:05 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:01:05 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:05 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility saved successfully"): Verify element property value successfully
+
+2022-07-18 21:01:06 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:06 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 21:01:06 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 21:01:06 - [TEST_STEP][PASSED] - value = id: null
+
+2022-07-18 21:01:06 - [TEST_STEP][PASSED] - admin_FacilityID = value: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Facility/TC_Update Facility" time="24.147" classname="Test Cases/Admin/TS4_Facility/TC_Update Facility" status="PASSED">
+         <system-out><![CDATA[2022-07-18 21:01:06 - [TEST_CASE][PASSED] - Test Cases/Admin/TS4_Facility/TC_Update Facility: Test Cases/Admin/TS4_Facility/TC_Update Facility
+
+2022-07-18 21:01:06 - [TEST_STEP][PASSED] - dump = admin_FacilityID: null
+
+2022-07-18 21:01:06 - [TEST_STEP][PASSED] - admin_facilityName = "biar ga kosong": null
+
+2022-07-18 21:01:06 - [TEST_STEP][PASSED] - for ([i = 0, i < 8, (i++)]): Verify element property value successfully
+
+2022-07-18 21:01:06 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:06 - [TEST_STEP][PASSED] - admin_FacilityID = 0: null
+
+2022-07-18 21:01:06 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Update")): Send request successfully
+
+2022-07-18 21:01:08 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\13.har
+
+2022-07-18 21:01:08 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:08 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-18 21:01:08 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:08 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility not found"): Verify element property value successfully
+
+2022-07-18 21:01:08 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:08 - [TEST_STEP][PASSED] - admin_FacilityID = dump: null
+
+2022-07-18 21:01:08 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:08 - [TEST_STEP][PASSED] - else if (i == 1): Verify response status code successfully
+
+2022-07-18 21:01:08 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 21:01:08 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Update")): Send request successfully
+
+2022-07-18 21:01:10 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\14.har
+
+2022-07-18 21:01:10 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:10 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 21:01:10 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:10 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:10 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:01:10 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-18 21:01:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:01:10 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 21:01:10 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 21:01:10 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 21:01:10 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 21:01:12 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\15.har
+
+2022-07-18 21:01:12 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:12 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 21:01:12 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 21:01:12 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 21:01:12 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 21:01:12 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 21:01:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:01:12 - [TEST_STEP][PASSED] - admin_facilityName = name255: null
+
+2022-07-18 21:01:12 - [TEST_STEP][PASSED] - println(admin_facilityName): null
+
+2022-07-18 21:01:12 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Update")): Send request successfully
+
+2022-07-18 21:01:15 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\16.har
+
+2022-07-18 21:01:15 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:01:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:15 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility updated successfully"): Verify element property value successfully
+
+2022-07-18 21:01:15 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:15 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:15 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:01:15 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:01:15 - [TEST_STEP][PASSED] - else if (i == 3): Verify element property value successfully
+
+2022-07-18 21:01:15 - [TEST_STEP][PASSED] - admin_facilityName = name256: null
+
+2022-07-18 21:01:15 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Update")): Send request successfully
+
+2022-07-18 21:01:17 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\17.har
+
+2022-07-18 21:01:17 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:17 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-18 21:01:17 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:17 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Verify element property value successfully
+
+2022-07-18 21:01:17 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:17 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:17 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:01:17 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:01:17 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 21:01:17 - [TEST_STEP][PASSED] - else if (i == 4): Verify element property value successfully
+
+2022-07-18 21:01:17 - [TEST_STEP][PASSED] - admin_facilityName = "": null
+
+2022-07-18 21:01:17 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Update")): Send request successfully
+
+2022-07-18 21:01:19 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\18.har
+
+2022-07-18 21:01:19 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-18 21:01:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:19 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "errors[0].error", "name must not be empty"): Verify element property value successfully
+
+2022-07-18 21:01:19 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:19 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:19 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:01:19 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:01:19 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 21:01:19 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-18 21:01:19 - [TEST_STEP][PASSED] - else if (i == 5): Verify element property value successfully
+
+2022-07-18 21:01:19 - [TEST_STEP][PASSED] - admin_facilityName = "Parking Area": null
+
+2022-07-18 21:01:19 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Update")): Send request successfully
+
+2022-07-18 21:01:23 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\19.har
+
+2022-07-18 21:01:23 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 500): Verify response status code successfully
+
+2022-07-18 21:01:23 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "error", "Internal Server Error"): Verify element property value successfully
+
+2022-07-18 21:01:23 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - else if (i == 6): Verify element property value successfully
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - admin_facilityName = "PARKING AREA": null
+
+2022-07-18 21:01:23 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Update")): Send request successfully
+
+2022-07-18 21:01:27 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\20.har
+
+2022-07-18 21:01:27 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:01:27 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility updated successfully"): Verify element property value successfully
+
+2022-07-18 21:01:27 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - else if (i == 3): null
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - else if (i == 4): null
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - else if (i == 5): null
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - else if (i == 6): null
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - else if (i == 7): Verify element property value successfully
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - admin_facilityName = "123": null
+
+2022-07-18 21:01:27 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Update")): Send request successfully
+
+2022-07-18 21:01:30 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\21.har
+
+2022-07-18 21:01:30 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:01:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:30 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility updated successfully"): Verify element property value successfully
+
+2022-07-18 21:01:30 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Facility/TC_Get All Facility" time="5.724" classname="Test Cases/Admin/TS4_Facility/TC_Get All Facility" status="PASSED">
+         <system-out><![CDATA[2022-07-18 21:01:30 - [TEST_CASE][PASSED] - Test Cases/Admin/TS4_Facility/TC_Get All Facility: Test Cases/Admin/TS4_Facility/TC_Get All Facility
+
+2022-07-18 21:01:30 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-07-18 21:01:30 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 21:01:30 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 21:01:30 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Get All")): Send request successfully
+
+2022-07-18 21:01:32 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\22.har
+
+2022-07-18 21:01:32 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:32 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 21:01:32 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:32 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:32 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-18 21:01:32 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:01:32 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 21:01:32 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 21:01:32 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 21:01:32 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 21:01:34 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\23.har
+
+2022-07-18 21:01:34 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:34 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 21:01:34 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 21:01:34 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 21:01:34 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 21:01:34 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 21:01:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:01:34 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Get All")): Send request successfully
+
+2022-07-18 21:01:35 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\24.har
+
+2022-07-18 21:01:35 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:35 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:01:35 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:35 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list facility"): Verify element property value successfully
+
+2022-07-18 21:01:35 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Facility/TC_Get Dropdown" time="3.612" classname="Test Cases/Admin/TS4_Facility/TC_Get Dropdown" status="PASSED">
+         <system-out><![CDATA[2022-07-18 21:01:35 - [TEST_CASE][PASSED] - Test Cases/Admin/TS4_Facility/TC_Get Dropdown: Test Cases/Admin/TS4_Facility/TC_Get Dropdown
+
+2022-07-18 21:01:36 - [TEST_STEP][PASSED] - dump = token: null
+
+2022-07-18 21:01:36 - [TEST_STEP][PASSED] - for ([i = 0, i < 2, (i++)]): Verify element property value successfully
+
+2022-07-18 21:01:36 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 21:01:36 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 21:01:36 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Dropdown")): Send request successfully
+
+2022-07-18 21:01:38 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\25.har
+
+2022-07-18 21:01:38 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:38 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 21:01:38 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:38 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:38 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-18 21:01:38 - [TEST_STEP][PASSED] - token = dump: null
+
+2022-07-18 21:01:38 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Dropdown")): Send request successfully
+
+2022-07-18 21:01:39 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\26.har
+
+2022-07-18 21:01:39 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:39 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:01:39 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:39 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "dropdown facility"): Verify element property value successfully
+
+2022-07-18 21:01:39 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Facility/TC_Get One Facility" time="11.749" classname="Test Cases/Admin/TS4_Facility/TC_Get One Facility" status="PASSED">
+         <system-out><![CDATA[2022-07-18 21:01:39 - [TEST_CASE][PASSED] - Test Cases/Admin/TS4_Facility/TC_Get One Facility: Test Cases/Admin/TS4_Facility/TC_Get One Facility
+
+2022-07-18 21:01:40 - [TEST_STEP][PASSED] - dump = admin_FacilityID: null
+
+2022-07-18 21:01:40 - [TEST_STEP][PASSED] - for ([i = 0, i < 4, (i++)]): Verify element property value successfully
+
+2022-07-18 21:01:40 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 21:01:40 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 21:01:40 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Get One")): Send request successfully
+
+2022-07-18 21:01:41 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\27.har
+
+2022-07-18 21:01:41 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:41 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 21:01:41 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:41 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:41 - [TEST_STEP][PASSED] - else if (i == 1): Verify element property value successfully
+
+2022-07-18 21:01:41 - [TEST_STEP][PASSED] - admin_FacilityID = dump: null
+
+2022-07-18 21:01:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:01:41 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 21:01:42 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 21:01:42 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 21:01:42 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 21:01:45 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\28.har
+
+2022-07-18 21:01:45 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:45 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 21:01:45 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 21:01:45 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 21:01:45 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 21:01:45 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 21:01:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:01:45 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Get One")): Send request successfully
+
+2022-07-18 21:01:47 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\29.har
+
+2022-07-18 21:01:47 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:47 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:01:47 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:47 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "list facility"): Verify element property value successfully
+
+2022-07-18 21:01:47 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:47 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:47 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:01:47 - [TEST_STEP][PASSED] - else if (i == 2): Verify element property value successfully
+
+2022-07-18 21:01:47 - [TEST_STEP][PASSED] - admin_FacilityID = notFound: null
+
+2022-07-18 21:01:47 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Get One")): Send request successfully
+
+2022-07-18 21:01:49 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\30.har
+
+2022-07-18 21:01:49 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:49 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-18 21:01:49 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:49 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility not found"): Verify element property value successfully
+
+2022-07-18 21:01:49 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:49 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:49 - [TEST_STEP][PASSED] - else if (i == 1): null
+
+2022-07-18 21:01:49 - [TEST_STEP][PASSED] - else if (i == 2): null
+
+2022-07-18 21:01:49 - [TEST_STEP][PASSED] - else: Verify element property value successfully
+
+2022-07-18 21:01:49 - [TEST_STEP][PASSED] - admin_FacilityID = string: null
+
+2022-07-18 21:01:49 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Get One")): Send request successfully
+
+2022-07-18 21:01:51 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\31.har
+
+2022-07-18 21:01:51 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:51 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 400): Verify response status code successfully
+
+2022-07-18 21:01:51 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "status", "BAD_REQUEST"): Verify element property value successfully
+
+2022-07-18 21:01:51 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:51 - [TEST_STEP][PASSED] - admin_FacilityID = dump: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Admin/TS4_Facility/TC_Delete Facility" time="8.402" classname="Test Cases/Admin/TS4_Facility/TC_Delete Facility" status="PASSED">
+         <system-out><![CDATA[2022-07-18 21:01:51 - [TEST_CASE][PASSED] - Test Cases/Admin/TS4_Facility/TC_Delete Facility: Test Cases/Admin/TS4_Facility/TC_Delete Facility
+
+2022-07-18 21:01:51 - [TEST_STEP][PASSED] - dump = admin_FacilityID: null
+
+2022-07-18 21:01:51 - [TEST_STEP][PASSED] - for ([i = 0, i < 3, (i++)]): Verify element property value successfully
+
+2022-07-18 21:01:51 - [TEST_STEP][PASSED] - if (i == 0): Verify response status code successfully
+
+2022-07-18 21:01:51 - [TEST_STEP][PASSED] - token = "": null
+
+2022-07-18 21:01:51 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Delete")): Send request successfully
+
+2022-07-18 21:01:53 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\32.har
+
+2022-07-18 21:01:53 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:53 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 401): Verify response status code successfully
+
+2022-07-18 21:01:53 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:53 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-18 21:01:53 - [TEST_STEP][PASSED] - if (i == 2): null
+
+2022-07-18 21:01:53 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:53 - [TEST_STEP][PASSED] - if (i == 1): Verify element property value successfully
+
+2022-07-18 21:01:53 - [TEST_STEP][PASSED] - admin_FacilityID = -1: null
+
+2022-07-18 21:01:53 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Admin/Dummy Admin/LoginGetToken"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:01:53 - [TEST_CASE][PASSED] - Test Cases/Admin/Dummy Admin/LoginGetToken: Test Cases/Admin/Dummy Admin/LoginGetToken
+
+2022-07-18 21:01:53 - [TEST_STEP][PASSED] - admin_uname = "superadmin": null
+
+2022-07-18 21:01:53 - [TEST_STEP][PASSED] - admin_password = "12345": null
+
+2022-07-18 21:01:53 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Auth/Login")): Send request successfully
+
+2022-07-18 21:01:55 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\33.har
+
+2022-07-18 21:01:55 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:55 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2022-07-18 21:01:55 - [TEST_STEP][PASSED] - result = slurper.parseText(rslt.getResponseBodyContent()): null
+
+2022-07-18 21:01:55 - [TEST_STEP][PASSED] - value = token: null
+
+2022-07-18 21:01:55 - [TEST_STEP][PASSED] - token = value: null
+
+2022-07-18 21:01:55 - [TEST_STEP][PASSED] - println(token): null
+
+2022-07-18 21:01:55 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Admin/Dummy Admin/LoginGetToken' successfully
+
+2022-07-18 21:01:55 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Delete")): Send request successfully
+
+2022-07-18 21:01:57 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\34.har
+
+2022-07-18 21:01:57 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:57 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 404): Verify response status code successfully
+
+2022-07-18 21:01:57 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:57 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility not found"): Verify element property value successfully
+
+2022-07-18 21:01:57 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2022-07-18 21:01:57 - [TEST_STEP][PASSED] - if (i == 2): null
+
+2022-07-18 21:01:57 - [TEST_STEP][PASSED] - if (i == 0): null
+
+2022-07-18 21:01:57 - [TEST_STEP][PASSED] - if (i == 1): null
+
+2022-07-18 21:01:57 - [TEST_STEP][PASSED] - if (i == 2): Verify element property value successfully
+
+2022-07-18 21:01:57 - [TEST_STEP][PASSED] - admin_FacilityID = dump: null
+
+2022-07-18 21:01:57 - [TEST_STEP][PASSED] - rslt = sendRequest(findTestObject("Postman/Admin/Facility/Delete")): Send request successfully
+
+2022-07-18 21:01:59 - [MESSAGE][INFO] - HAR: C:\Users\user\git\sewakantor-testing-apiTest\Reports\20220718_210022\FacilityRun\20220718_210022\requests\main\35.har
+
+2022-07-18 21:01:59 - [MESSAGE][PASSED] - Send request successfully
+
+2022-07-18 21:01:59 - [TEST_STEP][PASSED] - verifyResponseStatusCode(rslt, 200): Verify response status code successfully
+
+2022-07-18 21:01:59 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-07-18 21:01:59 - [TEST_STEP][PASSED] - verifyElementPropertyValue(rslt, "message", "facility deleted successfully"): Verify element property value successfully
+
+2022-07-18 21:01:59 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-07-18 21:00:27 - [TEST_SUITE][PASSED] - FacilityRun: Test Cases/Admin/TS4_Facility/TC_Delete Facility]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
